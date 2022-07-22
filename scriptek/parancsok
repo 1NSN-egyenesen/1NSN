@@ -1,4 +1,7 @@
 #!/bin/bash
+wget -O /bin/iso https://github.com/1NSN-egyenesen/1NSN/blob/main/scriptek/iso
+chmod 777 /bin/iso
+
 wget -O /bin/cache https://sourceforge.net/projects/egyenesenfatdog64/files/script/cache/download
 chmod 777 /bin/cache
 
