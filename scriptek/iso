@@ -1,0 +1,2 @@
+#!/bin/bash
+wget -O /root/1NSN_StretchDog64_K.4.9.iso https://sourceforge.net/projects/egyenesenfatdog64/files/Stretch64/1NSN_StretchDog64_K.4.9.iso/download
