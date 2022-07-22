@@ -1,0 +1,2 @@
+#!/bin/bash
+wget -O /bin/xmt https://sourceforge.net/projects/egyenesenfatdog64/files/app/XMT2_Linux_20.7.28.run/download

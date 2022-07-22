@@ -1,0 +1,11 @@
+#!/bin/bash
+cd /mnt/sda1
+mv casper live
+cd live
+rm *filesystem.squashfs
+
+wget -O /mnt/sda1/live/01-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Stretch64/01-filesystem.squashfs/download
+
+nano /mnt/sda1/syslinux/extlinux/extlinux.conf
+echo KESZ A RENDSZERCSERE...
+echo READY...
