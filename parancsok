@@ -2,31 +2,31 @@
 wget -O /bin/iso--no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/iso
 chmod 777 /bin/iso
 
-wget -O /bin/cache https://sourceforge.net/projects/egyenesenfatdog64/files/script/cache/download
+wget -O /bin/cache --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/cache
 chmod 777 /bin/cache
 
-wget -O /bin/wine32 https://sourceforge.net/projects/egyenesenfatdog64/files/script/wine32/download
+wget -O /bin/wine32 --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/wine32
 chmod 777 /bin/wine32
 
-wget -O /bin/rendszer https://sourceforge.net/projects/egyenesenfatdog64/files/script/rendszer/download
+wget -O /bin/rendszer --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/rendszer
 chmod 777 /bin/rendszer
 
-wget -O /bin/kernel https://sourceforge.net/projects/egyenesenfatdog64/files/script/kernel/download
+wget -O /bin/kernel --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/kernel
 chmod 777 /bin/kernel
 
-wget -O /bin/firmware https://sourceforge.net/projects/egyenesenfatdog64/files/script/firmware/download
+wget -O /bin/firmware --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/firmware
 chmod 777 /bin/firmware
 
-wget -O /bin/parancslista https://sourceforge.net/projects/egyenesenfatdog64/files/script/parancslista/download
+wget -O /bin/parancslista --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/parancslista
 chmod 777 /bin/parancslista
 
-wget -O /bin/xmt https://sourceforge.net/projects/egyenesenfatdog64/files/script/xmt/download
+wget -O /bin/xmt --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/xmt
 chmod 777 /bin/xmt
 
-wget -O /bin/epito https://sourceforge.net/projects/egyenesenfatdog64/files/script/epito/download
+wget -O /bin/epito --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/epito
 chmod 777 /bin/epito
 
-wget -O /bin/tint https://sourceforge.net/projects/egyenesenfatdog64/files/script/tint/download
+wget -O /bin/tint --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/tint
 chmod 777 /bin/tint
 
 echo "Scriptek letoltese kesz..."
