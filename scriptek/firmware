@@ -1,2 +1,0 @@
-#!/bin/bash
-wget -O /mnt/sda1/03-firmware-22.06.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Firmware/03-firmware-22.06.squashfs/download
