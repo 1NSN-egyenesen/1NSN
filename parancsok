@@ -1,5 +1,5 @@
 #!/bin/bash
-wget -O /bin/iso https://sourceforge.net/projects/egyenesenfatdog64/files/script/iso/download
+wget -O /bin/iso--no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/iso
 chmod 777 /bin/iso
 
 wget -O /bin/cache https://sourceforge.net/projects/egyenesenfatdog64/files/script/cache/download
