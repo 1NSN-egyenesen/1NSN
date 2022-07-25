@@ -1,0 +1,3 @@
+#!/bin/bash
+wget -O /bin/mklive-sid64 https://sourceforge.net/projects/egyenesenfatdog64/files/Rendszer%20epito/mklive-sid64/download
+chmod 777 /bin/mklive-sid64

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+wget -O /tmp/tint2.conf https://sourceforge.net/projects/egyenesenfatdog64/files/tint2.conf/download
