@@ -1,2 +1,2 @@
 #!/bin/bash
-wget -O /tmp/tint2.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/tint2.conf
+wget -O /tmp/sidlive.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/sidlive.conf
