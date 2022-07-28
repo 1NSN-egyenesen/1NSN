@@ -26,8 +26,8 @@ chmod 777 /bin/xmt
 wget -O /bin/epito --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/epito
 chmod 777 /bin/epito
 
-wget -O /tmp/tint2.conf --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/tint
-chmod 777 /tmp/tint.conf
+wget -O /bin/tint --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/tint
+chmod 777 /bin/tint
 
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
