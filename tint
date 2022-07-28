@@ -1,2 +1,2 @@
 #!/bin/bash
-wget -O /tmp/06-wine32-wine-7.0-repack-1.sfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/06-wine32-wine-7.0-repack-1.squashfs/download
+wget -O /tmp/tint2.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/tint2.conf
