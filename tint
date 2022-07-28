@@ -1,2 +1,0 @@
-#!/bin/bash
-wget -O /tmp/sidlive.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/sidlive.conf
