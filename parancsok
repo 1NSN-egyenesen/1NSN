@@ -1,6 +1,4 @@
 #!/bin/bash
-wget -O /bin/go --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/go
-chmod 777 /bin/go
 
 wget -O /bin/iso --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/iso
 chmod 777 /bin/iso
@@ -29,7 +27,8 @@ chmod 777 /bin/xmt
 wget -O /bin/epito --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/epito
 chmod 777 /bin/epito
 
-
+wget -O /bin/go --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/go
+chmod 777 /bin/go
 
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
