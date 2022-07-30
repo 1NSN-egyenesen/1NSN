@@ -1,5 +1,5 @@
 #!/bin/bash
-wget -O /bin/go --no-check-certificate https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/go
+wget -O /bin/go --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/go
 chmod 777 /bin/go
 
 wget -O /bin/iso --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/iso
