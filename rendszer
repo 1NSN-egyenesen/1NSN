@@ -24,7 +24,7 @@ while true; do
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Stretch" \
     "2" "Sid" \
-    "2" "Ceres" \
+    "3" "Ceres" \
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
