@@ -2,6 +2,7 @@
 echo "*******************"
 echo "**   Parancsok   **"
 echo "*******************"
+echo "go - google chrome run"
 echo "parancsok"
 echo "parancslista"
 echo "epito"
