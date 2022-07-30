@@ -2,6 +2,7 @@
 echo "*******************"
 echo "**   Parancsok   **"
 echo "*******************"
+echo "conf - 1nsn config"
 echo "go - google chrome run"
 echo "parancsok"
 echo "parancslista"
