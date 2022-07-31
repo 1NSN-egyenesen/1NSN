@@ -33,5 +33,8 @@ chmod 777 /bin/go
 wget -O /bin/conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/conf
 chmod 777 /bin/conf
 
+wget -O /bin/m https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/m
+chmod 777 /bin/m
+
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
