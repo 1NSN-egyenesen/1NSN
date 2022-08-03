@@ -40,7 +40,7 @@ wget -O /bin/confstretch https://github.com/1NSN-egyenesen/1NSN/blob/main/confst
 chmod 777 /bin/confstretch
 
 wget -O /bin/mstretch https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/mstretch
-chmod 777 /bin/confstretch
+chmod 777 /bin/mstretch
 
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
