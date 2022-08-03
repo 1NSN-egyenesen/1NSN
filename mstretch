@@ -1,0 +1,2 @@
+#!/bin/bash
+wget -O https://sourceforge.net/projects/egyenesenfatdog64/files/Stretch64/m-stretch.squashfs/download
