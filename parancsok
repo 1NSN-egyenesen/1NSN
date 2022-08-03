@@ -36,5 +36,9 @@ chmod 777 /bin/conf
 wget -O /bin/m https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/m
 chmod 777 /bin/m
 
+wget -O /bin/confstretch https://github.com/1NSN-egyenesen/1NSN/blob/main/confstretch
+chmod 777 /bin/confstretch
+
+
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
