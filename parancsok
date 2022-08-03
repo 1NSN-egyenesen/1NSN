@@ -36,7 +36,7 @@ chmod 777 /bin/conf
 wget -O /bin/m https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/m
 chmod 777 /bin/m
 
-wget -O /bin/confstretch https://github.com/1NSN-egyenesen/1NSN/blob/main/confstretch
+wget -O /bin/confstretch https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/confstretch
 chmod 777 /bin/confstretch
 
 wget -O /bin/mstretch https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/mstretch
