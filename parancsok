@@ -42,5 +42,7 @@ chmod 777 /bin/confstretch
 wget -O /bin/mstretch https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/mstretch
 chmod 777 /bin/mstretch
 
+wgwt -O /bin/fatdog https://github.com/1NSN-egyenesen/1NSN/blob/main/fatdog
+chmod 777 /bin/fatdog
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
