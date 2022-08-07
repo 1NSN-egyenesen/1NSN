@@ -1,4 +1,10 @@
 #!/bin/bash
+cd /mnt/sda1
+mv casper live
+cd live
+rm *filesystem.squashfs
+rm initrd1.xz
+rm vmlinuz1
 wget -O /mnt/sda3/live/initrd1.xz  https://sourceforge.net/projects/egyenesenfatdog64/files/fatdog/initrd1.xz/download
 wget -O /mnt/sda3/live/vmlinuz1 https://sourceforge.net/projects/egyenesenfatdog64/files/fatdog/vmlinuz1/download 
 wget -O /mnt/sda3/live/m-fatdog.sfs https://sourceforge.net/projects/egyenesenfatdog64/files/fatdog/m.sfs/download
