@@ -2,6 +2,7 @@
 echo "*******************"
 echo "**   Parancsok   **"
 echo "*******************"
+echo "mkv"
 echo "fatdog"
 echo "confstretch - stretch config"
 echo "conf - 1nsn-sid config"
