@@ -45,7 +45,7 @@ chmod 777 /bin/mstretch
 wget -O /bin/mkv https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/mkv
 chmod 777 /bin/mkv
 
-wgwt -O /bin/fatdog https://github.com/1NSN-egyenesen/1NSN/blob/main/fatdog
+wget -O /bin/fatdog https://github.com/1NSN-egyenesen/1NSN/blob/main/fatdog
 chmod 777 /bin/fatdog
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
