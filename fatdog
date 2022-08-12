@@ -6,6 +6,6 @@ rm *filesystem.squashfs
 rm initrd1.xz
 rm vmlinuz1
 rm sajat.squashfs
-wget -O /mnt/sda3/live/initrd1.xz  https://sourceforge.net/projects/egyenesenfatdog64/files/fatdog/initrd1.xz/download
-wget -O /mnt/sda3/live/vmlinuz1 https://sourceforge.net/projects/egyenesenfatdog64/files/fatdog/vmlinuz1/download 
-wget -O /mnt/sda3/live/m-fatdog.sfs https://sourceforge.net/projects/egyenesenfatdog64/files/fatdog/m.sfs/download
+wget -O /mnt/sda1/live/initrd1.xz  https://sourceforge.net/projects/egyenesenfatdog64/files/fatdog/initrd1.xz/download
+wget -O /mnt/sda1/live/vmlinuz1 https://sourceforge.net/projects/egyenesenfatdog64/files/fatdog/vmlinuz1/download 
+wget -O /mnt/sda1/live/m-fatdog.sfs https://sourceforge.net/projects/egyenesenfatdog64/files/fatdog/m.sfs/download
