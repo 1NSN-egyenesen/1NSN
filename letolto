@@ -1,3 +1,5 @@
 #!/bin/bash
+cd /bin
+rm parancsok
 wget -O /bin/parancsok https://sourceforge.net/projects/egyenesenfatdog64/files/script/parancsok/download
 chmod 777 /bin/parancsok
