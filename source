@@ -1,2 +1,2 @@
 #!/bin/sh
-lxterminal -e sftp egyenesenfatdog64@frs.sourceforge.net
+sftp egyenesenfatdog64@frs.sourceforge.net
