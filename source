@@ -1,3 +1,2 @@
 #!/bin/sh
-echo "ZkcsNWPCg7YtV6S"
 lxterminal -e sftp egyenesenfatdog64@frs.sourceforge.net
