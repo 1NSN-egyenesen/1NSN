@@ -47,5 +47,9 @@ chmod 777 /bin/mkv
 
 wget -O /bin/fatdog https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/fatdog
 chmod 777 /bin/fatdog
+
+wget -o /bin/source https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/source
+chmod 777 /bin/source
+
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
