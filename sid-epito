@@ -41,7 +41,7 @@ BASE_APPS_INSTALL="gparted parted geany transmission transmission-common transmi
 # Desktop environment related
 DESK_APPS_INSTALL="openbox=3.6.1-4.3 obconf pcmanfm lxpanel lxrandr lxinput lxappearance"  
 FIRMWARE="firmware-linux-free"   # see below for choices
-EXTRA_DOG_APPS_INSTALL=""
+EXTRA_DOG_APPS_INSTALL="upgrade-kernel"
 # Remove automatically installed packages: during installing, some are installed that you might not need, e.g.
 # cpp, REM_AUTO_INST=TRUE will uninstall it.
 REM_AUTO_INST="TRUE"
