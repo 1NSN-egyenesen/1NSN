@@ -78,7 +78,7 @@ cd live
 rm *filesystem.squashfs
 
 wget -O /mnt/sda1/live/01-filesystem-1nsn-skeleton-ceres-unofficial.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/ceres/01-filesystem-1nsn-skeleton-ceres-unofficial.squashfs/download
-
+wget -O /mnt/sda1/live/1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/1nsn-conf.squashfs/download
 )
       display_result ""
       ;;
