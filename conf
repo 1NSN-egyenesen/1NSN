@@ -1,2 +1,0 @@
-#!/bin/bash
-wget -O /mnt/sda1/live/1nsn-conf.squashfs https://github.com/1NSN-egyenesen/1NSN/raw/main/1nsn-conf.squashfs
