@@ -1,2 +1,3 @@
 #!/bin/bash
 wget -O /tmp/sid https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/sid-epito
+chmod 777 /tmp/sid
