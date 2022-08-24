@@ -37,7 +37,7 @@ BASE_INSTALL="acl acpi acpi-support-base acpid aespipe anacron apt-rdepends apt-
 # Base Dog Packages, recommended to keep: yad gtkdialog obshutdown pup-volume-monitor peasywifi
 BASE_DOG_APPS_INSTALL="yad gtkdialog obshutdown pup-volume-monitor peasywifi edit-sfs-pcmanfm filemnt-pcmanfm fixdepinstall chpupsocket lxinputsave lxrandr-save-fix gsu remaster-scripts quick-remaster apt2sfs sfsload fixdepinstall greybird-theme-dd-stretch makedebpackage tzupdate"
 # Applications
-BASE_APPS_INSTALL="trash-cli deb-multimedia-keyring lxtask gdmap gparted parted geany transmission transmission-common transmission-gtk vlc gmtp google-chrome-stable conky synaptic minidlna mkvtoolnix mkvtoolnix-gui ffmpeg pcmanfm mtpaint alsa-utils pack-it uextract nitrogen roxterm-gtk2 searchmonkey"
+BASE_APPS_INSTALL="avidemux-qt avidemux-common trash-cli deb-multimedia-keyring lxtask gdmap gparted parted geany transmission transmission-common transmission-gtk vlc gmtp google-chrome-stable conky synaptic minidlna mkvtoolnix mkvtoolnix-gui ffmpeg pcmanfm mtpaint alsa-utils pack-it uextract nitrogen roxterm-gtk2 searchmonkey"
 # Desktop environment related
 DESK_APPS_INSTALL="openbox=3.6.1-4.3 obconf jwm-setup lxpanel lxrandr lxinput libfm-modules lxappearance xlunch run-as-user tint2 nitrogen openbox-menu"  
 FIRMWARE="firmware-linux-free"   # see below for choices
