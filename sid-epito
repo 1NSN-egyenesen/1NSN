@@ -1073,7 +1073,7 @@ export REPOS64='deb https://github.com/doglinux/'$SID'/raw/master/amd64/ ./
 ## package repositories
 deb http://deb.debian.org/debian sid main contrib non-free
 #deb-src http://deb.debian.org/debian sid main contrib non-free
-
+deb http://www.deb-multimedia.org sid main non-free
 '
 
 # repos for 32-bit
