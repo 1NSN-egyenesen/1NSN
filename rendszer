@@ -53,6 +53,7 @@ mv casper live
 cd live
 rm *filesystem.squashfs
 
+wget -O /mnt/sda1/live/02-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Stretch64/m-stretch.squashfs/download
 wget -O /mnt/sda1/live/01-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Stretch64/01-filesystem.squashfs/download
 
 )
