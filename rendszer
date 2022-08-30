@@ -48,6 +48,7 @@ while true; do
     1 )
       result=$(
 cd /mnt/sda1
+mkdir live
 mv casper live
 cd live
 rm *filesystem.squashfs
@@ -74,6 +75,7 @@ wget -O /mnt/sda1/live/02-1nsn-conf.squashfs https://sourceforge.net/projects/eg
     3 )
       result=$(
 cd /mnt/sda1
+mkdir live
 mv casper live
 cd live
 rm *filesystem.squashfs
