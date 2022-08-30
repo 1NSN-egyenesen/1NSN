@@ -65,7 +65,7 @@ cd live
 rm *filesystem.squashfs
 
 wget -O /mnt/sda1/live/01-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-filesystem.squashfs/download
-wget -O /mnt/sda1/live/1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/1nsn-conf.squashfs/download
+wget -O /mnt/sda1/live/02-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/02-1nsn-conf.squashfs/download
 )
       display_result ""
       ;;
