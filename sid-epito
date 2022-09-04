@@ -46,7 +46,7 @@ EXTRA_DOG_APPS_INSTALL="upgrade-kernel"
 # cpp, REM_AUTO_INST=TRUE will uninstall it.
 REM_AUTO_INST="TRUE"
 # To force 32 bit build on a 64 bit OS, set to TRUE
-FORCE32="FALSE"
+FORCE32="TRUE"
 KEEPLOCALES="TRUE"
 KEEPMANDOC="FALSE"
 SYSTEMD="FALSE"
