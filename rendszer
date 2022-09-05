@@ -55,7 +55,7 @@ rm *filesystem.squashfs
 
 wget -O /mnt/sda1/live/02-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Stretch64/m-stretch.squashfs/download
 wget -O /mnt/sda1/live/01-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Stretch64/01-filesystem.squashfs/download
-wget -O /mnt/sda1/live/google.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/google.squashfs/download
+
 )
       display_result ""
       ;;
@@ -69,6 +69,7 @@ rm *filesystem.squashfs
 
 wget -O /mnt/sda1/live/01-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-filesystem.squashfs/download
 wget -O /mnt/sda1/live/02-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/02-1nsn-conf.squashfs/download
+wget -O /mnt/sda1/live/google.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/google.squashfs/download
 )
       display_result ""
       ;;
