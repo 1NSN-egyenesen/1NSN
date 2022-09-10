@@ -39,7 +39,7 @@ BASE_DOG_APPS_INSTALL="yad gtkdialog obshutdown pup-volume-monitor peasywifi edi
 # Applications
 BASE_APPS_INSTALL="ssh youtube-dl pcmanfm trash-cli lxtask gdmap gparted parted geany transmission-gtk gmtp conky minidlna ffmpeg mtpaint alsa-utils pack-it uextract nitrogen roxterm-gtk2 searchmonkey"
 # Desktop environment related
-DESK_APPS_INSTALL="openbox=3.6.1-4.3 obconf pcmanfm lxpanel lxrandr lxinput lxappearance"  
+DESK_APPS_INSTALL="openbox=3.6.1-4.3 obconf jwm-setup lxpanel lxrandr lxinput libfm-modules lxappearance xlunch run-as-user tint2 nitrogen openbox-menu"  
 FIRMWARE="firmware-linux-free"   # see below for choices
 EXTRA_DOG_APPS_INSTALL="upgrade-kernel"
 # Remove automatically installed packages: during installing, some are installed that you might not need, e.g.
@@ -47,10 +47,10 @@ EXTRA_DOG_APPS_INSTALL="upgrade-kernel"
 REM_AUTO_INST="TRUE"
 # To force 32 bit build on a 64 bit OS, set to TRUE
 FORCE32="FALSE"
-KEEPLOCALES="TRUE"
+KEEPLOCALES="FALSE"
 KEEPMANDOC="FALSE"
 SYSTEMD="FALSE"
-RUNXTERM="TRUE"
+RUNXTERM="FALSE"
 LBINITRD="FALSE"
 ISOUEFI="FALSE"
 }
