@@ -1390,7 +1390,7 @@ mkdir squash
 [ "$DE_CONFIG" = "LxDD" ] && wget --no-check-certificate -P squash -r -e robots=off -nd -l1 -A "*squashfs" https://debiandog.github.io/MakeLive/modules-bullseye/lxdd/ && unsquashfs -f -d chroot squash/*.squashfs; rm -rf squash
 [ "$DE_CONFIG" = "Fvwm-crystal" ] && wget --no-check-certificate -P squash -r -e robots=off -nd -l1 -A "*squashfs" https://debiandog.github.io/MakeLive/modules-bullseye/fvwm-crystal/ && unsquashfs -f -d chroot squash/*.squashfs; rm -rf squash
 if [ "$DE_CONFIG" = "DDog" ]; then
-wget --no-check-certificate -P squash "https://debiandog.github.io/MakeLive/modules-bullseye/ddog/zz_openbox_xfce-jwm.squashfs"  && unsquashfs -f -d chroot squash/*.squashfs; rm -rf squash
+wget --no-check-certificate -P squash "https://github.com/1NSN-egyenesen/1NSN/raw/main/zz_openbox_tint2-jwm_firefox.squashfs"  && unsquashfs -f -d chroot squash/*.squashfs; rm -rf squash
 fi
 [ "$DE_CONFIG" = "Kiosk" ] && wget --no-check-certificate -P squash -r -e robots=off -nd -l1 -A "*squashfs" https://debiandog.github.io/MakeLive/modules-bullseye/kiosk/  && unsquashfs -f -d chroot squash/*.squashfs; rm -rf squash
 [ "$DE_CONFIG" = "ObDog" ] && wget --no-check-certificate -P squash -r -e robots=off -nd -l1 -A "*squashfs" https://debiandog.github.io/MakeLive/modules-bullseye/obdog/ && unsquashfs -f -d chroot squash/*.squashfs; rm -rf squash
