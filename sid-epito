@@ -153,7 +153,7 @@ if [ -z `which yad` ]; then
 exit 0
 fi
 
-wget --no-check-certificate -P /tmp/ -r -e robots=off -N -q -nd -l1 -A "*png" https://github.com/1NSN-egyenesen/1NSN/tree/main/icons/ 2> /dev/null
+wget --no-check-certificate -P /tmp/ -r -e robots=off -N -q -nd -l1 -A "*png" https://github.com/1NSN-egyenesen/1NSN/tree/main/icons/  2> /dev/null
 
 LFONT="  ***  <span size='medium' >  <b>Choose Desktop Environment</b>  </span>  *** "
 CHOICE=$(yad --borders=6 --window-icon="gtk-ok" --center --height 530 --width="790" --list --title="Choose Desktop Environment" \
