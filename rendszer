@@ -83,8 +83,8 @@ mv casper live
 cd live
 rm *filesystem.squashfs
 
-wget -O /mnt/sda1/live/01-filesystem-1nsn-skeleton-ceres-unofficial.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/ceres/01-filesystem-1nsn-skeleton-ceres-unofficial.squashfs/download
-
+wget -O /mnt/sda1/live/01-filesystem-1nsn-skeleton-ceres-unofficial.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/ceres/01-filesystem_1nsn_ceres_eng_latest_unoffical.squashfs/download                                                                            
+wget -O /mnt/sda1/live/02-1nsn-conf-ceres.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/ceres/02-1nsn-conf-ceres.squashfs/download
 )
       display_result ""
       ;;
