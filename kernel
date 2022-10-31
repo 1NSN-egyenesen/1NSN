@@ -22,8 +22,8 @@ while true; do
     --clear \
     --cancel-label "Kilépés" \
     --menu "Kerlek valassz kernelt:" $HEIGHT $WIDTH 4 \
-    "1" "4.9" \
-    "2" "5.4" \
+    "1" "4.19-rt" \
+    "2" "5.4-low" \
     "3" "5.10" \
     "4" "5.18" \
     "5" "extlinux.conf" \
@@ -56,11 +56,11 @@ rm vmlinuz1
 rm initrd1.xz
 rm *amd64.squashfs      
 
-wget -O /mnt/sda1/live/k-4.9.0-12-amd64.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Kernel/4.9/k-4.9.0-12-amd64.squashfs/download
+wget -O /mnt/sda1/live/k-4.19.0-21-rt-amd64.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Kernel/4.19/k-4.19.0-21-rt-amd64.squashfs/download
 
-wget -O /mnt/sda1/live/vmlinuz1 https://sourceforge.net/projects/egyenesenfatdog64/files/Kernel/4.9/vmlinuz1/download
+wget -O /mnt/sda1/live/vmlinuz1 https://sourceforge.net/projects/egyenesenfatdog64/files/Kernel/4.19/vmlinuz1/download
 
-wget -O /mnt/sda1/live/initrd1.xz https://sourceforge.net/projects/egyenesenfatdog64/files/Kernel/4.9/initrd1.xz/download
+wget -O /mnt/sda1/live/initrd1.xz https://sourceforge.net/projects/egyenesenfatdog64/files/Kernel/4.19/initrd1.xz/download
 )
       display_result "4.9 Kernel letoltve!"
       ;;
