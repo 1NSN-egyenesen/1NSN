@@ -1,2 +1,0 @@
-#!/bin/bash
-wget -O /mnt/sda1/1nsn-tint2-stretch.squashfs https://github.com/1NSN-egyenesen/1NSN/raw/main/1nsn-tint2-stretch.squashfs
