@@ -55,8 +55,8 @@ wget -O /root/1NSN_StretchDog64_K.4.9.iso https://sourceforge.net/projects/egyen
     2 )
       result=$(
 
-wget -O /root/1NSN_SidDog64_K.5.10.0-15-rt_eng.iso
-https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/1NSN_SidDog64_K.5.10.0-15-rt_eng.iso/download
+wget -O /root/1NSN_SidDog64_Chrome_K-6.0_eng.iso
+https://sourceforge.net/projects/puppyszoftver/files/SidDog64/1NSN_SidDog64_Chrome_K-6.0_eng.iso/download
 
 )
       display_result "1NSN_SidDog64_K.5.10.0-15-rt_eng.iso letoltve"
