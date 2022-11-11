@@ -1,2 +1,2 @@
 #!/bin/sh
-
+wget -O /mnt/sda1/live/12-ventoy_1.0.77.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/12-ventoy_1.0.77.squashfs/download
