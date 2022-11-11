@@ -54,5 +54,8 @@ chmod 777 /bin/source
 wget -O /bin/ventoy https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/ventoy
 chmod 777 /bin/ventoy
 
+wget -O /bin/ventoy https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/chrome
+chmod 777 /bin/chrome
+
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
