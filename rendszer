@@ -67,7 +67,7 @@ mv casper live
 cd live
 rm *filesystem.squashfs
 
-wget -O /mnt/sda1/live/01-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-filesystem.squashfs/download
+wget -O /mnt/sda1/live/01-latest-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-latest-filesystem.squashfs/download
 wget -O /mnt/sda1/live/02-1nsn-conf.squashfs https://github.com/1NSN-egyenesen/1NSN/raw/main/02-1nsn-conf.squashfs
 wget -O /mnt/sda1/live/10-google-latest.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/10-google-latest.squashfs/download
 )
