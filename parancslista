@@ -2,6 +2,7 @@
 echo "*******************"
 echo "**   Parancsok   **"
 echo "*******************"
+echo "wine"
 echo "chrome"
 echo "ventoy"
 echo "mkv"
