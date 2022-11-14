@@ -1,2 +1,0 @@
-#!/bin/bash
-wget -O /mnt/sda1/live/06-wine32-wine-7.0-repack-1.sfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/06-wine32-wine-7.0-repack-1.squashfs/download
