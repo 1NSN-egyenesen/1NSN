@@ -1,2 +1,3 @@
 #!/bin/bash
 wget -O /bin/xmt https://sourceforge.net/projects/egyenesenfatdog64/files/app/XMT2_Linux_20.7.28.run/download
+wget -O /root/Magisk-v25-2.zip https://github.com/1NSN-egyenesen/1NSN/raw/main/Magisk-v25-2.zip
