@@ -1,0 +1,2 @@
+#!/bin/bash
+wget -O /mnt/sda1/live/14-vlc.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/14-vlc.squashfs/download
