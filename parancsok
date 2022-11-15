@@ -60,5 +60,7 @@ chmod 777 /bin/chrome
 wget -O /bin/wine https://github.com/1NSN-egyenesen/1NSN/blob/main/wine
 chmod 777 /bin/wine
 
+wget -O /bin/vlc https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/vlc
+
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
