@@ -63,5 +63,8 @@ chmod 777 /bin/wine
 wget -O /bin/vlc https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/vlc
 chmod 777 /bin/vlc
 
+wget -O /bin/alap https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/alap
+chmod 777 /bin/alap
+
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
