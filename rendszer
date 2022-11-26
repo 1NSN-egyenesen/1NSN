@@ -65,6 +65,7 @@ cd /mnt/sda1/live
 rm *filesystem.squashfs
 rm vmlinuz1
 rm initrd1.xz
+rm *amd64.squashfs
 
 wget -O /mnt/sda1/live/01-latest-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-latest-filesystem.squashfs/download
 wget -O /mnt/sda1/live/02-1nsn-conf.squashfs https://github.com/1NSN-egyenesen/1NSN/raw/main/02-1nsn-conf.squashfs
