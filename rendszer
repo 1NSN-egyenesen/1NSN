@@ -23,8 +23,9 @@ while true; do
     --cancel-label "Kilépés" \
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Stretch" \
-    "2" "Sid" \
-    "3" "Ceres" \
+    "2" "Sid + 5.4 low-kernel" \
+    "3" "Sid-frissites" \
+    "4" "Ceres"
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
@@ -79,6 +80,16 @@ wget -O /mnt/sda1/live/99-linux-firmware_1.187.34.squashfs https://sourceforge.n
       ;;
       
     3 )
+      result=$(
+cd /mnt/sda1/live
+rm *filesystem.squashfs
+
+wget -O /mnt/sda1/live/01-latest-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-latest-filesystem.squashfs/download
+)
+      display_result ""
+      ;;
+      
+      4 )
       result=$(
 cd /mnt/sda1
 mkdir live
