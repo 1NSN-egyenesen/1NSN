@@ -25,7 +25,7 @@ while true; do
     "1" "Stretch" \
     "2" "Sid + 5.4 low-kernel" \
     "3" "Sid-frissites" \
-    "4" "Ceres"
+    "4" "Ceres" \
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
