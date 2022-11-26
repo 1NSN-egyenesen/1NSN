@@ -1,0 +1,2 @@
+#!/bin/bash
+wget -O /mnt/sda1/live/01-latest-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-latest-filesystem.squashfs/download
