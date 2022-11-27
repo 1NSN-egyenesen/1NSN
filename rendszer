@@ -27,6 +27,7 @@ while true; do
     "3" "Sid-frissites" \
     "4" "Ceres" \
     "5" "extlinux.conf" \
+    "6" "Ventoy" \
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
@@ -112,5 +113,15 @@ wget -O /mnt/sda1/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.
       display_result ""
       ;;  
     
+    6 )
+      result=$(
+wget -O /mnt/sda1/live/12-ventoy_1.0.77.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/12-ventoy_1.0.77.squashfs/download
+
+)
+    display_result ""
+      ;;  
+     
+     
+     
      esac
 done
