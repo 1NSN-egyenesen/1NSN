@@ -86,7 +86,7 @@ wget -O /mnt/sda1/live/99-linux-firmware_1.187.34.squashfs https://sourceforge.n
 cd /mnt/sda1/live
 rm *filesystem.squashfs
 
-wget -O /mnt/sda1/live/01-latest-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-latest-filesystem.squashfs/download
+wget -O /mnt/sda1/live/01-latest-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/03-filesystem-update.squashfs
 )
       display_result ""
       ;;
