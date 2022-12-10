@@ -1,3 +1,0 @@
-#!/bin/bash
-rm -r /root/.cache
-rm -r /var/cache/minidlna
