@@ -24,11 +24,9 @@ while true; do
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Stretch" \
     "2" "Sid + 5.4 low-kernel" \
-    "3" "Sid-frissites" \
-    "4" "Ceres" \
-    "5" "extlinux.conf" \
-    "6" "Ventoy" \
-    "7" "Avidemux"
+    "3" "extlinux.conf" \
+    "4" "Ventoy" \
+    "5" "Avidemux"
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
@@ -81,31 +79,7 @@ wget -O /mnt/sda1/live/99-linux-firmware_1.187.34.squashfs https://sourceforge.n
       display_result ""
       ;;
       
-    3 )
-      result=$(
-cd /mnt/sda1/live
-rm *filesystem.squashfs
-
-wget -O /mnt/sda1/live/01-latest-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/03-filesystem-update.squashfs
-)
-      display_result ""
-      ;;
-      
-    4 )
-      result=$(
-cd /mnt/sda1
-mkdir live
-mv casper live
-cd live
-rm *filesystem.squashfs
-
-wget -O /mnt/sda1/live/01-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/ceres/01-filesystem.squashfs/download
-wget -O /mnt/sda1/live/02-1nsn-conf-ceres.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/ceres/02-1nsn-conf-ceres.squashfs/download
-)
-      display_result ""
-      ;;
-      
-    5 )
+   3 )
       result=$(
 wget -O /mnt/sda1/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
 
@@ -113,7 +87,7 @@ wget -O /mnt/sda1/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.
       display_result ""
       ;;  
     
-    6 )
+    4 )
       result=$(
 wget -O /mnt/sda1/live/12-ventoy_1.0.77.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/12-ventoy_1.0.77.squashfs/download
 
@@ -121,7 +95,7 @@ wget -O /mnt/sda1/live/12-ventoy_1.0.77.squashfs https://sourceforge.net/project
     display_result ""
       ;;  
      
-      7 )
+    5 )
       result=$(
 wget -O /mnt/sda1/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/11-avidemux_2.8_all_deb.squashfs/download
 
