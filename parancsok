@@ -1,13 +1,10 @@
 #!/bin/bash
 
+wget -O /bin/radio --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/radio
+chmod 777 /bin/radio
+
 wget -O /bin/iso --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/iso
 chmod 777 /bin/iso
-
-wget -O /bin/cache --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/cache
-chmod 777 /bin/cache
-
-wget -O /bin/wine32 --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/wine32
-chmod 777 /bin/wine32
 
 wget -O /bin/rendszer --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/rendszer
 chmod 777 /bin/rendszer
@@ -27,41 +24,14 @@ chmod 777 /bin/xmt
 wget -O /bin/epito --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/epito
 chmod 777 /bin/epito
 
-wget -O /bin/go --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/go
-chmod 777 /bin/go
-
-wget -O /bin/conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/conf
-chmod 777 /bin/conf
-
-wget -O /bin/m https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/m
-chmod 777 /bin/m
-
-wget -O /bin/confstretch https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/confstretch
-chmod 777 /bin/confstretch
-
-wget -O /bin/mstretch https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/mstretch
-chmod 777 /bin/mstretch
-
-wget -O /bin/mkv https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/mkv
-chmod 777 /bin/mkv
-
 wget -O /bin/fatdog https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/fatdog
 chmod 777 /bin/fatdog
-
-wget -O /bin/source https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/source
-chmod 777 /bin/source
 
 wget -O /bin/ventoy https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/ventoy
 chmod 777 /bin/ventoy
 
-wget -O /bin/chrome https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/chrome
-chmod 777 /bin/chrome
-
 wget -O /bin/wine https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/wine
 chmod 777 /bin/wine
-
-wget -O /bin/vlc https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/vlc
-chmod 777 /bin/vlc
 
 wget -O /bin/alap https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/alap
 chmod 777 /bin/alap
