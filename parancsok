@@ -1,5 +1,8 @@
 #!/bin/bash
 
+wget -O /bin/wine --no-check-certificate --content-disposition https://sourceforge.net/projects/egyenesenfatdog64/files/app/20-wine_7-repack10.squashfs/download
+chmod 777 /bin/wine
+
 wget -O /bin/radio --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/radio
 chmod 777 /bin/radio
 
