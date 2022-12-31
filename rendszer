@@ -81,7 +81,7 @@ wget -O /live/image/live/99-linux-firmware_1.187.34.squashfs https://sourceforge
       
    3 )
       result=$(
-wget -O /mnt/sda1/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
+wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
 
 )
       display_result ""
@@ -89,7 +89,7 @@ wget -O /mnt/sda1/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.
     
     4 )
       result=$(
-wget -O /mnt/sda1/live/12-ventoy_1.0.77.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/12-ventoy_1.0.77.squashfs/download
+wget -O /live/image/live/12-ventoy_1.0.77.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/12-ventoy_1.0.77.squashfs/download
 
 )
     display_result ""
@@ -97,7 +97,7 @@ wget -O /mnt/sda1/live/12-ventoy_1.0.77.squashfs https://sourceforge.net/project
      
     5 )
       result=$(
-wget -O /mnt/sda1/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/11-avidemux_2.8_all_deb.squashfs/download
+wget -O /live/image/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/11-avidemux_2.8_all_deb.squashfs/download
 
 )
     display_result ""
