@@ -27,6 +27,7 @@ while true; do
     "3" "extlinux.conf" \
     "4" "Ventoy" \
     "5" "Avidemux" \
+    "5" "Daedalus + conf" \
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
@@ -102,6 +103,18 @@ wget -O /mnt/sda1/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.net/
 )
     display_result ""
       ;;  
+     
+     
+     6 )
+      result=$(
+wget -O /mnt/sda1/live/01-filesystem-alap-daedalus-skeleton-tint2.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/01-filesystem-alap-daedalus-skeleton-tint2.squashfs/download
+wget -O /mnt/sda1/live/02-daedalus-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/02-daedalus-1nsn-conf.squashfs/download
+)
+     display_result ""
+      ;;  
+     
+     
+     
      
      esac
 done
