@@ -23,7 +23,7 @@ while true; do
     --cancel-label "Kilépés" \
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Stretch" \
-    "2" "Sid + 5.4 low-kernel" \
+    "2" "Sid" \
     "3" "extlinux.conf" \
     "4" "Ventoy" \
     "5" "Avidemux" \
@@ -73,9 +73,7 @@ rm *amd64.squashfs
 wget -O /mnt/sda1/live/01-sid-skeleton-tint2-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-sid-skeleton-tint2-filesystem.squashfs/download
 wget -O /mnt/sda1/live/02-sid-daedalus-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/02-sid-daedalus-1nsn-conf.squashfs/download
 wget -O /mnt/sda1/live/5.4.0-109-lowlatency-amd64.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Kernel/5.4-low/5.4.0-109-lowlatency-amd64.squashfs/download
-wget -O /mnt/sda1/live/vmlinuz1 https://sourceforge.net/projects/egyenesenfatdog64/files/Kernel/5.4-low/vmlinuz1/download
-wget -O /mnt/sda1/live/initrd1.xz https://sourceforge.net/projects/egyenesenfatdog64/files/Kernel/5.4-low/initrd1.xz/download
-wget -O /mnt/sda1/live/99-linux-firmware_1.187.34.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Firmware/99-linux-firmware_1.187.34.squashfs/download
+
 )
       display_result ""
       ;;
