@@ -1,2 +1,2 @@
 #!/bin/bash
-wget -O /mnt/sda1/03-linux-firmware-20221012.squashfs https://sourceforge.net/projects/puppyszoftver/files/SidDog64/Sfs/03-linux-firmware-20221012.squashfs/download
+wget -O /mnt/sda1/99-linux-firmware_1.187.34.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Firmware/99-linux-firmware_1.187.34.squashfs/download
