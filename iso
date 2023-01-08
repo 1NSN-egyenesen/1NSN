@@ -59,7 +59,7 @@ wget -O /root/1NSN_SidDog64_Chrome_k-5.4.0-sajat.iso
 https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/1NSN_SidDog64_Chrome_k-5.4.0-sajat.iso/download
 
 )
-      display_result "1NSN_SidDog64_K.5.10.0-15-rt_eng.iso letoltve"
+      display_result "1NSN_SidDog64_Chrome_k-5.4.0-sajat.iso letoltve"
       ;;
       
     
