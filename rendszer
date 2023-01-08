@@ -107,8 +107,8 @@ wget -O /mnt/sda1/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.net/
      
      6 )
       result=$(
-wget -O /mnt/sda1/live/01-filesystem-alap-daedalus-skeleton-tint2.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/01-filesystem-alap-daedalus-skeleton-tint2.squashfs/download
-wget -O /mnt/sda1/live/02-daedalus-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/02-daedalus-1nsn-conf.squashfs/download
+wget -O /mnt/sda1/live/01-daedalus-skeleton-tint2-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/01-daedalus-skeleton-tint2-filesystem.squashfs/download
+wget -O /mnt/sda1/live/02-sid-daedalus-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/02-sid-daedalus-1nsn-conf.squashfs/download
 )
      display_result ""
       ;;  
