@@ -36,8 +36,5 @@ chmod 777 /bin/ventoy
 wget -O /bin/wine https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/wine
 chmod 777 /bin/wine
 
-wget -O /bin/alap https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/alap
-chmod 777 /bin/alap
-
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
