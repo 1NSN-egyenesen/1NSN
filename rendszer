@@ -70,8 +70,8 @@ rm vmlinuz1
 rm initrd1.xz
 rm *amd64.squashfs
 
-wget -O /mnt/sda1/live/01-alap-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-alap-filesystem.squashfs/download
-wget -O /mnt/sda1/live/02-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/02-1nsn-conf.squashfs/download
+wget -O /mnt/sda1/live/01-sid-skeleton-tint2-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-sid-skeleton-tint2-filesystem.squashfs/download
+wget -O /mnt/sda1/live/02-sid-daedalus-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/02-sid-daedalus-1nsn-conf.squashfs/download
 wget -O /mnt/sda1/live/5.4.0-109-lowlatency-amd64.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Kernel/5.4-low/5.4.0-109-lowlatency-amd64.squashfs/download
 wget -O /mnt/sda1/live/vmlinuz1 https://sourceforge.net/projects/egyenesenfatdog64/files/Kernel/5.4-low/vmlinuz1/download
 wget -O /mnt/sda1/live/initrd1.xz https://sourceforge.net/projects/egyenesenfatdog64/files/Kernel/5.4-low/initrd1.xz/download
