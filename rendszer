@@ -50,10 +50,7 @@ while true; do
       ;;
     1 )
       result=$(
-cd /mnt/sda1
-mkdir live
-mv casper live
-cd live
+cd /mnt/sda1/live
 rm *filesystem.squashfs
 
 wget -O /mnt/sda1/live/02-stretch-update.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Stretch64/02-stretch-update.squashfs/download
@@ -66,9 +63,6 @@ wget -O /mnt/sda1/live/01-filesystem_libgbm1-update_comp-gz.squashfs https://sou
       result=$(
 cd /mnt/sda1/live
 rm *filesystem.squashfs
-rm vmlinuz1
-rm initrd1.xz
-rm *amd64.squashfs
 
 wget -O /mnt/sda1/live/01-sid-skeleton-tint2-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-sid-skeleton-tint2-filesystem.squashfs/download
 wget -O /mnt/sda1/live/02-sid-daedalus-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/02-sid-daedalus-1nsn-conf.squashfs/download
@@ -105,6 +99,9 @@ wget -O /mnt/sda1/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.net/
      
      6 )
       result=$(
+cd /mnt/sda1/live
+rm *filesystem.squashfs
+
 wget -O /mnt/sda1/live/01-daedalus-skeleton-tint2-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/01-daedalus-skeleton-tint2-filesystem.squashfs/download
 wget -O /mnt/sda1/live/02-sid-daedalus-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/02-sid-daedalus-1nsn-conf.squashfs/download
 )
