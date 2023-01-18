@@ -103,7 +103,7 @@ cd /mnt/sda1/live
 rm *filesystem.squashfs
 
 wget -O /mnt/sda1/live/01-daedalus-skeleton-tint2-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/01-daedalus-skeleton-tint2-filesystem.squashfs/download
-wget -O /mnt/sda1/live/02-sid-daedalus-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/02-sid-daedalus-1nsn-conf.squashfs/download
+wget -O /mnt/sda1/live/02-daedalus-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/02-daedalus-1nsn-conf.squashfs/download
 )
      display_result ""
       ;;  
