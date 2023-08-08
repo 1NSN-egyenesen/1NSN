@@ -24,12 +24,7 @@ rm -r /bin/epito
 wget -O /bin/epito --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/epito
 chmod 777 /bin/epito
 
-wget -O /bin/fatdog https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/fatdog
-chmod 777 /bin/fatdog
 
-rm -r /bin/ventoy
-wget -O /bin/ventoy https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/ventoy
-chmod 777 /bin/ventoy
 
 
 
