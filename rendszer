@@ -17,17 +17,18 @@ display_result() {
 while true; do
   exec 3>&1
   selection=$(dialog \
-    --backtitle "1NSN Script			Rendszer letolto script" \
+    --backtitle "1NSN Script			Rendszer és App letolto script" \
     --title "Menu" \
     --clear \
     --cancel-label "Kilépés" \
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
-    "1" "Stretch" \
+    "1" "Wine" \
     "2" "Sid" \
     "3" "extlinux.conf" \
     "4" "Ventoy" \
     "5" "Avidemux" \
-    "6" "Daedalus + conf" \
+    "6" "Daedalus - összes komp" \
+    "7" "Brave" \
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
@@ -50,22 +51,18 @@ while true; do
       ;;
     1 )
       result=$(
-cd /mnt/sda1/live
-rm *filesystem.squashfs
-
-wget -O /mnt/sda1/live/02-stretch-update.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Stretch64/02-stretch-update.squashfs/download
-wget -O /mnt/sda1/live/01-filesystem_libgbm1-update_comp-gz.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Stretch64/01-filesystem_libgbm1-update_comp-gz.squashfs/download
+wget -O /live/image/live/wine_8.0_repack-4.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/wine_8.0_repack-4.squashfs/download
 
 )
       display_result ""
       ;;
     2 )
       result=$(
-cd /mnt/sda1/live
+cd /live/image/live
 rm *filesystem.squashfs
 
-wget -O /mnt/sda1/live/01-sid-skeleton-tint2-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-sid-skeleton-tint2-filesystem.squashfs/download
-wget -O /mnt/sda1/live/02-sid-daedalus-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/02-sid-daedalus-1nsn-conf.squashfs/download
+wget -O /live/image/live/01-sid-skeleton-tint2-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-sid-skeleton-tint2-filesystem.squashfs/download
+wget -O /live/image/live/02-sid-daedalus-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/02-sid-daedalus-1nsn-conf.squashfs/download
 
 
 )
@@ -74,7 +71,7 @@ wget -O /mnt/sda1/live/02-sid-daedalus-1nsn-conf.squashfs https://sourceforge.ne
       
    3 )
       result=$(
-wget -O /mnt/sda1/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
+wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
 
 )
       display_result ""
@@ -82,7 +79,7 @@ wget -O /mnt/sda1/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.
     
     4 )
       result=$(
-wget -O /mnt/sda1/live/12-ventoy_1.0.77.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/12-ventoy_1.0.77.squashfs/download
+wget -O /live/image/live/12-ventoy_1.0.77.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/12-ventoy_1.0.77.squashfs/download
 
 )
     display_result ""
@@ -90,7 +87,7 @@ wget -O /mnt/sda1/live/12-ventoy_1.0.77.squashfs https://sourceforge.net/project
      
     5 )
       result=$(
-wget -O /mnt/sda1/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/11-avidemux_2.8_all_deb.squashfs/download
+wget -O /live/image/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/11-avidemux_2.8_all_deb.squashfs/download
 
 )
     display_result ""
@@ -99,17 +96,69 @@ wget -O /mnt/sda1/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.net/
      
      6 )
       result=$(
-cd /mnt/sda1/live
+cd /live/image/live
 rm *filesystem.squashfs
+rm *conf.squashfs
+rm *initrd1.xz
+rm *vmlinuz1
+rm *amd64.squashfs
+rm *live.squashfs
 
-wget -O /mnt/sda1/live/01-daedalus-skeleton-tint2-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/01-daedalus-skeleton-tint2-filesystem.squashfs/download
-wget -O /mnt/sda1/live/02-daedalus-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/02-daedalus-1nsn-conf.squashfs/download
+wget -O /live/image/live/01-daedalus-tint2-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/01-daedalus-tint2-filesystem.squashfs/download
+wget -O /live/image/live/02-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/02-1nsn-conf.squashfs/download
+wget -O /live/image/live/initrd1.xz https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/initrd1.xz/download
+wget -O /live/image/live/vmlinuz1 https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/vmlinuz1/download
+wget -O /live/image/live/k-5.4.147-amd64.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/k-5.4.147-amd64.squashfs/download
+wget -O /live/image/live/99-firmware-bookworm-live.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/99-firmware-bookworm-live.squashfs/download
+)
+     display_result ""
+      ;;  
+     
+     7 )
+      result=$(
+echo "**************************"
+echo "Csomagkezelő frissítése..." 
+echo "**************************"
+sleep 1
+apt update
+apt install brave-browser -y
+echo "**************"
+echo "Eltávolítás..." 
+echo "**************"
+sleep 1
+rm -r /mnt/live/memory/changes/upperdir/mnt
+#rm -r /mnt/live/memory/changes/upperdir/var
+rm -r /mnt/live/memory/changes/upperdir/home
+rm -r /mnt/live/memory/changes/upperdir/root
+rm -r /mnt/live/memory/changes/upperdir/dev
+rm -r /mnt/live/memory/changes/upperdir/tmp
+rm -r /mnt/live/memory/changes/upperdir/usr/bin/udhcpc
+rm -r /mnt/live/memory/changes/upperdir/etc/consol-setup
+rm -r /mnt/live/memory/changes/upperdir/etc/.pwd.lock
+rm -r /mnt/live/memory/changes/upperdir/etc/blkid-cache
+rm -r /mnt/live/memory/changes/upperdir/etc/localtime
+rm -r /mnt/live/memory/changes/upperdir/etc/machine-id
+rm -r /mnt/live/memory/changes/upperdir/etc/resolv.conf
+rm -r /mnt/live/memory/changes/upperdir/etc/timezone
+rm -r /mnt/sda1/live/21-brave-latest.squashfs
+
+echo "********************************"
+echo "Hordozható verzió elkészítése..."
+echo "********************************"
+
+mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/21-brave-latest.squashfs
+
+echo "******************************************************"
+echo "Hordozható verzió elkészítve,indítsd újra a rendszert!"
+echo "******************************************************"
+echo "********************************"
+echo "       Script by .:1NSN:."
+echo "********************************"
 )
      display_result ""
       ;;  
      
      
-     
-     
      esac
 done
+
