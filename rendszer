@@ -21,7 +21,7 @@ while true; do
     --cancel-label "Kilépés" \
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Wine" \
-    "2" "Sid" \
+    "2" "Epito" \
     "3" "extlinux.conf" \
     "4" "Ventoy" \
     "5" "Avidemux" \
@@ -56,12 +56,9 @@ wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/pr
       ;;
     2 )
       result=$(
-cd /live/image/live
-rm *filesystem.squashfs
-
-wget -O /live/image/live/01-sid-skeleton-tint2-filesystem.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/01-sid-skeleton-tint2-filesystem.squashfs/download
-wget -O /live/image/live/02-sid-daedalus-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Sid/02-sid-daedalus-1nsn-conf.squashfs/download
-
+rm -r /bin/builder
+wget -O /tmp/builder https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/daedalus
+chmod 777 /tmp/builder
 
 )
       display_result ""
