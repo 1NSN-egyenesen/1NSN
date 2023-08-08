@@ -1,5 +1,5 @@
 #!/bin/sh
-# while-menu-dialog: a menu driven system information program
+
 
 DIALOG_CANCEL=1
 DIALOG_ESC=255
@@ -49,7 +49,7 @@ while true; do
       ;;
     1 )
       result=$(
-wget -O /live/image/live/wine_8.0_repack-4.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/wine_8.0_repack-4.squashfs/download
+wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/98-wine_8.0_Repack4.squashfs/download
 
 )
       display_result ""
