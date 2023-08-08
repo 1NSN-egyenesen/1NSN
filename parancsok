@@ -1,14 +1,9 @@
 #!/bin/bash
 
-wget -O /bin/wine --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/wine
-chmod 777 /bin/wine
-
-wget -O /bin/radio --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/radio
-chmod 777 /bin/radio
-
 wget -O /bin/iso --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/iso
 chmod 777 /bin/iso
 
+rm -r /bin/rendszer
 wget -O /bin/rendszer --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/rendszer
 chmod 777 /bin/rendszer
 
