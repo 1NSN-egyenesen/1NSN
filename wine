@@ -1,3 +1,0 @@
-#!/bin/sh
-wget -O /mnt/sda1/live/20-wine_7-repack10.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/20-wine_7-repack10.squashfs/download
-
