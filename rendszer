@@ -109,7 +109,7 @@ wget -O /live/image/live/02-1nsn-conf.squashfs https://sourceforge.net/projects/
 wget -O /live/image/live/initrd1.xz https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/initrd1.xz/download
 wget -O /live/image/live/vmlinuz1 https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/vmlinuz1/download
 wget -O /live/image/live/k-5.4.147-amd64.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/k-5.4.147-amd64.squashfs/download
-wget -O /live/image/live/99-firmware-bookworm-live.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/99-firmware-bookworm-live.squashfs/download
+wget -O /live/image/live/99-firmware-bullseye-live.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/99-firmware-bullseye-live.squashfs/download
 )
      display_result ""
       ;;  
