@@ -4,20 +4,5 @@ rm -r /bin/rendszer
 wget -O /bin/rendszer --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/rendszer
 chmod 777 /bin/rendszer
 
-wget -O /bin/firmware --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/firmware
-chmod 777 /bin/firmware
-
-rm -r /bin/parancslista
-wget -O /bin/parancslista --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/parancslista
-chmod 777 /bin/parancslista
-
-rm -r /bin/epito
-wget -O /bin/epito --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/epito
-chmod 777 /bin/epito
-
-
-
-
-
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
