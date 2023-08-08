@@ -1,14 +1,8 @@
 #!/bin/bash
 
-wget -O /bin/iso --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/iso
-chmod 777 /bin/iso
-
 rm -r /bin/rendszer
 wget -O /bin/rendszer --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/rendszer
 chmod 777 /bin/rendszer
-
-wget -O /bin/kernel --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/kernel
-chmod 777 /bin/kernel
 
 wget -O /bin/firmware --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/firmware
 chmod 777 /bin/firmware
@@ -16,9 +10,6 @@ chmod 777 /bin/firmware
 rm -r /bin/parancslista
 wget -O /bin/parancslista --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/parancslista
 chmod 777 /bin/parancslista
-
-wget -O /bin/xmt --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/xmt
-chmod 777 /bin/xmt
 
 rm -r /bin/epito
 wget -O /bin/epito --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/epito
