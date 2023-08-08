@@ -13,23 +13,27 @@ chmod 777 /bin/kernel
 wget -O /bin/firmware --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/firmware
 chmod 777 /bin/firmware
 
+rm -r /bin/parancslista
 wget -O /bin/parancslista --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/parancslista
 chmod 777 /bin/parancslista
 
 wget -O /bin/xmt --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/xmt
 chmod 777 /bin/xmt
 
+rm -r /bin/epito
 wget -O /bin/epito --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/epito
 chmod 777 /bin/epito
 
 wget -O /bin/fatdog https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/fatdog
 chmod 777 /bin/fatdog
 
+rm -r /bin/ventoy
 wget -O /bin/ventoy https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/ventoy
 chmod 777 /bin/ventoy
 
+rm -r /bin/Wine
 wget -O /bin/wine https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/wine
-chmod 777 /bin/wine
+chmod 777 /bin/Wine
 
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
