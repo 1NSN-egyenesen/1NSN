@@ -1,8 +1,6 @@
 #!/bin/sh
 # while-menu-dialog: a menu driven system information program
 
-# while-menu-dialog: a menu driven system information program
-
 DIALOG_CANCEL=1
 DIALOG_ESC=255
 HEIGHT=0
