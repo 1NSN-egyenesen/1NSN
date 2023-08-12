@@ -27,6 +27,7 @@ while true; do
     "5" "Avidemux" \
     "6" "Daedalus - összes komp" \
     "7" "Brave - legutolsó" \
+    "8" "1NSN - konfig" \
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
@@ -117,8 +118,17 @@ wget -O /live/image/live/03-brave-browser_latest.squashfs https://sourceforge.ne
 )
      display_result "Letöltve! Indítsd újra a rendszert!"
       ;;  
+
+     8 )
+      result=$(
+rm -r /live/image/live/02-1nsn-conf.squashfs
+wget -O /live/image/live/02-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/02-1nsn-conf.squashfs/download
+
+)
+      display_result ""
      
      
-     esac
+
+esac
 done
 
