@@ -22,7 +22,7 @@ while true; do
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Wine" \
     "2" "Epito" \
-    "3" "extlinux.conf" \
+    "3" "Brave - konfig" \
     "4" "Ventoy" \
     "5" "Avidemux" \
     "6" "Daedalus - összes komp" \
@@ -66,10 +66,11 @@ chmod 777 /tmp/builder
       
    3 )
       result=$(
-wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
+rm -r /live/image/image/04-brave_puppy.squashfs
+wget -O /live/image/live/04-brave_puppy.squashfs/download https://sourceforge.net/projects/egyenesenfatdog64/files/app/04-brave_puppy.squashfs/download
 
 )
-      display_result ""
+      display_result "Letöltés kész! Indítsd újra a rendszert!"
       ;;  
     
     4 )
