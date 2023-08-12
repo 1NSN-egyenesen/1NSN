@@ -111,34 +111,8 @@ wget -O /live/image/live/99-firmware-bullseye-live.squashfs https://sourceforge.
      
      7 )
       result=$(
-echo "**************"
-echo "Eltávolítás..." 
-echo "**************"
-
-rm -r /mnt/live/memory/changes/upperdir/usr
-rm -r /mnt/live/memory/changes/upperdir/live
-rm -r /mnt/live/memory/changes/upperdir/mnt
-rm -r /mnt/live/memory/changes/upperdir/run
-rm -r /mnt/live/memory/changes/upperdir/var
-rm -r /mnt/live/memory/changes/upperdir/home
-rm -r /mnt/live/memory/changes/upperdir/root
-rm -r /mnt/live/memory/changes/upperdir/dev
-rm -r /mnt/live/memory/changes/upperdir/tmp
-rm -r /mnt/live/memory/changes/upperdir/etc
-rm -r /mnt/sda1/live/03-brave-latest.squashfs
-
-echo "********************************"
-echo "Hordozható verzió elkészítése..."
-echo "********************************"
-
-mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/03-brave-latest.squashfs
-
-echo "******************************************************"
-echo "Hordozható verzió elkészítve,indítsd újra a rendszert!"
-echo "******************************************************"
-echo "********************************"
-echo "       Script by .:1NSN:."
-echo "********************************"
+rm -r /live/image/live/03-brave-browser_latest.squashfs
+wget -O /live/image/live/03-brave-browser_latest.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/03-brave-browser_latest.squashfs/download
 )
      display_result ""
       ;;  
