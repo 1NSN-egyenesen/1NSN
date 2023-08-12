@@ -26,7 +26,7 @@ while true; do
     "4" "Ventoy" \
     "5" "Avidemux" \
     "6" "Daedalus - összes komp" \
-    "7" "Brave - latest" \
+    "7" "Brave - legutolsó" \
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
@@ -122,9 +122,8 @@ echo "Eltávolítás..."
 echo "**************"
 sleep 1
 
-rm -r /mnt/live/memory/changes/upperdir/etc/apt
-rm -r /mnt/live/memory/changes/upperdir/etc/udev
-rm -r /mnt/live/memory/changes/upperdir/etc/profile.d
+rm -r /mnt/live/memory/changes/upperdir/usr
+rm -r /mnt/live/memory/changes/upperdir/live
 rm -r /mnt/live/memory/changes/upperdir/mnt
 rm -r /mnt/live/memory/changes/upperdir/run
 rm -r /mnt/live/memory/changes/upperdir/var
@@ -132,14 +131,8 @@ rm -r /mnt/live/memory/changes/upperdir/home
 rm -r /mnt/live/memory/changes/upperdir/root
 rm -r /mnt/live/memory/changes/upperdir/dev
 rm -r /mnt/live/memory/changes/upperdir/tmp
-rm -r /mnt/live/memory/changes/upperdir/usr/bin/udhcpc
-rm -r /mnt/live/memory/changes/upperdir/etc/consol-setup
-rm -r /mnt/live/memory/changes/upperdir/etc/.pwd.lock
-rm -r /mnt/live/memory/changes/upperdir/etc/blkid-cache
-rm -r /mnt/live/memory/changes/upperdir/etc/localtime
-rm -r /mnt/live/memory/changes/upperdir/etc/machine-id
-rm -r /mnt/live/memory/changes/upperdir/etc/resolv.conf
-rm -r /mnt/live/memory/changes/upperdir/etc/timezone
+rm -r /mnt/live/memory/changes/upperdir/etc
+
 rm -r /mnt/sda1/live/03-brave-latest.squashfs
 
 echo "********************************"
