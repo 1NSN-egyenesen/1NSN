@@ -111,14 +111,9 @@ wget -O /live/image/live/99-firmware-bullseye-live.squashfs https://sourceforge.
      
      7 )
       result=$(
-echo "**************************"
-echo "Csomagkezelő frissítése..." 
-echo "**************************"
-sleep 1
 echo "**************"
 echo "Eltávolítás..." 
 echo "**************"
-sleep 1
 
 rm -r /mnt/live/memory/changes/upperdir/usr
 rm -r /mnt/live/memory/changes/upperdir/live
@@ -131,13 +126,6 @@ rm -r /mnt/live/memory/changes/upperdir/dev
 rm -r /mnt/live/memory/changes/upperdir/tmp
 rm -r /mnt/live/memory/changes/upperdir/etc
 rm -r /mnt/sda1/live/03-brave-latest.squashfs
-
-echo "****************"
-echo "Telepítés..."
-echo "****************"
-
-apt update
-apt install brave-browser -y
 
 echo "********************************"
 echo "Hordozható verzió elkészítése..."
