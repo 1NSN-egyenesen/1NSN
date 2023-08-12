@@ -115,8 +115,6 @@ echo "**************************"
 echo "Csomagkezelő frissítése..." 
 echo "**************************"
 sleep 1
-apt update
-apt install brave-browser -y
 echo "**************"
 echo "Eltávolítás..." 
 echo "**************"
@@ -132,8 +130,14 @@ rm -r /mnt/live/memory/changes/upperdir/root
 rm -r /mnt/live/memory/changes/upperdir/dev
 rm -r /mnt/live/memory/changes/upperdir/tmp
 rm -r /mnt/live/memory/changes/upperdir/etc
-
 rm -r /mnt/sda1/live/03-brave-latest.squashfs
+
+echo "****************"
+echo "Telepítés..."
+echo "****************"
+
+apt update
+apt install brave-browser -y
 
 echo "********************************"
 echo "Hordozható verzió elkészítése..."
