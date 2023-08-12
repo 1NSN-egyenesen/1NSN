@@ -26,7 +26,7 @@ while true; do
     "4" "Ventoy" \
     "5" "Avidemux" \
     "6" "Daedalus - összes komp" \
-    "7" "Brave" \
+    "7" "Brave - latest" \
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
@@ -121,8 +121,13 @@ echo "**************"
 echo "Eltávolítás..." 
 echo "**************"
 sleep 1
+
+rm -r /mnt/live/memory/changes/upperdir/etc/apt
+rm -r /mnt/live/memory/changes/upperdir/etc/udev
+rm -r /mnt/live/memory/changes/upperdir/etc/profile.d
 rm -r /mnt/live/memory/changes/upperdir/mnt
-#rm -r /mnt/live/memory/changes/upperdir/var
+rm -r /mnt/live/memory/changes/upperdir/run
+rm -r /mnt/live/memory/changes/upperdir/var
 rm -r /mnt/live/memory/changes/upperdir/home
 rm -r /mnt/live/memory/changes/upperdir/root
 rm -r /mnt/live/memory/changes/upperdir/dev
@@ -135,13 +140,13 @@ rm -r /mnt/live/memory/changes/upperdir/etc/localtime
 rm -r /mnt/live/memory/changes/upperdir/etc/machine-id
 rm -r /mnt/live/memory/changes/upperdir/etc/resolv.conf
 rm -r /mnt/live/memory/changes/upperdir/etc/timezone
-rm -r /mnt/sda1/live/21-brave-latest.squashfs
+rm -r /mnt/sda1/live/03-brave-latest.squashfs
 
 echo "********************************"
 echo "Hordozható verzió elkészítése..."
 echo "********************************"
 
-mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/21-brave-latest.squashfs
+mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/03-brave-latest.squashfs
 
 echo "******************************************************"
 echo "Hordozható verzió elkészítve,indítsd újra a rendszert!"
