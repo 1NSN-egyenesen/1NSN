@@ -53,7 +53,7 @@ while true; do
 wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/98-wine_8.0_Repack4.squashfs/download
 
 )
-      display_result ""
+      display_result "Letöltve! Indítsd újra a rendszert!"
       ;;
     2 )
       result=$(
@@ -62,7 +62,7 @@ wget -O /tmp/builder https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/
 chmod 777 /tmp/builder
 
 )
-      display_result ""
+      display_result "Letöltve! Indítsd újra a rendszert!"
       ;;
       
    3 )
@@ -79,7 +79,7 @@ wget -O /live/image/live/04-brave_puppy.squashfs/download https://sourceforge.ne
 wget -O /live/image/live/12-ventoy_1.0.77.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/12-ventoy_1.0.77.squashfs/download
 
 )
-    display_result ""
+    display_result "Letöltve! Indítsd újra a rendszert!"
       ;;  
      
     5 )
@@ -87,7 +87,7 @@ wget -O /live/image/live/12-ventoy_1.0.77.squashfs https://sourceforge.net/proje
 wget -O /live/image/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/11-avidemux_2.8_all_deb.squashfs/download
 
 )
-    display_result ""
+    display_result "Letöltve! Indítsd újra a rendszert!"
       ;;  
      
      
@@ -108,7 +108,7 @@ wget -O /live/image/live/vmlinuz1 https://sourceforge.net/projects/egyenesenfatd
 wget -O /live/image/live/k-5.4.147-amd64.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/k-5.4.147-amd64.squashfs/download
 wget -O /live/image/live/99-firmware-bullseye-live.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/99-firmware-bullseye-live.squashfs/download
 )
-     display_result ""
+     display_result "Letöltve! Indítsd újra a rendszert!"
       ;;  
      
      7 )
@@ -125,7 +125,7 @@ rm -r /live/image/live/02-1nsn-conf.squashfs
 wget -O /live/image/live/02-1nsn-conf.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Daedalus/02-1nsn-conf.squashfs/download
 
 )
-      display_result ""
+      display_result "Letöltve! Indítsd újra a rendszert!"
      
      
 
