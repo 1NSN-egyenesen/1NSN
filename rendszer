@@ -1,4 +1,4 @@
-#!/bin/sh
+kész#!/bin/sh
 
 
 DIALOG_CANCEL=1
@@ -114,7 +114,7 @@ wget -O /live/image/live/99-firmware-bullseye-live.squashfs https://sourceforge.
 rm -r /live/image/live/03-brave-browser_latest.squashfs
 wget -O /live/image/live/03-brave-browser_latest.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/03-brave-browser_latest.squashfs/download
 )
-     display_result ""
+     display_result "Letöltve! Indítsd újra a rendszert!"
       ;;  
      
      
