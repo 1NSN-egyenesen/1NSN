@@ -29,7 +29,7 @@ BASE_DOG_APPS_INSTALL="yad gtkdialog obshutdown pup-volume-monitor peasywifi edi
 # Applications
 BASE_APPS_INSTALL="adb fastboot minidlna mpv gsmartcontrol gmtp conky gdmap gparted geany roxterm-gtk2 gmtp pcmanfm transmission-gtk transmission transmission-common mtpaint pack-it uextract alsa-utils"
 # Desktop environment related
-DESK_APPS_INSTALL="openbox=3.6.1-4.3 obconf lxrandr lxinput libfm-modules lxappearance xlunch run-as-user nitrogen openbox-menu mate-themes tint2"  
+DESK_APPS_INSTALL="openbox=3.6.1-4.3 obconf lxrandr lxinput libfm-modules lxappearance xlunch run-as-user nitrogen mate-themes tint2"  
 FIRMWARE="firmware-linux-free"   # see below for choices
 EXTRA_DOG_APPS_INSTALL="upgrade-kernel debdoginstallscripts debdogmountscripts"
 # Remove automatically installed packages: during installing, some are installed that you might not need, e.g.
