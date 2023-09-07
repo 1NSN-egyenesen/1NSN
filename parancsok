@@ -8,6 +8,9 @@ rm -r /bin/Qbittorrent
 wget -O /bin/Qbittorrent --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Qbittorrent
 chmod 777 /bin/Qbittorrent
 
+rm -r /bin/Kodi
+wget -O /bin/Kodi --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Kodi
+chmod 777 /bin/Kodi
 
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
