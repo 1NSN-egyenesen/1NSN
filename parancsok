@@ -4,5 +4,8 @@ rm -r /bin/rendszer
 wget -O /bin/rendszer --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/rendszer
 chmod 777 /bin/rendszer
 
+rm -r /bin/Qbittorrent
+wget -O /bin/rendszer --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Qbittorrent
+
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
