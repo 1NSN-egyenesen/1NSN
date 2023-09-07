@@ -1,1 +1,2 @@
-
+#!/bin/bash
+wget -O /live/image/live/21-kodi_20.1_amd64.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/21-kodi_20.1_amd64.squashfs/download
