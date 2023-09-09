@@ -1,1 +1,3 @@
 #!/bin/bash
+apt update && upgrade
+apt list --upgradable
