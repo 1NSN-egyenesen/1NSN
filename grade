@@ -1,4 +1,8 @@
 #!/bin/bash
+echo "Előző verzió eltávolítása..."
+rm -r /live/image/live/100-update.squashfs
+echo "
+echo "Kérlek indítsd újra a rendszert!
 echo ""
 echo "Válassz alkalmazást..." 
 echo ""
@@ -20,9 +24,6 @@ apt install kodi
 echo ""
 echo ""
 echo "Hordozható verzió elkészítése..."
-echo ""
-echo "Előző verzió eltávolítása..."
-rm -r /live/image/live/100-update.squashfs
 echo ""
 echo "Tömörítés..."
 mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/100-update.squashfs -comp zstd
