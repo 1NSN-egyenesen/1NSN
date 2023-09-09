@@ -3,23 +3,24 @@ echo ""
 echo "Csomagkezelő,frissítés..."
 apt update && upgrade
 
-Újabb csomagok...
+echo "Újabb csomagok..."
+echo ""
 apt list --upgradable
-
-Válassz alkalmazást... 
-
-Brave-Browser-Nightly..."
-
+echo ""
+echo "Válassz alkalmazást..." 
+echo ""
+echo "Brave-Browser-Nightly..."
+echo ""
 apt install brave-browser-nightly
-
-Signal..."
+echo ""
+echo "Signal..."
 apt install signal-desktop
-
-Utox..
+echo ""
+echo "Utox.."
 apt install utox
-
-Qbittorrent...
+echo ""
+echo "Qbittorrent..."
 atp install qbittorrent
-
-Kodi..."
+echo ""
+echo "Kodi..."
 apt install kodi 
