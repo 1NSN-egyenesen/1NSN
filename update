@@ -32,7 +32,7 @@ echo "Előző verzió eltávolítása..."
 rm -r /live/image/live/100-update.squashfs
 echo ""
 echo "Tömörítés..."
-mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/100-update.squashfs -zstd
+mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/100-update.squashfs -comp zstd
 echo ""
 echo "***************Script by .:1NSN:.*************************"
 echo "*Elkészült a frissítés,kérlek indítsd újra a rendszert...*"
