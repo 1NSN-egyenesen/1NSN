@@ -1,1 +1,8 @@
+#!/bin/bash
+echo ""
+echo "Csomagkezelő,frissítés..."
+apt update && upgrade
 
+echo "Újabb csomagok..."
+echo ""
+apt list --upgradable
