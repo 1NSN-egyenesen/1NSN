@@ -1,3 +1,4 @@
 #!/bin/bash
 apt update && upgrade
 apt list --upgradable
+apt install brave-browser-nightly && signal && utox && qbittorrent && kodi -y
