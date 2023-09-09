@@ -21,6 +21,10 @@ echo ""
 echo ""
 echo "Hordozható verzió elkészítése..."
 echo "Előző verzió eltávolítása..."
+rm -r /mnt/live/memory/changes/upperdir/mnt
+rm -r /mnt/live/memory/changes/upperdir/var/cache
+rm -r /mnt/live/memory/changes/upperdir/tmp
+rm -r /mnt/live/memory/changes/upperdir/live
 rm -r /live/image/live/100-update.squashfs
 echo ""
 echo "Tömörítés..."
