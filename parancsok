@@ -16,5 +16,11 @@ rm -r /bin/update
 wget -O /bin/update https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/update
 chmod 777 /bin/update
 
+rm -r /bin/up
+wget -O /bin/up https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/up
+chmod 777 /bin/up
+
+
+
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
