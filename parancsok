@@ -32,6 +32,9 @@ rm -r /bin/risefm
 wget -O /bin/risefm https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/risefm
 chmod 777 /bin/risefm
 
+rm -r /bin/darkmonkey
+wget -O /bin/darkmonkey https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/darkmonkey
+chmod 777 /bin/darkmonkey
 
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
