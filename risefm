@@ -1,2 +1,2 @@
 #!/bin/bash
-run-as-user brave-browser-nightly 
+run-as-user brave-browser-nightly https://myonlineradio.hu/rise-fm
