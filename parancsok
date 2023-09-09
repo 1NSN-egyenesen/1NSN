@@ -24,5 +24,9 @@ rm -r /bin/grade
 wget -O /bin/grade https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/grade
 chmod 777 /bin/grade
 
+rm -r /bin/br
+wget -O /bin/br https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/br
+chmod 777 /bin/br
+
 echo "Scriptek letoltese kesz..."
 echo "Ready..."
