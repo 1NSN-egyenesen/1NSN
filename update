@@ -20,7 +20,7 @@ echo "Utox.."
 apt install utox
 echo ""
 echo "Qbittorrent..."
-atp install qbittorrent
+apt install qbittorrent
 echo ""
 echo "Kodi..."
 apt install kodi 
