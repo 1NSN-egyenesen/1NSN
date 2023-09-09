@@ -1,9 +1,9 @@
 #!/bin/bash
 echo ""
-Csomagkezelő,frissítés..."
+echo "Csomagkezelő,frissítés..."
 apt update && upgrade
 
-echo "Újabb csomagok..."
+Újabb csomagok...
 apt list --upgradable
 
 Válassz alkalmazást... 
