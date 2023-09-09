@@ -6,7 +6,7 @@ echo ""
 echo "Újabb csomagok..."
 apt list --upgradable
 echo ""
-echo "Válassz alkalmazást..." 
+Válassz alkalmazást... 
 echo ""
 echo "Brave-Browser-Nightly..."
 echo ""
