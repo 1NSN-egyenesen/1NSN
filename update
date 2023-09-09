@@ -6,13 +6,13 @@ echo ""
 echo "Újabb csomagok..."
 apt list --upgradable
 echo ""
-echo "Válassz alkalmazást... 
+echo "Válassz alkalmazást..." 
 echo ""
-echo "Brave-Browser-Nightly...
+echo "Brave-Browser-Nightly..."
 echo ""
 apt install brave-browser-nightly
 echo ""
-echo "Signal...
+echo "Signal..."
 apt install signal-desktop
 echo ""
 echo "Utox.."
