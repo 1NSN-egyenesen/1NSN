@@ -1,8 +1,25 @@
 #!/bin/bash
+echo ""
+echo "Csomagkezelő,frissítés..."
 apt update && upgrade
+echo ""
+echo "Újabb csomagok..."
 apt list --upgradable
+echo ""
+echo "Válassz alkalmazást... 
+echo ""
+echo "Brave-Browser-Nightly...
+echo ""
 apt install brave-browser-nightly
+echo ""
+echo "Signal...
 apt install signal-desktop
+echo ""
+echo "Utox.."
 apt install utox
+echo ""
+echo "Qbittorrent..."
 atp install qbittorrent
+echo ""
+echo "Kodi..."
 apt install kodi 
