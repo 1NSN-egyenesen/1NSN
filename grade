@@ -1,5 +1,8 @@
 #!/bin/sh
 cat /home/1NSN/scriptek/grade > /root/Startup/grade
+echo "Rendszer újraindítása..."
+echo "************************"
+reboot
 
 
 
