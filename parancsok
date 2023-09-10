@@ -1,4 +1,7 @@
 hoh#!/bin/bash
+rm -r /bin/grade
+wget -O /bin/grade https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/grade
+chmod 777 /bin/grade
 
 rm -r /bin/rendszer
 wget -O /bin/rendszer --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/rendszer
