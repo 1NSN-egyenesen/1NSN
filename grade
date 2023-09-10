@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "Előző verzió eltávolítása..."
 echo "****************************"
-rm -r //live/image/live/100-update.squashfs
+rm -r /live/image/live/100-update.squashfs
 cat /home/1NSN/scriptek/grade > /root/Startup/grade
 echo "Rendszer újraindítása..."
 echo "************************"
