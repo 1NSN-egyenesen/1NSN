@@ -40,10 +40,6 @@ rm -r /bin/u
 wget -O /bin/u https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/u
 chmod 777 /bin/u
 
-rm -r /root/Startup/update
-wget -O https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/update
-chmod 777 /root/Startup/update
-
 echo "****Script by .:1NSN:.******"
 echo "*Scriptek letoltese kesz...*"
 echo "****************************"
