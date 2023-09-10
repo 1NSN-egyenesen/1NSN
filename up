@@ -8,7 +8,7 @@ echo "Újabb csomagok kilistázás..."
 echo "****************************"
 apt list --upgradable
 echo ""
-echo "Rendszer frissítés..."
-echo "*********************"
+echo "Rendszer frissítés lehetősége..."
+echo "********************************"
 apt upgrade 
 
