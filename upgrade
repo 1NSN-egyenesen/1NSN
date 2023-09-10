@@ -1,1 +1,2 @@
-
+#!/bin/bash
+xterm -e /home/puppy/1NSN/script/grade
