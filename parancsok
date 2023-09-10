@@ -12,9 +12,6 @@ rm -r /bin/Kodi
 wget -O /bin/Kodi --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Kodi
 chmod 777 /bin/Kodi
 
-wget -O /root/Startup/upgrade https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/upgrade
-chmod 777 /root/Startup/upgrade
-
 rm -r /bin/up
 wget -O /bin/up https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/up
 chmod 777 /bin/up
