@@ -19,10 +19,6 @@ rm -r /bin/up
 wget -O /bin/up https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/up
 chmod 777 /bin/up
 
-rm -r /bin/grade
-wget -O /bin/grade https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/grade
-chmod 777 /bin/grade
-
 rm -r /bin/risefm
 wget -O /bin/risefm https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/risefm
 chmod 777 /bin/risefm
