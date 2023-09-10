@@ -2,16 +2,13 @@
 echo ""
 echo "Csomagkezelő,frissítés..."
 echo "*************************"
-echo ""
 apt update && upgrade
 echo ""
 echo "Újabb csomagok kilistázás..."
 echo "****************************"
-echo ""
 apt list --upgradable
 echo ""
 echo "Rendszer frissítés..."
 echo "*********************"
-echo ""
 apt upgrade 
 
