@@ -1,26 +1,29 @@
 #!/bin/bash
 echo ""
-echo "Válassz alkalmazást..." 
-echo ""
 echo "Brave-Browser-Nightly..."
-echo ""
-apt install brave-browser-nightly
+echo "************************"
+apt install brave-browser-nightly -y
 echo ""
 echo "Signal..."
-apt install signal-desktop
+echo "**********"
+apt install signal-desktop -y
 echo ""
 echo "Utox.."
-apt install utox
+echo "******"
+apt install utox -y
 echo ""
 echo "Qbittorrent..."
-apt install qbittorrent
+echo "**************"
+apt install qbittorrent -y
 echo ""
 echo "Kodi..."
-apt install kodi 
-echo ""
+echo "*******"
+apt install kodi -y
 echo ""
 echo "Hordozható verzió elkészítése..."
+echo "********************************"
 echo "Előző verzió eltávolítása..."
+echo "****************************"
 rm -r /mnt/live/memory/changes/upperdir/mnt
 rm -r /mnt/live/memory/changes/upperdir/var/cache
 rm -r /mnt/live/memory/changes/upperdir/tmp
@@ -28,6 +31,7 @@ rm -r /mnt/live/memory/changes/upperdir/live
 rm -r /live/image/live/100-update.squashfs
 echo ""
 echo "Tömörítés..."
+echo "************"
 mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/100-update.squashfs -comp zstd
 echo ""
 echo "***************Script by .:1NSN:.*************************"
