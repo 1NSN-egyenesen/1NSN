@@ -27,6 +27,7 @@ echo "Előző verzió eltávolítása..."
 echo "****************************"
 echo ""
 rm -r /mnt/live/memory/changes/upperdir/mnt
+rm -r /mnt/live/memory/changes/upperdir/root/.cache
 rm -r /mnt/live/memory/changes/upperdir/var/cache
 rm -r /mnt/live/memory/changes/upperdir/tmp
 rm -r /mnt/live/memory/changes/upperdir/live
