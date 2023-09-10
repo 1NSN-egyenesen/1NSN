@@ -1,9 +1,0 @@
-#!/bin/bash
-echo ""
-echo "Csomagkezelő,frissítés..."
-echo "*************************"
-apt update && upgrade
-echo ""
-echo "Újabb csomagok kilistázás..."
-echo "****************************"
-apt list --upgradable
