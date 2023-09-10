@@ -1,4 +1,5 @@
 #!/bin/bash
+killall xorg
 echo ""
 echo "Brave-Browser-Nightly telepítés..."
 echo "**********************************"
