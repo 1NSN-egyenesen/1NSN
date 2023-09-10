@@ -1,11 +1,42 @@
-#!/bin/sh
-echo "Előző verzió eltávolítása..."
-echo "****************************"
-rm -r /live/image/live/100-update.squashfs
-cat /home/1NSN/scriptek/grade > /root/Startup/grade
-echo "Rendszer újraindítása..."
+#!/bin/bash
+killall xorg
+echo ""
+echo "Brave-Browser-Nightly telepítés..."
+echo "**********************************"
+apt install brave-browser-nightly -y
+echo ""
+echo "Signal telepítés..."
+echo "*******************"
+apt install signal-desktop -y
+echo ""
+echo "Utox telepítés.."
+echo "****************"
+apt install utox -y
+echo ""
+echo "Qbittorrent telepítés..."
 echo "************************"
+apt install qbittorrent -y
+echo ""
+echo "Kodi telepítés..."
+echo "*****************"
+apt install kodi -y
+echo ""
+echo "Hordozható verzió elkészítése..."
+echo "********************************"
+echo ""
+rm -r /root/Startup/grade
+rm -r /mnt/live/memory/changes/upperdir/mnt
+rm -r /mnt/live/memory/changes/upperdir/root/.cache
+rm -r /mnt/live/memory/changes/upperdir/var/cache
+rm -r /mnt/live/memory/changes/upperdir/tmp
+rm -r /mnt/live/memory/changes/upperdir/live
+rm -r /live/image/live/100-update.squashfs
+echo ""
+echo "Hordozható verzió tömörítése..."
+echo "*******************************"
+mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/100-update.squashfs -comp zstd
+echo ""
+echo "Újraindítás..."
+echo "**************"
 reboot
-
-
 
