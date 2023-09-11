@@ -16,7 +16,7 @@ rm -r /live/image/live/100-update.squashfs
 echo ""
 echo "Hordozható verzió tömörítése..."
 echo "*******************************"
-mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/07-brave-nightly_latest.squashfs
+mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/25-kodi_latest.squashfs
 echo ""
 echo "Újraindítás..."
 echo "**************"
