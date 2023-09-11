@@ -7,9 +7,9 @@ rm -r /bin/Qbittorrent
 wget -O /bin/Qbittorrent https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Qbittorrent
 chmod 777 /bin/Qbittorrent
 
-
-
-
+rm -r /bin/Kodi
+wget -O /bin/Kodi https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Kodi
+chmod 777 /bin/Kodi
 
 
 rm -r /bin/grade
