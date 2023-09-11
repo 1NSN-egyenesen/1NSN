@@ -4,7 +4,7 @@ wget -O /bin/Braven https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/B
 chmod 777 /bin/Braven
 
 rm -r /bin/Qbittorrent
-wget -O /bin/Qbittorrent https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Braven
+wget -O /bin/Qbittorrent https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Qbittorrent
 chmod 777 /bin/Qbittorrent
 
 
