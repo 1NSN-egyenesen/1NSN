@@ -13,6 +13,7 @@ rm -r /mnt/live/memory/changes/upperdir/var/cache
 rm -r /mnt/live/memory/changes/upperdir/tmp
 rm -r /mnt/live/memory/changes/upperdir/live
 
+rm -r /live/image/live/07-brave-nightly_latest.squashfs
 rm -r /live/image/live/03-brave_stabil_latest.squashfs
 
 echo ""
