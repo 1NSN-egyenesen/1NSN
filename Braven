@@ -13,6 +13,11 @@ rm -r /mnt/live/memory/changes/upperdir/var/cache
 rm -r /mnt/live/memory/changes/upperdir/tmp
 rm -r /mnt/live/memory/changes/upperdir/live
 rm -r /live/image/live/100-update.squashfs
+
+rm -r /bin/br
+wget -O /bin/br https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/br
+chmod 777 /bin/br
+
 echo ""
 echo "Hordozható verzió tömörítése..."
 echo "*******************************"
