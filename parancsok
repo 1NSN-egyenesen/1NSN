@@ -16,7 +16,6 @@ rm -r /bin/Kodi
 wget -O /bin/Kodi https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Kodi
 chmod 777 /bin/Kodi
 
-
 rm -r /bin/grade
 wget -O /bin/grade https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/grade
 chmod 777 /bin/grade
