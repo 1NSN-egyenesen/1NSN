@@ -3,7 +3,7 @@ killall Xorg
 echo ""
 echo "Brave-Browser-Stable telepítés..."
 echo "**********************************"
-apt install brave-browser-stable -y
+apt install brave-browser -y
 echo ""
 echo "(upperdir)felesleges fájlok eltávolítása..."
 echo "*******************************************"
@@ -12,7 +12,7 @@ rm -r /mnt/live/memory/changes/upperdir/root/.cache
 rm -r /mnt/live/memory/changes/upperdir/var/cache
 rm -r /mnt/live/memory/changes/upperdir/tmp
 rm -r /mnt/live/memory/changes/upperdir/live
-rm -r /live/image/live/100-update.squashfs
+rm -r /live/image/live/03-brave_stabil_latest.squashfs
 
 rm -r /bin/br
 wget -O /bin/br https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/br
@@ -21,7 +21,7 @@ chmod 777 /bin/br
 echo ""
 echo "Hordozható verzió tömörítése..."
 echo "*******************************"
-mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/07-brave-nightly_latest.squashfs
+mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/03-brave_stabil_latest.squashfs
 echo ""
 echo "Újraindítás..."
 echo "**************"
