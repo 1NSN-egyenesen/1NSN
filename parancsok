@@ -1,4 +1,8 @@
-hoh#!/bin/bash
+#!/bin/bash
+rm -r /bin/Braven
+wget -O /bin/Braven https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Braven
+chmod 777 /bin/Braven
+
 rm -r /bin/grade
 wget -O /bin/grade https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/grade
 chmod 777 /bin/grade
