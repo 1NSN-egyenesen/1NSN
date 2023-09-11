@@ -1,4 +1,9 @@
 #!/bin/bash
+
+rm -r /bin/Brave
+wget -O /bin/Brave https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Brave
+chmod 777 /bin/Brave
+
 rm -r /bin/Braven
 wget -O /bin/Braven https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Braven
 chmod 777 /bin/Braven
