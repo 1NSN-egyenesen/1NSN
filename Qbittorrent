@@ -1,3 +1,25 @@
 #!/bin/bash
-wget -O /live/image/live/22-qbittorrent_4.5.2-3_amd64.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/22-qbittorrent_4.5.2-3_amd64.squashfs/download
+killall Xorg
+echo ""
+echo "qbittorrent telepítés..."
+echo "**********************************"
+apt install qbittorrent -y
+echo ""
+echo "(upperdir)felesleges fájlok eltávolítása..."
+echo "*******************************************"
+rm -r /mnt/live/memory/changes/upperdir/mnt
+rm -r /mnt/live/memory/changes/upperdir/root/.cache
+rm -r /mnt/live/memory/changes/upperdir/var/cache
+rm -r /mnt/live/memory/changes/upperdir/tmp
+rm -r /mnt/live/memory/changes/upperdir/live
 
+rm -r /live/image/live/09-qbittorrent_latest.squashfs
+
+echo ""
+echo "Hordozható verzió tömörítése..."
+echo "*******************************"
+mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/09-qbittorrent_latest.squashfs
+echo ""
+echo "Újraindítás..."
+echo "**************"
+reboot
