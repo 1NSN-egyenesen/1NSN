@@ -7,6 +7,10 @@ apt install brave-browser-nightly -y
 echo ""
 echo "(upperdir)felesleges fájlok eltávolítása..."
 echo "*******************************************"
+rm -r rm -r /mnt/live/memory/changes/upperdir/root
+rm -r rm -r /mnt/live/memory/changes/upperdir/home
+rm -r rm -r /mnt/live/memory/changes/upperdir/dev
+rm -r rm -r /mnt/live/memory/changes/upperdir/etc
 rm -r /mnt/live/memory/changes/upperdir/mnt
 rm -r /mnt/live/memory/changes/upperdir/root/.cache
 rm -r /mnt/live/memory/changes/upperdir/var/cache
