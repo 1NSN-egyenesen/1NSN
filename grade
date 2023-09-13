@@ -24,6 +24,11 @@ echo ""
 echo "Hordozható verzió elkészítése..."
 echo "********************************"
 echo ""
+
+rm -r /bin/br
+wget -O /bin/br https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/br
+chmod 777 /bin/br
+
 rm -r /root/Startup/grade
 rm -r /mnt/live/memory/changes/upperdir/mnt
 rm -r /mnt/live/memory/changes/upperdir/root/.cache
