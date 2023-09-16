@@ -30,8 +30,8 @@ rm -r /live/image/live/07-brave-nightly_latest.squashfs
 rm -r /live/image/live/03-brave_stabil_latest.squashfs
 
 rm -r /bin/br
-wget -O /bin/br https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/br
-chmod 777 /bin/br
+wget -O /tmp/xxx/bin/br https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/br
+chmod 777 /tmp/xxx/bin/br
 
 echo ""
 echo "Hordozható verzió tömörítése..."
