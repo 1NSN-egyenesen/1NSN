@@ -1,11 +1,10 @@
 #!/bin/bash
-killall Xorg
 echo ""
 echo "Brave-Browser-Nightly telepítés..."
 echo "**********************************"
 apt install brave-browser-nightly -y
 echo ""
-echo "Fájlok másolásasa..."
+echo "Fájlok másolása..."
 echo "*******************************************"
 mkdir -p /tmp/xxx/opt
 mkdir -p /tmp/xxx/bin
