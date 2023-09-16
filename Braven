@@ -5,18 +5,30 @@ echo "Brave-Browser-Nightly telepítés..."
 echo "**********************************"
 apt install brave-browser-nightly -y
 echo ""
-echo "(upperdir)felesleges fájlok eltávolítása..."
+echo "Fájlok másolásasa..."
 echo "*******************************************"
-rm -r rm -r /mnt/live/memory/changes/upperdir/root
-rm -r rm -r /mnt/live/memory/changes/upperdir/home
-rm -r rm -r /mnt/live/memory/changes/upperdir/dev
-rm -r rm -r /mnt/live/memory/changes/upperdir/etc
-rm -r /mnt/live/memory/changes/upperdir/mnt
-rm -r /mnt/live/memory/changes/upperdir/root/.cache
-rm -r /mnt/live/memory/changes/upperdir/var/cache
-rm -r /mnt/live/memory/changes/upperdir/tmp
-rm -r /mnt/live/memory/changes/upperdir/live
-rm -r /live/image/live/100-update.squashfs
+mkdir -p /tmp/xxx/opt
+mkdir -p /tmp/xxx/bin
+mkdir -p /tmp/xxx/usr/bin
+mkdir -p /tmp/xxx/usr/lib
+mkdir -p /tmp/xxx/usr/share/applications
+mkdir -p /tmp/xxx/usr/share/icons
+mkdir -p /tmp/xxx/var/lib/apt
+mkdir -p /tmp/xxx/var/lib/dpkg
+mkdir -p /tmp/xxx/var/log/apt
+
+cp -r /mnt/live/memory/changes/upperdir/opt /tmp/xxx/opt
+cp -r /mnt/live/memory/changes/upperdir/bin /tmp/xxx/bin
+cp -r /mnt/live/memory/changes/upperdir/usr/bin /tmp/xxx/usr/bin
+cp -r /mnt/live/memory/changes/upperdir/usr/lib/ /tmp/xxx/usr/lib
+cp -r /mnt/live/memory/changes/upperdir/usr/share/applications /tmp/xxx/usr/share/applications
+cp -r /mnt/live/memory/changes/upperdir/usr/share/icons /tmp/xxx/usr/share/icons
+cp -r /mnt/live/memory/changes/upperdir/var/lib/apt /tmp/xxx/var/lib/apt
+cp -r /mnt/live/memory/changes/upperdir/var/lib/dpkg /tmp/xxx/var/lib/dpkg
+cp -r /mnt/live/memory/changes/upperdir/var/log/apt /tmp/xxx/var/log/apt
+
+rm -r /live/image/live/07-brave-nightly_latest.squashfs
+rm -r /live/image/live/03-brave_stabil_latest.squashfs
 
 rm -r /bin/br
 wget -O /bin/br https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/br
@@ -25,7 +37,7 @@ chmod 777 /bin/br
 echo ""
 echo "Hordozható verzió tömörítése..."
 echo "*******************************"
-mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/07-brave-nightly_latest.squashfs -comp gzip
+mksquashfs /tmp/xxx/ /live/image/live/07-brave-nightly_latest.squashfs -comp gzip
 echo ""
 echo "Újraindítás..."
 echo "**************"
