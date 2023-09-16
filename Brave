@@ -6,17 +6,17 @@ apt install brave-browser -y
 echo ""
 echo "fájlok másolása..."
 echo "*******************************************"
-mkdir /tmp/xxx/opt
-mkdir /tmp/xxx/bin
-mkdir /tmp/xxx/usr/bin
-mkdir /tmp/xxx/usr/lib
-mkdir /tmp/xxx/usr/share/applications
-mkdir /tmp/xxx/usr/share/icons
-mkdir /tmp/xxx/var/lib/apt
-mkdir /tmp/xxx/var/lib/dpkg
-mkdir /tmp/xxx/var/log/apt
+mkdir -p /tmp/xxx/opt
+mkdir -p /tmp/xxx/bin
+mkdir -p /tmp/xxx/usr/bin
+mkdir -p /tmp/xxx/usr/lib
+mkdir -p /tmp/xxx/usr/share/applications
+mkdir -p /tmp/xxx/usr/share/icons
+mkdir -p /tmp/xxx/var/lib/apt
+mkdir -p /tmp/xxx/var/lib/dpkg
+mkdir -p /tmp/xxx/var/log/apt
 
-c -r /mnt/live/memory/changes/upperdir/root/.cache
+cp -r /opt /tmp/xxx/opt
 rm -r /mnt/live/memory/changes/upperdir/var/cache
 rm -r /mnt/live/memory/changes/upperdir/tmp
 rm -r /mnt/live/memory/changes/upperdir/live
