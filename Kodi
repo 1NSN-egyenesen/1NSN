@@ -18,17 +18,19 @@ mkdir -p /tmp/xxx/usr/share/kodi/userdata
 mkdir -p /tmp/xxx/var/lib/apt
 mkdir -p /tmp/xxx/var/lib/dpkg
 mkdir -p /tmp/xxx/var/log/apt
-
+mkdir -p /tmp/xxx/usr/share/kodi/media
 
 cp -r /mnt/live/memory/changes/upperdir/opt /tmp/xxx/
 cp -r /mnt/live/memory/changes/upperdir/usr/bin /tmp/xxx/usr/
 cp -r /mnt/live/memory/changes/upperdir/usr/lib/ /tmp/xxx/usr/
 
-cp -r /mnt/live/memory/changes/upperdir/usr/share/applications /tmp/xxx/usr/share/
+cp -r /mnt/live/memory/changes/upperdir/usr/share/applications /tmp/xxx/usr/share
 cp -r /mnt/live/memory/changes/upperdir/usr/share/icons /tmp/xxx/usr/share/
-cp -r /mnt/live/memory/changes/upperdir/usr/share/kodi/addons /tmp/xxx/usr/share/kodi/
+cp -r /mnt/live/memory/changes/upperdir/usr/share/kodi/addons /tmp/xxx/usr/share/kodi
 cp -r /mnt/live/memory/changes/upperdir/usr/share/kodi/system /tmp/xxx/usr/share/kodi
 cp -r /mnt/live/memory/changes/upperdir/usr/share/kodi/userdata /tmp/xxx/usr/share/kodi
+cp -r /mnt/live/memory/changes/upperdir/usr/share/kodi/media /tmp/xxx/usr/share/kodi
+
 
 cp -r /mnt/live/memory/changes/upperdir/var/lib/apt /tmp/xxx/var/lib/
 cp -r /mnt/live/memory/changes/upperdir/var/lib/dpkg /tmp/xxx/var/lib/
