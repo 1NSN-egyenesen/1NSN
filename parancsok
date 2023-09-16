@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -r /bin/scripts
-wget -O /bin/script https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/scripts
+wget -O /bin/scripts https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/scripts
 chmod 777 /bin/scripts
 
 rm -r /bin/Brave
