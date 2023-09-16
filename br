@@ -1,2 +1,2 @@
 #!/bin/bash
-run-as-user brave-browser-nightly
+run-as-user /opt/brave.com/brave-nightly/brave-browser-nigtly
