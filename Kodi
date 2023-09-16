@@ -5,19 +5,33 @@ echo "Kodi telepítés..."
 echo "**********************************"
 apt install kodi -y
 echo ""
-echo "(upperdir)felesleges fájlok eltávolítása..."
+echo "Fájlok másolása..."
 echo "*******************************************"
-rm -r /mnt/live/memory/changes/upperdir/mnt
-rm -r /mnt/live/memory/changes/upperdir/root/.cache
-rm -r /mnt/live/memory/changes/upperdir/var/cache
-rm -r /mnt/live/memory/changes/upperdir/tmp
-rm -r /mnt/live/memory/changes/upperdir/live
+mkdir -p /tmp/xxx/opt
+mkdir -p /tmp/xxx/bin
+mkdir -p /tmp/xxx/usr/bin
+mkdir -p /tmp/xxx/usr/lib
+mkdir -p /tmp/xxx/usr/share/applications
+mkdir -p /tmp/xxx/usr/share/icons
+mkdir -p /tmp/xxx/var/lib/apt
+mkdir -p /tmp/xxx/var/lib/dpkg
+mkdir -p /tmp/xxx/var/log/apt
+
+cp -r /mnt/live/memory/changes/upperdir/opt /tmp/xxx/
+cp -r /mnt/live/memory/changes/upperdir/usr/bin /tmp/xxx/usr/
+cp -r /mnt/live/memory/changes/upperdir/usr/lib/ /tmp/xxx/usr/
+cp -r /mnt/live/memory/changes/upperdir/usr/share/applications /tmp/xxx/usr/share/
+cp -r /mnt/live/memory/changes/upperdir/usr/share/icons /tmp/xxx/usr/share/
+cp -r /mnt/live/memory/changes/upperdir/var/lib/apt /tmp/xxx/var/lib/
+cp -r /mnt/live/memory/changes/upperdir/var/lib/dpkg /tmp/xxx/var/lib/
+cp -r /mnt/live/memory/changes/upperdir/var/log/apt /tmp/xxx/var/log/
+
 rm -r /live/image/live/25-kodi_latest.squashfs
 
 echo ""
 echo "Hordozható verzió tömörítése..."
 echo "*******************************"
-mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/25-kodi_latest.squashfs
+mksquashfs /tmp/xxx /live/image/live/25-kodi_latest.squashfs
 echo ""
 echo "Újraindítás..."
 echo "**************"
