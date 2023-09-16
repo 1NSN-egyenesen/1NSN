@@ -37,7 +37,7 @@ chmod 777 /bin/br
 echo ""
 echo "Hordozható verzió tömörítése..."
 echo "*******************************"
-mksquashfs /tmp/xxx/ /live/image/live/07-brave-nightly_latest.squashfs -comp gzip
+mksquashfs /tmp/xxx /live/image/live/07-brave-nightly_latest.squashfs -comp gzip
 echo ""
 echo "Újraindítás..."
 echo "**************"
