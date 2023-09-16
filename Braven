@@ -17,15 +17,15 @@ mkdir -p /tmp/xxx/var/lib/apt
 mkdir -p /tmp/xxx/var/lib/dpkg
 mkdir -p /tmp/xxx/var/log/apt
 
-cp -r /mnt/live/memory/changes/upperdir/opt /tmp/xxx/opt
-cp -r /mnt/live/memory/changes/upperdir/bin /tmp/xxx/bin
-cp -r /mnt/live/memory/changes/upperdir/usr/bin /tmp/xxx/usr/bin
-cp -r /mnt/live/memory/changes/upperdir/usr/lib/ /tmp/xxx/usr/lib
-cp -r /mnt/live/memory/changes/upperdir/usr/share/applications /tmp/xxx/usr/share/applications
-cp -r /mnt/live/memory/changes/upperdir/usr/share/icons /tmp/xxx/usr/share/icons
-cp -r /mnt/live/memory/changes/upperdir/var/lib/apt /tmp/xxx/var/lib/apt
-cp -r /mnt/live/memory/changes/upperdir/var/lib/dpkg /tmp/xxx/var/lib/dpkg
-cp -r /mnt/live/memory/changes/upperdir/var/log/apt /tmp/xxx/var/log/apt
+cp -r /mnt/live/memory/changes/upperdir/opt /tmp/xxx/
+cp -r /mnt/live/memory/changes/upperdir/bin /tmp/xxx/
+cp -r /mnt/live/memory/changes/upperdir/usr/bin /tmp/xxx/usr/
+cp -r /mnt/live/memory/changes/upperdir/usr/lib/ /tmp/xxx/usr/
+cp -r /mnt/live/memory/changes/upperdir/usr/share/applications /tmp/xxx/usr/share/
+cp -r /mnt/live/memory/changes/upperdir/usr/share/icons /tmp/xxx/usr/share/
+cp -r /mnt/live/memory/changes/upperdir/var/lib/apt /tmp/xxx/var/lib/
+cp -r /mnt/live/memory/changes/upperdir/var/lib/dpkg /tmp/xxx/var/lib/
+cp -r /mnt/live/memory/changes/upperdir/var/log/apt /tmp/xxx/var/log/
 
 rm -r /live/image/live/07-brave-nightly_latest.squashfs
 rm -r /live/image/live/03-brave_stabil_latest.squashfs
