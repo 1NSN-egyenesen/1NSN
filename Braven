@@ -17,7 +17,6 @@ mkdir -p /tmp/xxx/var/lib/dpkg
 mkdir -p /tmp/xxx/var/log/apt
 
 cp -r /mnt/live/memory/changes/upperdir/opt /tmp/xxx/
-cp -r /mnt/live/memory/changes/upperdir/bin /tmp/xxx/
 cp -r /mnt/live/memory/changes/upperdir/usr/bin /tmp/xxx/usr/
 cp -r /mnt/live/memory/changes/upperdir/usr/lib/ /tmp/xxx/usr/
 cp -r /mnt/live/memory/changes/upperdir/usr/share/applications /tmp/xxx/usr/share/
