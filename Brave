@@ -32,7 +32,7 @@ rm -r /live/image/live/03-brave_stabil_latest.squashfs
 echo ""
 echo "Hordozható verzió tömörítése..."
 echo "*******************************"
-mksquashfs /tmp/xxx/ /live/image/live/03-brave_stabil_latest.squashfs
+mksquashfs /tmp/xxx /live/image/live/03-brave_stabil_latest.squashfs
 echo ""
 echo "Újraindítás..."
 echo "**************"
