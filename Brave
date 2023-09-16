@@ -1,14 +1,22 @@
 #!/bin/bash
-killall Xorg
 echo ""
 echo "Brave-Browser-Stable telepítés..."
 echo "**********************************"
 apt install brave-browser -y
 echo ""
-echo "(upperdir)felesleges fájlok eltávolítása..."
+echo "fájlok másolása..."
 echo "*******************************************"
-rm -r /mnt/live/memory/changes/upperdir/mnt
-rm -r /mnt/live/memory/changes/upperdir/root/.cache
+mkdir /tmp/xxx/opt
+mkdir /tmp/xxx/bin
+mkdir /tmp/xxx/usr/bin
+mkdir /tmp/xxx/usr/lib
+mkdir /tmp/xxx/usr/share/applications
+mkdir /tmp/xxx/usr/share/icons
+mkdir /tmp/xxx/var/lib/apt
+mkdir /tmp/xxx/var/lib/dpkg
+mkdir /tmp/xxx/var/log/apt
+
+c -r /mnt/live/memory/changes/upperdir/root/.cache
 rm -r /mnt/live/memory/changes/upperdir/var/cache
 rm -r /mnt/live/memory/changes/upperdir/tmp
 rm -r /mnt/live/memory/changes/upperdir/live
