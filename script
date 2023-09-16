@@ -1,1 +1,7 @@
+#!/bin/bash
+mkdir -p /tmp/xxx/bin
+
+cp -p /mnt/live/memory/changes/upperdir/bin /tmp/xxx/
+
+mksquashfs
 
