@@ -2,3 +2,5 @@
 mkdir -p /tmp/xxx/bin
 
 cp -r /mnt/live/memory/changes/upperdir/bin /tmp/xxx/
+
+mksquashfs /tmp/xxx /live/image/live/30-scripts_latest.squashfs
