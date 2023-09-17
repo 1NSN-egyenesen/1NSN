@@ -12,9 +12,6 @@ mkdir -p /tmp/xxx/usr/bin
 mkdir -p /tmp/xxx/usr/lib
 mkdir -p /tmp/xxx/usr/share/applications
 mkdir -p /tmp/xxx/usr/share/icons
-mkdir -p /tmp/xxx/var/lib/apt
-mkdir -p /tmp/xxx/var/lib/dpkg
-mkdir -p /tmp/xxx/var/log/apt
 
 cp -r /mnt/live/memory/changes/upperdir/opt /tmp/xxx/
 cp -r /mnt/live/memory/changes/upperdir/usr/bin /tmp/xxx/usr/
