@@ -15,9 +15,6 @@ mkdir -p /tmp/xxx/usr/share/icons
 mkdir -p /tmp/xxx/usr/share/kodi/addons
 mkdir -p /tmp/xxx/usr/share/kodi/system
 mkdir -p /tmp/xxx/usr/share/kodi/userdata
-mkdir -p /tmp/xxx/var/lib/apt
-mkdir -p /tmp/xxx/var/lib/dpkg
-mkdir -p /tmp/xxx/var/log/apt
 mkdir -p /tmp/xxx/usr/share/kodi/media
 
 cp -r /mnt/live/memory/changes/upperdir/opt /tmp/xxx/
