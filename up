@@ -8,6 +8,10 @@ echo "Újabb csomagok kilistázás..."
 echo "****************************"
 apt list --upgradable
 echo ""
+apt policy brave-browser-nightly
+echo "*********************************"
+apt policy qbittorrent
+echo "*********************************"
 echo "Rendszer frissítés lehetősége..."
 echo "********************************"
 apt upgrade 
