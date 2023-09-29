@@ -2,7 +2,7 @@
 echo ""
 echo "Csomagkezelő,frissítés..."
 echo "*************************"
-apt update && upgrade
+apt update && dist-upgrade
 echo ""
 echo "Újabb csomagok kilistázás..."
 echo "****************************"
