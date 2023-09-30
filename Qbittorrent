@@ -2,7 +2,7 @@
 echo ""
 echo "qbittorrent telepítés..."
 echo "**********************************"
-apt install qbittorrent -y
+apt install qbittorrent && qt5ct && qt5-style-plugins -y
 echo ""
 echo "Fájlok másolása..."
 echo "*******************************************"
