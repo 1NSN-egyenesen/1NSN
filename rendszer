@@ -21,7 +21,7 @@ while true; do
     --cancel-label "Kilépés" \
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Wine" \
-    "2" "" \
+    "2" "Locales" \
     "3" "" \
     "4" "Ventoy" \
     "5" "Avidemux" \
@@ -56,11 +56,7 @@ wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/pr
       display_result "Letöltve! Indítsd újra a rendszert!"
       ;;
     2 )
-      result=$(
-rm -r /bin/builder
-wget -O /tmp/builder https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/daedalus
-chmod 777 /tmp/builder
-
+      dpkg-reconfigure locales
 )
       display_result "Letöltve! Indítsd újra a rendszert!"
       ;;
