@@ -22,7 +22,7 @@ while true; do
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Wine" \
     "2" "Epito" \
-    "3" "Brave - konfig" \
+    "3" "Qbittorrent" \
     "4" "Ventoy" \
     "5" "Avidemux" \
     "6" "Daedalus - összes komp" \
