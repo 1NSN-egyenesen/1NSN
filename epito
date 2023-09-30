@@ -1,4 +1,0 @@
-#!/bin/bash
-rm -r /bin/builder
-wget -O /tmp/builder https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/daedalus
-chmod 777 /tmp/builder
