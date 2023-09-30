@@ -21,7 +21,7 @@ while true; do
     --cancel-label "Kilépés" \
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Wine" \
-    "2" "Locales" \
+    "2" "Nyelv beállítás" \
     "3" "" \
     "4" "Ventoy" \
     "5" "Avidemux" \
