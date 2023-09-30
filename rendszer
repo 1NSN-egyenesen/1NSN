@@ -22,7 +22,7 @@ while true; do
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Wine" \
     "2" "Nyelv beallitas" \
-    "3" "" \
+    "3" "Kodi" \
     "4" "Ventoy" \
     "5" "Avidemux" \
     "6" "" \
@@ -64,8 +64,8 @@ wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/pr
       
    3 )
       result=$(
-rm -r /live/image/image/04-brave_puppy.squashfs
-wget -O /live/image/live/04-brave_puppy.squashfs/download https://sourceforge.net/projects/egyenesenfatdog64/files/app/04-brave_puppy.squashfs/download
+rm -r /live/image/live/25-kodi_latest.squashfs
+wget -O /live/image/live/25-kodi_latest.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/25-kodi_latest.squashfs/download
 
 )
       display_result "Letöltés kész! Indítsd újra a rendszert!"
