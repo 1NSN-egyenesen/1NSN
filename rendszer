@@ -26,7 +26,7 @@ while true; do
     "4" "Ventoy" \
     "5" "Avidemux" \
     "6" "Qbittorrent" \
-    "7" "" \
+    "7" "MKVToolnix" \
     "8" "1NSN - konfig" \
     2>&1 1>&3)
   exit_status=$?
@@ -100,8 +100,8 @@ wget -O /live/image/live/09-qbittorrent_latest.squashfs https://sourceforge.net/
      
      7 )
       result=$(
-rm -r /live/image/live/03-brave-browser_latest.squashfs
-wget -O /live/image/live/03-brave-browser_latest.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/03-brave-browser_latest.squashfs/download
+rm -r /live/image/live/08-mkvtoolnix_latest.squashfs
+wget -O /live/image/live/08-mkvtoolnix_latest.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/08-mkvtoolnix_latest.squashfs/download
 )
      display_result "Letöltve! Indítsd újra a rendszert!"
       ;;  
