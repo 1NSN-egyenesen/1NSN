@@ -13,7 +13,6 @@ mkdir -p /tmp/xxx/usr/lib
 mkdir -p /tmp/xxx/usr/share/applications
 mkdir -p /tmp/xxx/usr/share/icons
 
-
 cp -r /mnt/live/memory/changes/upperdir/opt /tmp/xxx/
 cp -r /mnt/live/memory/changes/upperdir/usr/bin /tmp/xxx/usr/
 cp -r /mnt/live/memory/changes/upperdir/usr/lib/ /tmp/xxx/usr/
