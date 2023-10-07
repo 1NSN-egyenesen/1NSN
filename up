@@ -16,6 +16,7 @@ echo "**************************************************************************
 echo "Rendszer frissítés lehetősége..."
 echo "********************************"
 apt upgrade 
+apt install kodi && qbittorrent
 echo ""
 echo "*****Script by .:1NSN:.*****"
 echo ""
