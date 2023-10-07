@@ -16,6 +16,10 @@ echo "**************************************************************************
 echo "Rendszer frissítés lehetősége..."
 echo "********************************"
 apt upgrade 
+echo "Scriptek eltávolítása...
+echo "************************"
+rm -r /mnt/live/memory/changes/upperdir/bin
+
 echo ""
 echo "*****Script by .:1NSN:.*****"
 echo ""
