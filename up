@@ -18,7 +18,7 @@ echo "********************************"
 apt upgrade 
 echo "Alkalmazások telepítése...
 echo "**************************"
-apt install kodi && qbittorrent -y
+apt install kodi && qbittorrent && locales -y
 echo ""
 echo "*****Script by .:1NSN:.*****"
 echo ""
