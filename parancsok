@@ -1,5 +1,9 @@
 #!/bin/bash
 
+rm -r /bin/grade
+wget -O https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/grade
+chmode 777 /bin/grade
+
 rm -r /bin/scripts
 wget -O /bin/scripts https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/scripts
 chmod 777 /bin/scripts
