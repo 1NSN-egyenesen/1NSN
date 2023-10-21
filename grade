@@ -8,6 +8,7 @@ apt install quiterss -y
 
 rm -r /live/image/live/95-update_latest.squashfs
 rm -r /mnt/live/memory/changes/upperdir/mnt
+
 mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/95-update_latest.squashfs -comp zstd
 
 reboot
