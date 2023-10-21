@@ -1,6 +1,7 @@
 #!/bin/bash
 apt upgrade -y
 apt install locales -y
+xterm -e dpkg-reconfigure locales
 apt install kodi -y
 apt install qbittorrent -y 
 apt install quiterss -y
