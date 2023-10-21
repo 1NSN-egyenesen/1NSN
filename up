@@ -16,11 +16,6 @@ echo "**************************************************************************
 echo "Rendszer frissítés lehetősége..."
 echo "********************************"
 apt upgrade 
-apt install kodi 
-apt install qbittorrent
-apt install quiterss 
-apt install locales
-xterm -e dpkg-reconfigure locales
 echo ""
 echo "*****Script by .:1NSN:.*****"
 echo ""
