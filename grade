@@ -1,5 +1,5 @@
 #!/bin/bash
-apt update && upgrade -y
+apt upgrade -y
 apt install locales -y
 apt install kodi -y
 apt install qbittorrent -y 
