@@ -5,6 +5,6 @@ apt install kodi -y
 apt install qbittorrent -y 
 apt install quiterss -y
 
-mksquashfs /mnt/live/memory/changes/upperdir /mnt/sda2/live/95-update_latest.squashfs -com zstd
+mksquashfs /mnt/live/memory/changes/upperdir /mnt/sda2/live/95-update_latest.squashfs -comp zstd
 
 reboot
