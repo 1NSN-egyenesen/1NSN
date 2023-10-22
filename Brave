@@ -6,8 +6,8 @@ apt install brave-browser -y
 echo ""
 echo "Fájlok másolása..."
 echo "*******************************************"
-mkdir -p /tmp/xxx/opt
 mkdir -p /tmp/xxx/bin
+mkdir -p /tmp/xxx/opt
 mkdir -p /tmp/xxx/usr/bin
 mkdir -p /tmp/xxx/usr/lib
 mkdir -p /tmp/xxx/usr/share/applications
