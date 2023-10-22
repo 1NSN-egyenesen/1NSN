@@ -1,7 +1,10 @@
 #!/bin/bash
 apt upgrade -y
+apt install lxpanel -y
+apt install pcmanfk -y
 apt install kodi -y
 apt install qbittorrent -y 
+apt remove
 
 rm -r /live/image/live/95-update_latest.squashfs
 rm -r /mnt/live/memory/changes/upperdir/mnt
