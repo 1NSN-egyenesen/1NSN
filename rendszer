@@ -108,7 +108,7 @@ wget -O /live/image/live/08-mkvtoolnix_latest.squashfs https://sourceforge.net/p
 
      8 )
       result=$(
-rm -r /live/image/syslinux/extlinux
+rm -r /live/image/syslinux/extlinux/extlinux.conf
 wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
 
 )
