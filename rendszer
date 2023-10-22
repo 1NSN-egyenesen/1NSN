@@ -27,7 +27,7 @@ while true; do
     "5" "Avidemux" \
     "6" "Qbittorrent" \
     "7" "MKVToolnix" \
-    "8" "1NSN - konfig" \
+    "8" "no save copy2ram" \
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
