@@ -4,10 +4,12 @@ apt install locales -y
 xterm -e dpkg-reconfigure locales
 apt install kodi -y
 apt install qbittorrent -y 
-apt install quiterss -y
 
 rm -r /live/image/live/95-update_latest.squashfs
 rm -r /mnt/live/memory/changes/upperdir/mnt
+
+mkdir -p /root/tint2launchers
+
 
 mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/95-update_latest.squashfs -comp zstd
 
