@@ -1,7 +1,5 @@
 #!/bin/bash
 apt upgrade -y
-apt install locales -y
-xterm -e dpkg-reconfigure locales
 apt install kodi -y
 apt install qbittorrent -y 
 
@@ -9,6 +7,9 @@ rm -r /live/image/live/95-update_latest.squashfs
 rm -r /mnt/live/memory/changes/upperdir/mnt
 
 mkdir -p /root/tint2launchers
+
+cp -r /home/1NSN/scriptek/kodi.desktop /root/tint2launchers
+cp -r /home/1NSN/scriptek/org.qbittorrent.qBittorrent.desktop /root/tint2launchers
 
 
 mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/95-update_latest.squashfs -comp zstd
