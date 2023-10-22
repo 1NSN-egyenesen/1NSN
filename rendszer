@@ -109,7 +109,7 @@ wget -O /live/image/live/08-mkvtoolnix_latest.squashfs https://sourceforge.net/p
      8 )
       result=$(
 rm -r /live/image/syslinux/extlinux
-wget -O /live/image/syslinux/extlinux https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
+wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
 
 )
       display_result "Letöltve! Indítsd újra a rendszert!"
