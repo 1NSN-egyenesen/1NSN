@@ -6,7 +6,7 @@ apt install pcmanfm -y
 
 apt install kodi -y
 apt install qbittorrent -y 
-apt instal yt-dlp -y
+apt install yt-dlp -y
 
 rm -r /live/image/live/95-update_latest.squashfs
 rm -r /mnt/live/memory/changes/upperdir/mnt
