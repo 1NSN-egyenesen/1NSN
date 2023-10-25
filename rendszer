@@ -22,7 +22,7 @@ while true; do
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Wine" \
     "2" "Ceres - repo" \
-    "3" "Kodi" \
+    "3" "Csomagkezelő frissítése" \
     "4" "Ventoy" \
     "5" "Avidemux" \
     "6" "Qbittorrent" \
@@ -63,12 +63,29 @@ wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/pr
       ;;
       
    3 )
-      result=$(
-rm -r /live/image/live/25-kodi_latest.squashfs
-wget -O /live/image/live/25-kodi_latest.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/25-kodi_latest.squashfs/download
-
+      result=$( xterm -e 
+echo ""
+echo "Csomagkezelő,frissítés..."
+echo "*************************"
+apt update && dist-upgrade
+echo ""
+echo "Újabb csomagok kilistázás..."
+echo "****************************"
+apt list --upgradable
+echo ""
+echo "*****************************************************************************"
+apt policy brave-browser-nightly
+echo "*****************************************************************************"
+apt policy qbittorrent
+echo "*****************************************************************************"
+echo "Rendszer frissítés lehetősége..."
+echo "********************************"
+apt upgrade 
+echo ""
+echo "*****Script by .:1NSN:.*****"
+echo ""
 )
-      display_result "Letöltés kész! Indítsd újra a rendszert!"
+      display_result "A script sikeresen lefuttatva."
       ;;  
     
     4 )
