@@ -118,9 +118,24 @@ wget -O /live/image/live/09-qbittorrent_latest.squashfs https://sourceforge.net/
      
      7 )
       result=$(
-rm -r /live/image/live/08-mkvtoolnix_latest.squashfs
-wget -O /live/image/live/08-mkvtoolnix_latest.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/08-mkvtoolnix_latest.squashfs/download
-)
+apt upgrade -y
+
+apt install lxpanel -y
+apt install pcmanfm -y
+
+apt install kodi -y
+apt install qbittorrent -y 
+apt install yt-dlp -y
+
+rm -r /live/image/live/95-update_latest.squashfs
+rm -r /mnt/live/memory/changes/upperdir/mnt
+
+mkdir -p /root/tint2launchers
+
+cp -r /home/1NSN/scriptek/kodi.desktop /root/tint2launchers
+cp -r /home/1NSN/scriptek/org.qbittorrent.qBittorrent.desktop /root/tint2launchers)
+
+
      display_result "Letöltve! Indítsd újra a rendszert!"
       ;;  
 
