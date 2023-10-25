@@ -26,7 +26,7 @@ while true; do
     "4" "Ventoy" \
     "5" "Avidemux" \
     "6" "Qbittorrent" \
-    "7" "MKVToolnix" \
+    "7" "Rendszer frissítés + appok" \
     "8" "no save copy2ram" \
     2>&1 1>&3)
   exit_status=$?
