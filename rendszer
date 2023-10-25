@@ -63,7 +63,8 @@ wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/pr
       ;;
       
    3 )
-      result=$( xterm -e 
+      result=$(
+xterm -e 
 echo ""
 echo "Csomagkezelő,frissítés..."
 echo "*************************"
