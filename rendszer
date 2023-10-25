@@ -22,7 +22,7 @@ while true; do
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Wine" \
     "2" "Ceres - repo" \
-    "3" "Csomagkezelő frissítése" \
+    "3" "?" \
     "4" "Ventoy" \
     "5" "Avidemux" \
     "6" "Qbittorrent" \
@@ -64,27 +64,7 @@ wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/pr
       
    3 )
       result=$(
-xterm -e apt update && dist-upgrade
-echo ""
-echo "Csomagkezelő,frissítés..."
-echo "*************************"
-apt update && dist-upgrade
-echo ""
-echo "Újabb csomagok kilistázás..."
-echo "****************************"
-apt list --upgradable
-echo ""
-echo "*****************************************************************************"
-apt policy brave-browser-nightly
-echo "*****************************************************************************"
-apt policy qbittorrent
-echo "*****************************************************************************"
-echo "Rendszer frissítés lehetősége..."
-echo "********************************"
-apt upgrade 
-echo ""
-echo "*****Script by .:1NSN:.*****"
-echo ""
+
 )
       display_result "A script sikeresen lefuttatva."
       ;;  
@@ -108,12 +88,10 @@ wget -O /live/image/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.ne
      
      6 )
       result=$(
-rm -r /live/image/live/09-qbittorrent_latest.squashfs
-
-wget -O /live/image/live/09-qbittorrent_latest.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/09-qbittorrent_latest.squashfs/download
-
-)
-     display_result "Letöltve! Indítsd újra a rendszert!"
+xterm -e apt update 
+xterm -e dist-upgrade
+apt list --upgradable)
+     display_result "Csomaglista frissítve."
       ;;  
      
      7 )
