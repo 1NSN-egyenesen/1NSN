@@ -89,7 +89,7 @@ wget -O /live/image/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.ne
      6 )
       result=$(
 xterm -e apt update 
-xterm -e dist-upgrade
+apt dist-upgrade
 apt list --upgradable)
      display_result "Csomaglista frissítve."
       ;;  
