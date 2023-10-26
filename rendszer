@@ -110,13 +110,14 @@ rm -r /mnt/live/memory/changes/upperdir/mnt
 mkdir -p /root/tint2launchers
 
 cp -r /home/1NSN/scriptek/kodi.desktop /root/tint2launchers
-cp -r /home/1NSN/scriptek/org.qbittorrent.qBittorrent.desktop /root/tint2launchers)
+cp -r /home/1NSN/scriptek/org.qbittorrent.qBittorrent.desktop /root/tint2launchers
 
 apt autoremove
 
 xterm -e mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/95-update_latest.squashfs -comp zstd
 
 reboot
+)
      display_result "Letöltve! Indítsd újra a rendszert!"
       ;;  
 
