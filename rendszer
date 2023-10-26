@@ -95,6 +95,9 @@ echo "mpv https://www.youtube.com/watch?v=ZhJUtVoE5KU" > /bin/darkmonkey
      
      7 )
       result=$(
+cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
+
+xterm -e apt update -y
 xterm -e apt upgrade -y
 
 xterm -e apt install lxpanel -y
