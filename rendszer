@@ -97,15 +97,15 @@ echo "mpv https://www.youtube.com/watch?v=ZhJUtVoE5KU" > /bin/darkmonkey
       result=$(
 cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
 
-xterm -e apt update -y
-xterm -e apt upgrade -y
+apt update -y
+apt upgrade -y
 
-xterm -e apt install lxpanel -y
-xterm -e apt install pcmanfm -y
+apt install lxpanel -y
+apt install pcmanfm -y
 
-xterm -e apt install kodi -y
-xterm -e apt install qbittorrent -y 
-xterm -e apt install yt-dlp -y
+apt install kodi -y
+apt install qbittorrent -y 
+apt install yt-dlp -y
 
 rm -r /live/image/live/95-update_latest.squashfs
 rm -r /mnt/live/memory/changes/upperdir/mnt
@@ -121,7 +121,7 @@ cp -r /home/1NSN/scriptek/org.qbittorrent.qBittorrent.desktop /root/tint2launche
 
 apt autoremove
 
-xterm -e mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/95-update_latest.squashfs -comp zstd
+mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/95-update_latest.squashfs -comp zstd
 
 reboot
 )
