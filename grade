@@ -1,4 +1,7 @@
 #!/bin/bash
+
+cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
+
 apt upgrade -y
 
 apt install lxpanel -y
