@@ -111,6 +111,7 @@ rm -r /live/image/live/95-update_latest.squashfs
 rm -r /mnt/live/memory/changes/upperdir/mnt
 rm -r /mnt/live/memory/changes/upperdir/home/puppy/.cache
 rm -r /mnt/live/memory/changes/upperdir/root/.cache
+rm -r /mnt/live/memory/changes/upperdir/tmp
 
 mkdir -p /root/tint2launchers
 
