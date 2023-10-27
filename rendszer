@@ -66,7 +66,7 @@ apt policy brave-browser-nightly
 apt policy qbittorrent
 apt upgrade" > /bin/up
 chmod 777 /bin/up
-up
+
 
 )
       display_result "Letöltve! Indítsd újra a rendszert!"
