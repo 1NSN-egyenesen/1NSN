@@ -21,7 +21,7 @@ while true; do
     --cancel-label "Kilépés" \
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Wine" \
-    "2" "?" \
+    "2" "Csomagkezelő frissítése" \
     "3" "?" \
     "4" "Ventoy" \
     "5" "Avidemux" \
@@ -57,7 +57,16 @@ wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/pr
       ;;
     2 )
       result=$(
-      cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
+rm -r /bin/up
+echo "
+cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
+apt update && dist-upgrade
+apt list --upgradable
+apt policy brave-browser-nightly
+apt policy qbittorrent
+apt upgrade" > /bin/up
+chmod 777 /bin/up
+
 )
       display_result "Letöltve! Indítsd újra a rendszert!"
       ;;
