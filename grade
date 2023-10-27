@@ -14,6 +14,10 @@ apt install yt-dlp -y
 
 rm -r /live/image/live/95-update_latest.squashfs
 rm -r /mnt/live/memory/changes/upperdir/mnt
+rm -r /mnt/live/memory/changes/upperdir/home/puppy/.cache
+rm -r /mnt/live/memory/changes/upperdir/root/.cache
+rm -r /mnt/live/memory/changes/upperdir/tmp
+rm -r /mnt/live/memory/changes/upperdir/var/cache/apt
 
 mkdir -p /root/tint2launchers
 
