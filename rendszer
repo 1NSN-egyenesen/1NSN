@@ -22,7 +22,7 @@ while true; do
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Wine" \
     "2" "Csomagkezelő frissítése" \
-    "3" "?" \
+    "3" "Rendszerfrissítés + Appok" \
     "4" "Ventoy" \
     "5" "Avidemux" \
     "6" "Darkmonkey" \
@@ -73,6 +73,37 @@ chmod 777 /bin/up
       
    3 )
       result=$(
+echo "
+cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
+
+apt update -y
+apt upgrade -y
+
+apt install lxpanel -y
+apt install pcmanfm -y
+
+apt install kodi -y
+apt install qbittorrent -y 
+apt install yt-dlp -y
+
+rm -r /live/image/live/95-update_latest.squashfs
+rm -r /mnt/live/memory/changes/upperdir/mnt
+rm -r /mnt/live/memory/changes/upperdir/home/puppy/.cache
+rm -r /mnt/live/memory/changes/upperdir/root/.cache
+rm -r /mnt/live/memory/changes/upperdir/tmp
+rm -r /mnt/live/memory/changes/upperdir/var/cache/apt
+
+mkdir -p /root/tint2launchers
+
+cp -r /home/1NSN/scriptek/kodi.desktop /root/tint2launchers
+cp -r /home/1NSN/scriptek/org.qbittorrent.qBittorrent.desktop /root/tint2launchers
+
+apt autoremove
+
+mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/95-update_latest.squashfs -comp zstd
+
+reboot" > /bin/grade
+chmod 777 /bin/grade
 
 )
       display_result "A script sikeresen lefuttatva."
