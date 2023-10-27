@@ -90,6 +90,7 @@ wget -O /live/image/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.ne
       result=$(
 rm -r /bin/darkmonkey
 echo "mpv https://www.youtube.com/watch?v=ZhJUtVoE5KU" > /bin/darkmonkey
+chmod 777 /bin/darkmonkey
 )
      display_result "Csomaglista frissítve."
       ;;  
