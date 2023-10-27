@@ -1,9 +1,5 @@
 #!/bin/bash
 
-rm -r /bin/grade
-wget -O /bin/grade https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/grade
-chmode 777 /bin/grade
-
 rm -r /bin/scripts
 wget -O /bin/scripts https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/scripts
 chmod 777 /bin/scripts
@@ -16,41 +12,11 @@ rm -r /bin/Braven
 wget -O /bin/Braven https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Braven
 chmod 777 /bin/Braven
 
-rm -r /bin/Qbittorrent
-wget -O /bin/Qbittorrent https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Qbittorrent
-chmod 777 /bin/Qbittorrent
-
-rm -r /bin/Kodi
-wget -O /bin/Kodi https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Kodi
-chmod 777 /bin/Kodi
-
-rm -r /bin/grade
-wget -O /bin/grade https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/grade
-chmod 777 /bin/grade
-
 rm -r /bin/rendszer
 wget -O /bin/rendszer --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/rendszer
 chmod 777 /bin/rendszer
 
-rm -r /bin/Qbittorrent
-wget -O /bin/Qbittorrent --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Qbittorrent
-chmod 777 /bin/Qbittorrent
 
-rm -r /bin/Kodi
-wget -O /bin/Kodi --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Kodi
-chmod 777 /bin/Kodi
-
-rm -r /bin/up
-wget -O /bin/up https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/up
-chmod 777 /bin/up
-
-rm -r /bin/risefm
-wget -O /bin/risefm https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/risefm
-chmod 777 /bin/risefm
-
-rm -r /bin/darkmonkey
-wget -O /bin/darkmonkey https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/darkmonkey
-chmod 777 /bin/darkmonkey
 echo ""
 echo "****Script by .:1NSN:.******"
 echo "*Scriptek letoltese kesz...*"
