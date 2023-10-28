@@ -22,7 +22,7 @@ while true; do
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Csomagkezelő frissítése" \
     "2" "Rendszerfrissítés + Appok" \
-    "3" "Rádió" \
+    "3" "Rádió + panel konfig" \
     "4" "Ventoy" \
     "5" "Avidemux" \
     "6" "Wine" \
