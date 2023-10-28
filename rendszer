@@ -112,6 +112,7 @@ killall mpv
 mpv https://www.youtube.com/watch?v=ZhJUtVoE5KU" > /bin/darkmonkey
 chmod 777 /bin/darkmonkey
 echo "
+killall mpv
 mpv https://stream1.virtualisan.net/prx/8080/risefm_deephouse_hq" > /bin/insomnia
 chmod 777 /bin/insomnia
 
