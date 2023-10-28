@@ -22,7 +22,7 @@ while true; do
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
     "1" "Csomagkezelő frissítése" \
     "2" "Rendszerfrissítés + Appok" \
-    "3" "" \
+    "3" "Rádió" \
     "4" "Ventoy" \
     "5" "Avidemux" \
     "6" "Wine" \
@@ -147,7 +147,7 @@ rm -r /live/image/syslinux/extlinux/extlinux.conf
 wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
 
 )
-      display_result "Letöltve! Indítsd újra a rendszert!"
+      display_result "Chat kód módosítva.Indítsd újra a rendszert!"
      
      
 
