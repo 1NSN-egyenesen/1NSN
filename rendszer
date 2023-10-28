@@ -119,7 +119,7 @@ chmod 777 /bin/insomnia
 
 
 )
-      display_result "Írd be a terminálba,hogy(grade)!"
+      display_result "Rádio konfig kész!"
       ;;  
     
 4 )
