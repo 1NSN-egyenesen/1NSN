@@ -48,7 +48,7 @@ while true; do
       clear
       echo "Program terminated."
       ;;
-    1 )
+1 )
       result=$(
 echo "
 cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
@@ -62,7 +62,7 @@ chmod 777 /bin/up
 )
       display_result "Írd be az (up) - parancsot a terminálba!"
       ;;
-    2 )
+2 )
       result=$(
 echo "
 
@@ -102,14 +102,26 @@ chmod 777 /bin/grade
       display_result "Írd be az (up) - parancsot a terminálba!"
       ;;
       
-   3 )
-      result=$(
+3 )
+      result=$(  
+rm -r /bin/darkmonkey
+rm -r /bin/insomnia
+
+echo "
+killall mpv
+mpv https://www.youtube.com/watch?v=ZhJUtVoE5KU" > /bin/darkmonkey
+chmod 777 /bin/darkmonkey
+echo "
+mpv https://stream1.virtualisan.net/prx/8080/risefm_deephouse_hq" > /bin/insomnia
+chmod 777 /bin/insomnia
+
+
 
 )
       display_result "Írd be a terminálba,hogy(grade)!"
       ;;  
     
-    4 )
+4 )
       result=$(
 wget -O /live/image/live/12-ventoy_1.0.77.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/12-ventoy_1.0.77.squashfs/download
 
@@ -117,7 +129,7 @@ wget -O /live/image/live/12-ventoy_1.0.77.squashfs https://sourceforge.net/proje
     display_result "Letöltve! Indítsd újra a rendszert!"
       ;;  
      
-    5 )
+5 )
       result=$(
 wget -O /live/image/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/11-avidemux_2.8_all_deb.squashfs/download
 
@@ -126,14 +138,14 @@ wget -O /live/image/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.ne
       ;;  
      
      
-     6 )
+6 )
       result=$(
 wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/98-wine_8.0_Repack4.squashfs/download
 )
      display_result "Csomaglista frissítve."
       ;;  
      
-     7 )
+7 )
       result=$(
 
 
@@ -141,7 +153,7 @@ wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/pr
      display_result "Letöltve! Indítsd újra a rendszert!"
       ;;  
 
-     8 )
+8 )
       result=$(
 rm -r /live/image/syslinux/extlinux/extlinux.conf
 wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
