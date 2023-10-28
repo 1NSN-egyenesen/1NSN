@@ -20,12 +20,12 @@ while true; do
     --clear \
     --cancel-label "Kilépés" \
     --menu "Kerlek valassz rendszert:" $HEIGHT $WIDTH 4 \
-    "1" "Wine" \
-    "2" "Csomagkezelő frissítése" \
-    "3" "Rendszerfrissítés + Appok" \
+    "1" "Csomagkezelő frissítése" \
+    "2" "Rendszerfrissítés + Appok" \
+    "3" "" \
     "4" "Ventoy" \
     "5" "Avidemux" \
-    "6" "?" \
+    "6" "Wine" \
     "7" "?" \
     "8" "no save copy2ram" \
     2>&1 1>&3)
@@ -50,13 +50,6 @@ while true; do
       ;;
     1 )
       result=$(
-wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/98-wine_8.0_Repack4.squashfs/download
-
-)
-      display_result "Letöltve! Indítsd újra a rendszert!"
-      ;;
-    2 )
-      result=$(
 echo "
 cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
 rm -r /bin/up
@@ -66,13 +59,10 @@ apt policy brave-browser-nightly
 apt policy qbittorrent
 apt upgrade" > /bin/up
 chmod 777 /bin/up
-
-
 )
       display_result "Írd be az (up) - parancsot a terminálba!"
       ;;
-      
-   3 )
+    2 )
       result=$(
 echo "
 
@@ -109,6 +99,13 @@ reboot" > /bin/grade
 chmod 777 /bin/grade
 
 )
+      display_result "Írd be az (up) - parancsot a terminálba!"
+      ;;
+      
+   3 )
+      result=$(
+
+)
       display_result "Írd be a terminálba,hogy(grade)!"
       ;;  
     
@@ -131,7 +128,7 @@ wget -O /live/image/live/11-avidemux_2.8_all_deb.squashfs https://sourceforge.ne
      
      6 )
       result=$(
-
+wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/app/98-wine_8.0_Repack4.squashfs/download
 )
      display_result "Csomaglista frissítve."
       ;;  
