@@ -450,7 +450,7 @@ wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/pr
 rm -r /bin/Braven
 echo "
 apt install brave-browser-nightly -y
-CSIBABIGA
+
 mkdir -p /tmp/xxx/bin
 mkdir -p /tmp/xxx/opt
 mkdir -p /tmp/xxx/usr/bin
@@ -507,8 +507,33 @@ reboot
 
 10 )
       result=$(
-rm -r /live/image/syslinux/extlinux/extlinux.conf
-wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
+rm -r /bin/Brave
+echo "
+apt install brave-browser -y
+
+mkdir -p /tmp/xxx/bin
+mkdir -p /tmp/xxx/opt
+mkdir -p /tmp/xxx/usr/bin
+mkdir -p /tmp/xxx/usr/lib
+mkdir -p /tmp/xxx/usr/share/applications
+mkdir -p /tmp/xxx/usr/share/icons
+mkdir -p /tmp/xxx/root/tint2launchers
+
+cp -r /home/1NSN/scriptek/brave-browser.desktop /tmp/xxx/root/tint2launchers
+cp -r /mnt/live/memory/changes/upperdir/opt /tmp/xxx/
+cp -r /mnt/live/memory/changes/upperdir/usr/bin /tmp/xxx/usr/
+cp -r /mnt/live/memory/changes/upperdir/usr/lib/ /tmp/xxx/usr/
+cp -r /mnt/live/memory/changes/upperdir/usr/share/applications /tmp/xxx/usr/share/
+cp -r /mnt/live/memory/changes/upperdir/usr/share/icons /tmp/xxx/usr/share/
+
+rm -r /live/image/live/07-brave-nightly_latest.squashfs
+rm -r /live/image/live/03-brave_stabil_latest.squashfs
+
+mksquashfs /tmp/xxx /live/image/live/03-brave_stabil_latest.squashfs
+
+reboot" > /bin/Brave
+
+chmod 777 /bin/Brave
 
 )
       display_result "Chat kód módosítva.Indítsd újra a rendszert!"
