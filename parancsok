@@ -1,13 +1,5 @@
 #!/bin/bash
 
-rm -r /bin/scripts
-wget -O /bin/scripts https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/scripts
-chmod 777 /bin/scripts
-
-rm -r /bin/Brave
-wget -O /bin/Brave https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/Brave
-chmod 777 /bin/Brave
-
 rm -r /bin/1
 wget -O /bin/1 --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/rendszer
 chmod 777 /bin/1
