@@ -445,11 +445,10 @@ wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/pr
      
 7 )
       result=$(
-xterm -e
+rm -r /bin/Braven
+echo "
 apt install brave-browser-nightly -y
-echo ""
-echo "Fájlok másolása..."
-echo "*******************************************"
+CSIBABIGA
 mkdir -p /tmp/xxx/bin
 mkdir -p /tmp/xxx/opt
 mkdir -p /tmp/xxx/usr/bin
@@ -472,14 +471,11 @@ rm -r /bin/br
 wget -O /tmp/xxx/bin/br https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/br
 chmod 777 /tmp/xxx/bin/br
 
-echo ""
-echo "Hordozható verzió tömörítése..."
-echo "*******************************"
 mksquashfs /tmp/xxx /live/image/live/07-brave-nightly_latest.squashfs -comp gzip
-echo ""
-echo "Újraindítás..."
-echo "**************"
-reboot
+
+reboot" > /bin/Braven
+
+chmod 777 /bin/Braven
 
 )
      display_result "Letöltve! Indítsd újra a rendszert!"
