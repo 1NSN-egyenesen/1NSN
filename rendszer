@@ -60,7 +60,7 @@ apt policy qbittorrent
 apt upgrade" > /bin/up
 chmod 777 /bin/up
 )
-      display_result "Írd be az (up) - parancsot a terminálba!"
+      display_result "Elkészűlt a script,írd be (up) a terminálba!"
       ;;
 2 )
       result=$(
@@ -478,7 +478,7 @@ reboot" > /bin/Braven
 chmod 777 /bin/Braven
 
 )
-     display_result "Letöltve! Indítsd újra a rendszert!"
+     display_result "Elkészűlt a script,írd be (Braven) a terminálba!"
       ;;  
 
 8 )
