@@ -445,7 +445,7 @@ wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/pr
      
 7 )
       result=$(
-xter -e
+xterm -e
 apt install brave-browser-nightly -y
 echo ""
 echo "Fájlok másolása..."
