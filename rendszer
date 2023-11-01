@@ -28,7 +28,7 @@ while true; do
     "6" "Wine" \
     "7" "Braven" \
     "8" "no save copy2ram" \
-    "9" "Scripts"
+    "9" "Scripts" \
     
 
 
