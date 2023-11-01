@@ -26,7 +26,7 @@ while true; do
     "4" "Ventoy" \
     "5" "Avidemux" \
     "6" "Wine" \
-    "7" "?" \
+    "7" "Braven" \
     "8" "no save copy2ram" \
     2>&1 1>&3)
   exit_status=$?
@@ -445,7 +445,41 @@ wget -O /live/image/live/98-wine_8.0_Repack4.squashfs https://sourceforge.net/pr
      
 7 )
       result=$(
+xter -e
+apt install brave-browser-nightly -y
+echo ""
+echo "Fájlok másolása..."
+echo "*******************************************"
+mkdir -p /tmp/xxx/bin
+mkdir -p /tmp/xxx/opt
+mkdir -p /tmp/xxx/usr/bin
+mkdir -p /tmp/xxx/usr/lib
+mkdir -p /tmp/xxx/usr/share/applications
+mkdir -p /tmp/xxx/usr/share/icons
+mkdir -p /tmp/xxx/root/tint2launchers
 
+cp -r /home/1NSN/scriptek/brave-browser-nightly.desktop /tmp/xxx/root/tint2launchers
+cp -r /mnt/live/memory/changes/upperdir/opt /tmp/xxx/
+cp -r /mnt/live/memory/changes/upperdir/usr/bin /tmp/xxx/usr/
+cp -r /mnt/live/memory/changes/upperdir/usr/lib/ /tmp/xxx/usr/
+cp -r /mnt/live/memory/changes/upperdir/usr/share/applications /tmp/xxx/usr/share/
+cp -r /mnt/live/memory/changes/upperdir/usr/share/icons /tmp/xxx/usr/share/
+
+rm -r /live/image/live/07-brave-nightly_latest.squashfs
+rm -r /live/image/live/03-brave_stabil_latest.squashfs
+
+rm -r /bin/br
+wget -O /tmp/xxx/bin/br https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/br
+chmod 777 /tmp/xxx/bin/br
+
+echo ""
+echo "Hordozható verzió tömörítése..."
+echo "*******************************"
+mksquashfs /tmp/xxx /live/image/live/07-brave-nightly_latest.squashfs -comp gzip
+echo ""
+echo "Újraindítás..."
+echo "**************"
+reboot
 
 )
      display_result "Letöltve! Indítsd újra a rendszert!"
