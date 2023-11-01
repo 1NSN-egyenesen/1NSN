@@ -29,10 +29,7 @@ while true; do
     "7" "Braven" \
     "8" "no save copy2ram" \
     "9" "Scripts" \
-    
-
-
-
+    "10" "Brave" \    
      2>&1 1>&3)
   exit_status=$?
   exec 3>&-
@@ -507,6 +504,18 @@ mksquashfs /tmp/xxx /live/image/live/30-scripts_latest.squashfs -comp gzip
 reboot
 )
       display_result "Chat kód módosítva.Indítsd újra a rendszert!"    
+
+10 )
+      result=$(
+rm -r /live/image/syslinux/extlinux/extlinux.conf
+wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
+
+)
+      display_result "Chat kód módosítva.Indítsd újra a rendszert!"
+     ;; 
+
+
+
 
 esac
 done
