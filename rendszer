@@ -477,6 +477,7 @@ reboot" > /bin/Braven
 
 chmod 777 /bin/Braven
 
+
 )
      display_result "Elkészűlt a script,írd be (Braven) a terminálba!"
       ;;  
