@@ -504,6 +504,7 @@ mksquashfs /tmp/xxx /live/image/live/30-scripts_latest.squashfs -comp gzip
 reboot
 )
       display_result "Chat kód módosítva.Indítsd újra a rendszert!"    
+      ;;
 
 10 )
       result=$(
