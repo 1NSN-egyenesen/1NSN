@@ -28,7 +28,12 @@ while true; do
     "6" "Wine" \
     "7" "Braven" \
     "8" "no save copy2ram" \
-    2>&1 1>&3)
+    "9" "Scripts"
+    
+
+
+
+     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
   case $exit_status in
@@ -489,8 +494,15 @@ wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubuserconten
 
 )
       display_result "Chat kód módosítva.Indítsd újra a rendszert!"
-     
-     
+     ;; 
+ 
+9 )
+      result=$(
+rm -r /live/image/syslinux/extlinux/extlinux.conf
+wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
+
+)
+      display_result "Chat kód módosítva.Indítsd újra a rendszert!"    
 
 esac
 done
