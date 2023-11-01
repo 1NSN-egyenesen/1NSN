@@ -498,9 +498,13 @@ wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubuserconten
  
 9 )
       result=$(
-rm -r /live/image/syslinux/extlinux/extlinux.conf
-wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf
+mkdir -p /tmp/xxx/bin
 
+cp -r /mnt/live/memory/changes/upperdir/bin /tmp/xxx/
+
+rm -r /live/image/live/30-scripts_latest.squashfs
+mksquashfs /tmp/xxx /live/image/live/30-scripts_latest.squashfs -comp gzip
+reboot
 )
       display_result "Chat kód módosítva.Indítsd újra a rendszert!"    
 
