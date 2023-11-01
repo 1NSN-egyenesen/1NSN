@@ -29,8 +29,7 @@ while true; do
     "7" "Braven" \
     "8" "no save copy2ram" \
     "9" "Scripts" \
-    "11" "Brave" \    
-     2>&1 1>&3)
+       2>&1 1>&3)
   exit_status=$?
   exec 3>&-
   case $exit_status in
@@ -506,39 +505,6 @@ reboot
       display_result "Chat kód módosítva.Indítsd újra a rendszert!"    
       ;;
 
-11 )
-      result=$(
-rm -r /bin/Brave
-echo "
-apt install brave-browser -y
-
-mkdir -p /tmp/xxx/bin
-mkdir -p /tmp/xxx/opt
-mkdir -p /tmp/xxx/usr/bin
-mkdir -p /tmp/xxx/usr/lib
-mkdir -p /tmp/xxx/usr/share/applications
-mkdir -p /tmp/xxx/usr/share/icons
-mkdir -p /tmp/xxx/root/tint2launchers
-
-cp -r /home/1NSN/scriptek/brave-browser.desktop /tmp/xxx/root/tint2launchers
-cp -r /mnt/live/memory/changes/upperdir/opt /tmp/xxx/
-cp -r /mnt/live/memory/changes/upperdir/usr/bin /tmp/xxx/usr/
-cp -r /mnt/live/memory/changes/upperdir/usr/lib/ /tmp/xxx/usr/
-cp -r /mnt/live/memory/changes/upperdir/usr/share/applications /tmp/xxx/usr/share/
-cp -r /mnt/live/memory/changes/upperdir/usr/share/icons /tmp/xxx/usr/share/
-
-rm -r /live/image/live/07-brave-nightly_latest.squashfs
-rm -r /live/image/live/03-brave_stabil_latest.squashfs
-
-mksquashfs /tmp/xxx /live/image/live/03-brave_stabil_latest.squashfs
-
-reboot" > /bin/Brave
-
-chmod 777 /bin/Brave
-
-)
-      display_result "Chat kód módosítva.Indítsd újra a rendszert!"
-     ;; 
 
 
 
