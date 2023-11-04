@@ -4,6 +4,10 @@ rm -r /bin/1
 wget -O /bin/1 --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/rendszer
 chmod 777 /bin/1
 
+rm -r /bin/yad
+wget -O /bin/ya https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/yad
+chmod 777 /bin/ya
+
 
 echo ""
 echo "****Script by .:1NSN:.******"
