@@ -2,7 +2,7 @@
 
 yad --form --center --borders=10 --window-icon="/home/1NSN/ikonok/limbo.png" --title=".:1NSN:. BOX" --columns=3 --no-buttons --image-on-top \
 --image=/home/1NSN/ikonok/limbo.png \
---field="  Csomagkezelő frissítése!text-editor":fbtn "" \
+--field="  Csomagkezelő frissítése!text-editor":fbtn "up" \
 --field="  picom.conf!text-editor":fbtn "leafpad $HOME/.config/picom.conf" \
 --field="  Syslinux!text-editor":fbtn "rm -r /live/image/syslinux/extlinux/extlinux.conf
 wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf" \
