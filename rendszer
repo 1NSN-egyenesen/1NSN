@@ -4,6 +4,7 @@ rm -r /bin/up
 rm -r /bin/grade
 rm -r /bin/Braven
 rm -r /bin/scripts
+rm -r /bin/1
 
 echo "[Desktop Entry]
 Type=Application
