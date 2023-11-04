@@ -1,2 +1,0 @@
-#!/bin/bash
-wget -O /mnt/sda1/99-linux-firmware_1.187.34.squashfs https://sourceforge.net/projects/egyenesenfatdog64/files/Firmware/99-linux-firmware_1.187.34.squashfs/download
