@@ -16,7 +16,6 @@ chmod 777 /root/tint2launchers/1nsn.desktop
 wget -O /home/1NSN/ikonok https://github.com/1NSN-egyenesen/1NSN/blob/main/brave.png
 
 
-
 echo "
 #!/bin/sh
 cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
