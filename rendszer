@@ -403,3 +403,5 @@ mksquashfs /tmp/xxx /live/image/live/30-scripts_latest.squashfs -comp gzip
 reboot" > /bin/scripts
 
 chmod 777 /bin/scripts
+
+tin2restart
