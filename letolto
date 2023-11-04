@@ -5,6 +5,7 @@ wget -O /bin/parancsok https://sourceforge.net/projects/egyenesenfatdog64/files/
 chmod 777 /bin/parancsok
 
 rm -r /bin/ya
-
+wget -O b/bin/ya https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/yad
+chmod 777 /bin/ya
 
 
