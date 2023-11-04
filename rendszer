@@ -5,7 +5,14 @@ rm -r /bin/grade
 rm -r /bin/Braven
 rm -r /bin/scripts
 
-
+echo "[Desktop Entry]
+Type=Application
+Terminal=false
+Name=.:1NSN:. BOX
+Exec=ya
+Icon=/home/1NSN/ikonok/brave.png
+NotShowIn=XFCE" > /root/tint2launchers/1nsn.desktop
+chmod 777 /root/tint2launchers/1nsn.desktop
 
 echo "
 #!/bin/sh
