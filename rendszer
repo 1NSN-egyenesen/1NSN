@@ -404,4 +404,4 @@ reboot" > /bin/scripts
 
 chmod 777 /bin/scripts
 
-tin2restart
+tint2restart
