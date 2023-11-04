@@ -1,1 +1,10 @@
+#!/usr/bin/env bash
 
+yad --form --center --borders=10 --window-icon="/home/1NSN/ikonok/limbo.png" --title=".:1NSN:. BOX" --columns=3 --no-buttons --image-on-top \
+--image=/home/1NSN/ikonok/limbo.png \
+--field="  Csomagkezelő frissítése!text-editor":fbtn "" \
+--field="  picom.conf!text-editor":fbtn "leafpad $HOME/.config/picom.conf" \
+--field="  Calendar!calendar":fbtn "yad --calendar --no-buttons --width=400 --center --undecorated --close-on-unfocus" \
+--field="  Autostart!text-editor":fbtn "leafpad $HOME/.config/openbox/autostart" \
+--field="  System Upgrade!terminal":fbtn "xterm -e apt list --upgradeable" \
+--field="  rc.xml!text-editor":fbtn "leafpad $HOME/.config/openbox/rc.xml" \
