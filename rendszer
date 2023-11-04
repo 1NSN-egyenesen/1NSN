@@ -3,6 +3,7 @@
 rm -r /bin/up
 rm -r /bin/grade
 rm -r /bin/Braven
+rm -r /bin/scripts
 
 echo "
 #!/bin/sh
@@ -381,11 +382,13 @@ chmod 777 /bin/Braven
 echo "
 #!/bin/sh
 mkdir -p /tmp/xxx/bin
+mkdir -p /tmp/xxx/root/.config/tint2
 
 cp -r /mnt/live/memory/changes/upperdir/bin /tmp/xxx/
+cp -r /mnt/live/memory/changes/upperdir/root/.config/tint2/tint2rc_crunchbang /tmp/xxx/root/.config/tint2
 
 rm -r /live/image/live/30-scripts_latest.squashfs
 mksquashfs /tmp/xxx /live/image/live/30-scripts_latest.squashfs -comp gzip
-reboot" > /bin/save
+reboot" > /bin/scripts
 
 chmod 777 /bin/save
