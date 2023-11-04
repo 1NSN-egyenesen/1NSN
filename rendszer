@@ -1,6 +1,7 @@
 #!/bin/sh
 
 echo "
+#!/bin/sh
 cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
 rm -r /bin/up
 apt update && dist-upgrade
@@ -11,7 +12,7 @@ apt upgrade" > /bin/up
 chmod 777 /bin/up
 
 echo "
-
+#!/bin/sh
 apt update -y
 apt upgrade -y
 
@@ -341,6 +342,7 @@ chmod 777 /root/.config/tint2/tint2rc_crunchbang
 
 rm -r /bin/Braven
 echo "
+#!/bin/sh
 apt install brave-browser-nightly -y
 
 mkdir -p /tmp/xxx/bin
@@ -431,6 +433,7 @@ chmod 777 /bin/ext
 
 
 echo "
+#!/bin/sh
 mkdir -p /tmp/xxx/bin
 
 cp -r /mnt/live/memory/changes/upperdir/bin /tmp/xxx/
