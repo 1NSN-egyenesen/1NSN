@@ -14,6 +14,9 @@ Icon=/home/1NSN/ikonok/brave.png
 NotShowIn=XFCE" > /root/tint2launchers/1nsn.desktop
 chmod 777 /root/tint2launchers/1nsn.desktop
 
+
+
+
 echo "
 #!/bin/sh
 cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
