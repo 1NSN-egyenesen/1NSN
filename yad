@@ -2,10 +2,7 @@
 
 yad --form --center --borders=10 --window-icon="/home/1NSN/ikonok/limbo.png" --title=".:1NSN:. BOX" --columns=3 --no-buttons --image-on-top \
 --image=/home/1NSN/ikonok/limbo.png \
---field="  Csomagkezelő frissítése!terminal":fbtn "up" \
---field="  Rendszer frissítése + Appok!terminal":fbtn "grade" \
---field="  Syslinux!text-editor":fbtn "rm -r /live/image/syslinux/extlinux/extlinux.conf
-wget -O /live/image/syslinux/extlinux/extlinux.conf https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/extlinux.conf" \
+--field="  Brave Nightly!webbrowser":fbtn "up" \
 --field="  Autostart!text-editor":fbtn "leafpad $HOME/.config/openbox/autostart" \
 --field="  System Upgrade!terminal":fbtn "xterm -e apt list --upgradeable" \
 --field="  rc.xml!text-editor":fbtn "leafpad $HOME/.config/openbox/rc.xml" \
