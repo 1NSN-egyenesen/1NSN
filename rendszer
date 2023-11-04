@@ -4,7 +4,8 @@ echo "
 #!/bin/sh
 cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
 rm -r /bin/up
-apt update && dist-upgrade
+apt update
+apt upgrade
 apt list --upgradable
 apt policy brave-browser-nightly
 apt policy qbittorrent
