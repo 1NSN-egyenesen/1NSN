@@ -4,5 +4,4 @@ yad --form --center --borders=10 --window-icon="/home/1NSN/ikonok/limbo.png" --t
 --image=/home/1NSN/ikonok/limbo.png \
 --field="  Brave Nightly!terminal":fbtn "Braven" \
 --field="  Autostart!text-editor":fbtn "leafpad $HOME/.config/openbox/autostart" \
---field="  System Upgrade!terminal":fbtn "xterm -e apt list --upgradeable" \
 --field="  rc.xml!text-editor":fbtn "leafpad $HOME/.config/openbox/rc.xml" \
