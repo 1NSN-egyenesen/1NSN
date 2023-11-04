@@ -11,7 +11,7 @@ Type=Application
 Terminal=false
 Name=.:1NSN:. BOX
 Exec=ya
-Icon=/home/1NSN/ikonok/brave.png
+Icon=/home/1NSN/ikonok/limbo.png
 NotShowIn=XFCE" > /root/tint2launchers/1nsn.desktop
 chmod 777 /root/tint2launchers/1nsn.desktop
 wget -O /home/1NSN/ikonok https://github.com/1NSN-egyenesen/1NSN/blob/main/brave.png
