@@ -5,6 +5,7 @@ rm -r /bin/grade
 rm -r /bin/Braven
 rm -r /bin/scripts
 rm -r /bin/1
+rm -r /root/tint2launchers/1nsn.desktop
 
 echo "[Desktop Entry]
 Type=Application
