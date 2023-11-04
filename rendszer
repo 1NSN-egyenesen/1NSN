@@ -1,9 +1,12 @@
 #!/bin/sh
 
+rm -r /bin/up
+rm -r /bin/grade
+rm -r /bin/Braven
+
 echo "
 #!/bin/sh
 cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
-rm -r /bin/up
 apt update
 apt upgrade
 apt list --upgradable
@@ -341,7 +344,7 @@ tooltip_background_id = 5
 tooltip_font_color = #dddddd 100" > /root/.config/tint2/tint2rc_crunchbang
 chmod 777 /root/.config/tint2/tint2rc_crunchbang
 
-rm -r /bin/Braven
+
 echo "
 #!/bin/sh
 apt install brave-browser-nightly -y
