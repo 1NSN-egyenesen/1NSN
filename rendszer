@@ -5,6 +5,8 @@ rm -r /bin/grade
 rm -r /bin/Braven
 rm -r /bin/scripts
 
+
+
 echo "
 #!/bin/sh
 cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
