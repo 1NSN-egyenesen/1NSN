@@ -69,8 +69,8 @@ chmod 777 /bin/grade
 echo "
 #!/bin/sh
 killall mpv
-mpv https://stream1.virtualisan.net/prx/8080/risefm_deephouse_hq" > /bin/deep
-/home/1NSN/scriptek/deep
+mpv https://stream1.virtualisan.net/prx/8080/risefm_deephouse_hq
+/home/1NSN/scriptek/deep" > /bin/deep
 chmod 777 /bin/deep
 
 
