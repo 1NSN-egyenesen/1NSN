@@ -283,38 +283,7 @@ button_background_id = 0
 button_centered = 0
 button_max_icon_size = 0
 
-#-------------------------------------
-# Button 2
-#button = new
-button_icon = /home/1NSN/ikonok/share.png
-button_text = 
-button_tooltip = Bal:start dlna*Jobb:stop dlna*Görgő:minidlna.conf
-button_lclick_command = minidlnad
-button_rclick_command = /etc/init.d/minidlna stop
-button_mclick_command = geany /etc/minidlna.conf
-button_uwheel_command = 
-button_dwheel_command = xterm -e dlnastatus
-button_font_color = #000000 100
-button_padding = 0 0
-button_background_id = 0
-button_centered = 0
-button_max_icon_size = 0
 
-#-------------------------------------
-# Button 3
-#button = new
-button_icon = /home/1NSN/ikonok/avidemux.png
-button_text = 
-button_lclick_command = filmek
-button_rclick_command = sorozatok1
-button_mclick_command = sorozatok2
-button_uwheel_command = 
-button_dwheel_command = 
-button_font_color = #000000 100
-button_padding = 0 0
-button_background_id = 0
-button_centered = 0
-button_max_icon_size = 0
 
 #-------------------------------------
 # Button 4
@@ -352,7 +321,7 @@ button_max_icon_size = 0
 
 #-------------------------------------
 # Tooltip
-tooltip_show_timeout = 0.5
+tooltip_show_timeout = 0.1
 tooltip_hide_timeout = 0.1
 tooltip_padding = 4 4
 tooltip_background_id = 5
