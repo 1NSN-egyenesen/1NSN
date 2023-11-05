@@ -3,5 +3,5 @@
 yad --form --center --borders=10 --window-icon="/home/1NSN/ikonok/limbo.png" --title=".:1NSN:. BOX" --columns=3 --no-buttons --image-on-top \
 --image=/home/1NSN/ikonok/limbo.png \
 --field="  Brave Nightly!terminal":fbtn "Braven" \
---field="  Autostart!text-editor":fbtn "leafpad $HOME/.config/openbox/autostart" \
---field="  rc.xml!text-editor":fbtn "leafpad $HOME/.config/openbox/rc.xml" \
+--field="  Tint2 config!text-editor":fbtn "geany /root/.config/tint2/tint2rc_crunchbang" \
+
