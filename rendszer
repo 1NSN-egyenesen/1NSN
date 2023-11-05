@@ -71,7 +71,7 @@ echo "
 yad --form --center --borders=10 --window-icon="/home/1NSN/ikonok/limbo.png" --title="RiseFm Deep" --columns=3 --no-buttons --image-on-top \
 --image=/home/1NSN/ikonok/deep.png \
 killall mpv
-mpv https://stream1.virtualisan.net/prx/8080/risefm_deephouse_hq > /bin/deep
+mpv https://stream1.virtualisan.net/prx/8080/risefm_deephouse_hq" > /bin/deep
 chmod 777 /bin/deep
 
 echo "
