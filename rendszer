@@ -285,8 +285,6 @@ button_background_id = 0
 button_centered = 0
 button_max_icon_size = 0
 
-
-
 #-------------------------------------
 # Button 4
 button = new
