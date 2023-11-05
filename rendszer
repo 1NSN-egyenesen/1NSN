@@ -285,7 +285,7 @@ button_max_icon_size = 0
 
 #-------------------------------------
 # Button 2
-button = new
+#button = new
 button_icon = /home/1NSN/ikonok/share.png
 button_text = 
 button_tooltip = Bal:start dlna*Jobb:stop dlna*Görgő:minidlna.conf
@@ -302,7 +302,7 @@ button_max_icon_size = 0
 
 #-------------------------------------
 # Button 3
-button = new
+#button = new
 button_icon = /home/1NSN/ikonok/avidemux.png
 button_text = 
 button_lclick_command = filmek
