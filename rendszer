@@ -312,21 +312,6 @@ button_centered = 0
 button_max_icon_size = 0
 
 #-------------------------------------
-# Button 5
-button = new
-button_icon = /usr/share/pixmaps/gnome-shutdown.png
-button_text = 
-button_tooltip = Bal:kikapcs* Jobb:újraindít*görgő:killall Xorg*Felfele görgő:Sleep
-button_lclick_command = wmpoweroff
-button_rclick_command = wmreboot
-button_mclick_command = killall Xorg
-button_uwheel_command = pm-suspend
-button_dwheel_command = 
-button_font_color = #000000 100
-button_padding = 0 0
-button_background_id = 0
-button_centered = 0
-button_max_icon_size = 0
 
 #-------------------------------------
 # Tooltip
