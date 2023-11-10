@@ -450,8 +450,8 @@ label DebianDog - boot save on Exit (Betoltes mentessel,mentes opcio)
 kernel /live/vmlinuz1
 append initrd=/live/initrd1.xz noauto from=/ changes=EXIT:/mnt/sd/changes.dat
 
-EXIT:" > /live/image/syslinux/extlinux/extlinux.conf
-chmod 777 /live/image/syslinux/extlinux/extlinux.conf
+EXIT:" > /bin/ext
+chmod 777 /bin/ext
 
 
 
