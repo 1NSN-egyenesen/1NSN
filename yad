@@ -5,4 +5,4 @@ yad --form --center --borders=10 --window-icon="/home/1NSN/ikonok/limbo.png" --t
 --field="  Brave Nightly!terminal":fbtn "xterm -e Braven" \
 --field="  Brave Stable!terminal":fbtn "xterm -e Brave" \
 --field="  Tint2 config!text-editor":fbtn "geany /root/.config/tint2/tint2rc_crunchbang" \
-
+--field="  Chat code!terminal":fbtn "cp -r /bin/ext /live/image/syslinux/extlinux/extlinux.conf" \
