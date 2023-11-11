@@ -91,7 +91,7 @@ cp -r /home/1NSN/scriptek/org.qbittorrent.qBittorrent.desktop /root/tint2launche
 
 apt autoremove
 
-mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/95-update_latest.squashfs -comp zstd
+mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/95-update_latest.squashfs -comp gz
 
 reboot" > /bin/grade
 
