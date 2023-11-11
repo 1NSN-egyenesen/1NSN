@@ -79,7 +79,7 @@ rm -r /mnt/live/memory/changes/upperdir/home/puppy/.cache
 rm -r /mnt/live/memory/changes/upperdir/root/.cache
 rm -r /mnt/live/memory/changes/upperdir/tmp
 rm -r /mnt/live/memory/changes/upperdir/var/cache/apt
-rm -r /mnt/live/memory/changes/home/puppy/.config
+rm -r /mnt/live/memory/changes/home/puppy
 
 
 mkdir -p /root/tint2launchers
