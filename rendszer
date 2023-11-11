@@ -68,9 +68,7 @@ killall Xorg
 apt update -y
 apt upgrade -y
 
-apt install lxpanel -y
 apt install pcmanfm -y
-
 apt install kodi -y
 apt install qbittorrent -y 
 apt install yt-dlp -y
@@ -97,14 +95,25 @@ reboot" > /bin/grade
 
 chmod 777 /bin/grade
 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx radio XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 echo "
 
 #!/bin/sh
 killall mpv
-mpv https://stream1.virtualisan.net/prx/8080/risefm_deephouse_hq
-/home/1NSN/scriptek/deep" > /bin/deep
+mpv https://stream1.virtualisan.net/prx/8080/risefm_deephouse_hq" > /bin/deep
 chmod 777 /bin/deep
 
+echo "
+
+killall mpv
+mpv https://stream1.virtualisan.net/prx/8080/risefm_hq" > /bin/hithouse
+chmod 777 /bin/hithouse
+
+echo "
+
+killall mpv 
+mpv https://stream1.virtualisan.net/prx/8080/risefm_classic_hq" > /bin/classic
+chmod 777 /bin/classic
 
 ##################### (tint2) #########################
 echo "
@@ -315,12 +324,12 @@ ac_disconnected_cmd =
 button = new
 button_icon = /home/1NSN/ikonok/radio.png
 button_text = 
-button_tooltip = Bal:DeepHouse"Jobb:HitHouse"Közép:Leállít"Görgő le:ClassicHouse"Görgő föl:darkmonkey
+button_tooltip = Bal:DeepHouse<>Jobb:HitHouse<>Közép:Leállít<>Görgő le:ClassicHouse<>Görgő föl:darkmonkey
 button_lclick_command = deep
-button_rclick_command = mpv https://stream1.virtualisan.net/prx/8080/risefm_hq
+button_rclick_command = hithouse
 button_mclick_command = killall mpv
 button_uwheel_command = mpv https://www.youtube.com/watch?v=u_rtFDI5Cq8
-button_dwheel_command = mpv https://stream1.virtualisan.net/prx/8080/risefm_classic_hq
+button_dwheel_command = classic
 button_font_color = #000000 100
 button_padding = 0 0
 button_background_id = 0
