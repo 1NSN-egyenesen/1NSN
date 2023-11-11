@@ -315,11 +315,11 @@ ac_disconnected_cmd =
 button = new
 button_icon = /home/1NSN/ikonok/radio.png
 button_text = 
-button_tooltip = Bal:DeepHouse*Jobb:HitHouse*Közép:Leállít*Görgő le:ClassicHouseGörgő föl:darkmonkey
+button_tooltip = Bal:DeepHouse"Jobb:HitHouse"Közép:Leállít"Görgő le:ClassicHouse"Görgő föl:darkmonkey
 button_lclick_command = deep
 button_rclick_command = mpv https://stream1.virtualisan.net/prx/8080/risefm_hq
 button_mclick_command = killall mpv
-button_uwheel_command = darkmonkey
+button_uwheel_command = mpv https://www.youtube.com/watch?v=u_rtFDI5Cq8
 button_dwheel_command = mpv https://stream1.virtualisan.net/prx/8080/risefm_classic_hq
 button_font_color = #000000 100
 button_padding = 0 0
