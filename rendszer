@@ -481,7 +481,7 @@ chmod 777 /bin/ext
 ##########################################################################################################
 echo "
 #!/bin/sh
-deep" > /root/Startup/classic
+classic" > /root/Startup/classic
 
 chmod 777 /root/Startup/classic
 
