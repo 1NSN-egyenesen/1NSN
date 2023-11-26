@@ -1,101 +1,6 @@
 #!/bin/sh
 
-rm -r /bin/up
-rm -r /bin/grade
-rm -r /bin/Braven
-rm -r /bin/scripts
-rm -r /bin/1
-rm -r /root/tint2launchers/1nsn.desktop
-rm -r /root/.config/tint2/tint2rc_crunchbang
-rm -r /bin/deep
 
-echo "[Desktop Entry]
-
-Type=Application
-Terminal=false
-Name=.:1NSN:. BOX
-Exec=ya
-Icon=/home/1NSN/ikonok/limbo.png
-NotShowIn=XFCE" > /root/tint2launchers/1nsn.desktop
-chmod 777 /root/tint2launchers/1nsn.desktop
-wget /home/1NSN/ikonok https://github.com/1NSN-egyenesen/1NSN/blob/main/brave.png
-####################################################################
-##################### (install brave-browser) ######################
-####################################################################
-echo "
-
-#!/bin/sh
-cp -r /home/1NSN/scriptek/sources.list /etc/apt/sources.list
-apt update
-apt upgrade
-apt list --upgradable
-apt policy brave-browser-nightly
-apt policy qbittorrent
-apt upgrade" > /bin/up
-chmod 777 /bin/up
-
-echo "
-
-apt install brave-browser -y
-
-mkdir -p /tmp/xxx/bin
-mkdir -p /tmp/xxx/opt
-mkdir -p /tmp/xxx/usr/bin
-mkdir -p /tmp/xxx/usr/lib
-mkdir -p /tmp/xxx/usr/share/applications
-mkdir -p /tmp/xxx/usr/share/icons
-mkdir -p /tmp/xxx/root/tint2launchers
-
-cp -r /home/1NSN/scriptek/brave-browser.desktop /tmp/xxx/root/tint2launchers
-cp -r /mnt/live/memory/changes/upperdir/opt /tmp/xxx/
-cp -r /mnt/live/memory/changes/upperdir/usr/bin /tmp/xxx/usr/
-cp -r /mnt/live/memory/changes/upperdir/usr/lib/ /tmp/xxx/usr/
-cp -r /mnt/live/memory/changes/upperdir/usr/share/applications /tmp/xxx/usr/share/
-cp -r /mnt/live/memory/changes/upperdir/usr/share/icons /tmp/xxx/usr/share/
-
-rm -r /live/image/live/07-brave-nightly_latest.squashfs
-rm -r /live/image/live/03-brave_stabil_latest.squashfs
-
-mksquashfs /tmp/xxx /live/image/live/03-brave_stabil_latest.squashfs
-
-reboot" > /bin/Brave
-chmod 777 /bin/Brave
-##############################################################################
-#################################(upgrade) ###################################
-##############################################################################
-echo "
-
-#!/bin/sh
-killall Xorg
-apt update -y
-apt upgrade -y
-
-apt install pcmanfm -y
-apt install kodi -y
-apt install qbittorrent -y 
-apt install yt-dlp -y
-
-rm -r /live/image/live/95-update_latest.squashfs
-rm -r /mnt/live/memory/changes/upperdir/mnt
-rm -r /mnt/live/memory/changes/upperdir/home/puppy/.cache
-rm -r /mnt/live/memory/changes/upperdir/root/.cache
-rm -r /mnt/live/memory/changes/upperdir/tmp
-rm -r /mnt/live/memory/changes/upperdir/var/cache/apt
-rm -r /mnt/live/memory/changes/upperdir/home
-
-
-mkdir -p /root/tint2launchers
-
-cp -r /home/1NSN/scriptek/kodi.desktop /root/tint2launchers
-cp -r /home/1NSN/scriptek/org.qbittorrent.qBittorrent.desktop /root/tint2launchers
-
-apt autoremove
-
-mksquashfs /mnt/live/memory/changes/upperdir /live/image/live/95-update_latest.squashfs -comp gzip
-
-reboot" > /bin/grade
-
-chmod 777 /bin/grade
 
 #########################################################################################
 ##################################### radio #############################################
@@ -124,6 +29,8 @@ echo "
 killall mpv 
 mpv https://www.youtube.com/watch?v=u_rtFDI5Cq8" > /bin/darkmonkey
 chmod 777 /bin/darkmonkey
+
+
 ##########################################################################
 ######################################## (tint2) #########################
 ##########################################################################
@@ -392,107 +299,7 @@ tooltip_background_id = 5
 tooltip_font_color = #dddddd 100" > /root/.config/tint2/tint2rc_crunchbang
 chmod 777 /root/.config/tint2/tint2rc_crunchbang
 
-######################################################################
-################### (install brave-browser-nightly) ##################
-######################################################################
-echo "
 
-#!/bin/sh
-apt install brave-browser-nightly -y
-
-mkdir -p /tmp/xxx/bin
-mkdir -p /tmp/xxx/opt
-mkdir -p /tmp/xxx/usr/bin
-mkdir -p /tmp/xxx/usr/lib
-mkdir -p /tmp/xxx/usr/share/applications
-mkdir -p /tmp/xxx/usr/share/icons
-mkdir -p /tmp/xxx/root/tint2launchers
-
-cp -r /home/1NSN/scriptek/brave-browser-nightly.desktop /tmp/xxx/root/tint2launchers
-cp -r /mnt/live/memory/changes/upperdir/opt /tmp/xxx/
-cp -r /mnt/live/memory/changes/upperdir/usr/bin /tmp/xxx/usr/
-cp -r /mnt/live/memory/changes/upperdir/usr/lib/ /tmp/xxx/usr/
-cp -r /mnt/live/memory/changes/upperdir/usr/share/applications /tmp/xxx/usr/share/
-cp -r /mnt/live/memory/changes/upperdir/usr/share/icons /tmp/xxx/usr/share/
-
-rm -r /live/image/live/07-brave-nightly_latest.squashfs
-rm -r /live/image/live/03-brave_stabil_latest.squashfs
-
-rm -r /bin/br
-wget -O /tmp/xxx/bin/br https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/br
-chmod 777 /tmp/xxx/bin/br
-
-mksquashfs /tmp/xxx /live/image/live/07-brave-nightly_latest.squashfs -comp gzip
-
-reboot" > /bin/Braven
-
-chmod 777 /bin/Braven
-###############################################
-################ (scripts) ####################
-###############################################
-echo "
-
-#!/bin/sh
-mkdir -p /tmp/xxx/bin
-mkdir -p /tmp/xxx/root/.config/tint2
-
-cp -r /mnt/live/memory/changes/upperdir/bin /tmp/xxx/
-cp -r /mnt/live/memory/changes/upperdir/root/.config/tint2/tint2rc_crunchbang /tmp/xxx/root/.config/tint2
-
-rm -r /live/image/live/30-scripts_latest.squashfs
-mksquashfs /tmp/xxx /live/image/live/30-scripts_latest.squashfs -comp gzip
-reboot" > /bin/scripts
-
-chmod 777 /bin/scripts
-
-tint2restart
-############################################################
-######################## (extlinux.conf) ###################
-############################################################
-echo "
-
-UI vesamenu.c32
- PROMPT 0
- MENU TITLE 1NSN DebianDog
- MENU BACKGROUND /syslinux/splash.png
- TIMEOUT 70
- 
- MENU WIDTH 78
- MENU MARGIN 4
- MENU ROWS 14
- MENU VSHIFT 4
- MENU TIMEOUTROW 19
- MENU TABMSGROW 21
- MENU CMDLINEROW 21
- # MENU HELPMSGROW 16
- # MENU HELPMSGENDROW 29
- 
- # Refer to http://www.syslinux.org/wiki/index.php/Comboot/menu.c32
- 
- MENU COLOR border       30;44   #40ffffff #a0000000 std
- MENU COLOR title        1;36;44 #9033ccff #a0000000 std
- MENU COLOR sel          7;37;40 #e0ffffff #20ffffff all
- MENU COLOR unsel        37;44   #50ffffff #a0000000 std
- MENU COLOR help         37;40   #c0ffffff #a0000000 std
- MENU COLOR timeout_msg  37;40   #80ffffff #00000000 std
- MENU COLOR timeout      1;37;40 #c0ffffff #00000000 std
- MENU COLOR msg07        37;40   #90ffffff #a0000000 std
- MENU COLOR tabmsg       31;40   #30ffffff #00000000 std
- 
-label DebianDog - boot Always Fresh (Betoltes mentes nelkul)
-kernel /live/vmlinuz1
-append initrd=/live/initrd1.xz from=/ copy2ram
- 
-label DebianDog - boot autosave on Exit (Betoltes mentessel.automentes)
-kernel /live/vmlinuz1
-append initrd=/live/initrd1.xz noauto from=/ changes=/mnt/sd/changes.dat
-
-label DebianDog - boot save on Exit (Betoltes mentessel,mentes opcio)
-kernel /live/vmlinuz1
-append initrd=/live/initrd1.xz noauto from=/ changes=EXIT:/mnt/sd/changes.dat
-
-EXIT:" > /bin/ext
-chmod 777 /bin/ext
 ###########################################################################################################
 ############################################## (Startup) ##################################################
 ##########################################################################################################
