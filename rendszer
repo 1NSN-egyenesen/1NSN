@@ -348,6 +348,23 @@ button_centered = 0
 button_max_icon_size = 0
 
 #-------------------------------------
+# Button 2
+button = new
+button_icon = /home/1NSN/ikonok/radio.png
+button_text = 
+button_tooltip = Bal:DeepHouse<Jobb:HitHouse<Közép:Leállít<Görgő le:ClassicHouse<Görgő föl:darkmonkey
+button_lclick_command = deep
+button_rclick_command = hithouse
+button_mclick_command = killall mpv
+button_uwheel_command = darkmonkey
+button_dwheel_command = classic
+button_font_color = #000000 100
+button_padding = 0 0
+button_background_id = 0
+button_centered = 0
+button_max_icon_size = 0
+
+#-------------------------------------
 # Button 4
 button = new
 button_icon = /home/1NSN/ikonok/sound.png
