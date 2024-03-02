@@ -2,6 +2,7 @@
 
 rm -r /tmp/book
 wget -O /tmp/book --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/book
+rm -r /tmp/book
 chmod 777 /tmp/book
 
 
