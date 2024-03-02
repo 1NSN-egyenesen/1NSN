@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -r /tmp/book
-wget -O /bin/1 --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/book
+wget -O /tmp/book --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/book
 chmod 777 /tmp/book
 
 
