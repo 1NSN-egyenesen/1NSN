@@ -1,12 +1,10 @@
 #!/bin/bash
 
-rm -r /bin/1
+rm -r /tmp/book
 wget -O /bin/1 --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/rendszer
-chmod 777 /bin/1
+chmod 777 /tmp/book
 
-rm -r /bin/yad
-wget -O /bin/ya https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/yad
-chmod 777 /bin/ya
+
 
 
 echo ""
