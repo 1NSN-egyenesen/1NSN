@@ -55,7 +55,7 @@ DESK_APPS_INSTALL="icewm lxrandr lxinput libfm-modules lxappearance run-as-user 
 
 FIRMWARE="firmware-linux-free"   # see below for choices
 
-EXTRA_DOG_APPS_INSTALL=""
+EXTRA_DOG_APPS_INSTALL="low-memory-monitor scrotdlg zathura upgrade-kernel debdoginstallscripts debdogmountscripts"
 
 # Remove automatically installed packages: during installing, some are installed that you might not need, e.g.
 # cpp, REM_AUTO_INST=TRUE will uninstall it.
