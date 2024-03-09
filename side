@@ -25,7 +25,7 @@
 #####################################################################################
 
 # SET STIMESTAMP of snaphot.debian, format yyyymmdd e.g. 20230926 = 26 sep 2023
-export STIMESTAMP=20240306
+#export STIMESTAMP=20240309
 
 # set to yes if you want to keep the locale files in /usr/share/locale
 #export KEEP_LOCALES="no" ### 2021-02-10 is checkbox or variable in config now
