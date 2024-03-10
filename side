@@ -1252,22 +1252,22 @@ apt-get install -y porteusbootscripts
 fi
 
 ### install the kernel
-echo -e "\e[0;36mInstall the kernel, download and extract\033[0m"
-mkdir -p /tmp/tmpapt
-[ "$ARCH" = "i386" ] && apt-get -o dir::cache::archives="/tmp/tmpapt" install -d linux-image-686-pae -y
-[ "$ARCH" = "amd64" ] && apt-get -o dir::cache::archives="/tmp/tmpapt" install -d linux-image-amd64 -y
+#echo -e "\e[0;36mInstall the kernel, download and extract\033[0m"
+#mkdir -p /tmp/tmpapt
+#[ "$ARCH" = "i386" ] && apt-get -o dir::cache::archives="/tmp/tmpapt" install -d linux-image-686-pae -y
+#[ "$ARCH" = "amd64" ] && apt-get -o dir::cache::archives="/tmp/tmpapt" install -d linux-image-amd64 -y
 
-L_IMG=$(ls -S /tmp/tmpapt | head -1)
-dpkg-deb -x /tmp/tmpapt/$L_IMG /tmp/tmpapt
-kernel=$(ls /tmp/tmpapt/lib/modules/ 2> /dev/null)  # try lib/modules first
-if [ -n "$kernel" ]; then
-cp -a /tmp/tmpapt/lib/modules /lib/
-else
-kernel=$(ls /tmp/tmpapt/usr/lib/modules/)  # kernel in usr/lib/modules
-cp -a /tmp/tmpapt/usr/lib/modules /lib/
-fi
-cp -a /tmp/tmpapt/boot/config-* /boot/
-depmod $kernel
+#L_IMG=$(ls -S /tmp/tmpapt | head -1)
+#dpkg-deb -x /tmp/tmpapt/$L_IMG /tmp/tmpapt
+#kernel=$(ls /tmp/tmpapt/lib/modules/ 2> /dev/null)  # try lib/modules first
+#if [ -n "$kernel" ]; then
+#cp -a /tmp/tmpapt/lib/modules /lib/
+#else
+#kernel=$(ls /tmp/tmpapt/usr/lib/modules/)  # kernel in usr/lib/modules
+#cp -a /tmp/tmpapt/usr/lib/modules /lib/
+#fi
+#cp -a /tmp/tmpapt/boot/config-* /boot/
+#depmod $kernel
 
 ############ End of installing packages ############
 
