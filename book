@@ -1289,8 +1289,8 @@ fi
 ### install the kernel
 echo -e "\e[0;36mInstall the kernel, download and extract\033[0m"
 mkdir -p /tmp/tmpapt
-[ "$ARCH" = "i386" ] && apt-get -o dir::cache::archives="/tmp/tmpapt" install -d linux-image-686-pae -y
-[ "$ARCH" = "amd64" ] && apt-get -o dir::cache::archives="/tmp/tmpapt" install -d linux-image-amd64 -y
+[ "$ARCH" = "i386" ] && apt-get -o dir::cache::archives="/tmp/tmpapt" install -d linux-image-rt-686-pae -y
+[ "$ARCH" = "amd64" ] && apt-get -o dir::cache::archives="/tmp/tmpapt" install -d linux-image-rt-amd64 -y
 
 L_IMG=$(ls -S /tmp/tmpapt | head -1)
 dpkg-deb -x /tmp/tmpapt/$L_IMG /tmp/tmpapt
