@@ -42,7 +42,7 @@ BASE_INSTALL="acl acpi acpi-support-base acpid aespipe anacron apt-rdepends apt-
 BASE_DOG_APPS_INSTALL="yad gtkdialog obshutdown pup-volume-monitor peasywifi chpupsocket edit-sfs-pcmanfm filemnt-pcmanfm remaster-scripts quick-remaster apt2sfs sfsload fixdepinstall greybird-theme-dd-stretch makedebpackage peasyclock"
 
 # Applications
-BASE_APPS_INSTALL="kodi qbittorrent qt5ct gpicview mc gmtp conky gdmap gparted geany roxterm-gtk2 pack-it uextract alsa-utils"
+BASE_APPS_INSTALL="mkvtoolnix-gui kodi qbittorrent qt5ct gpicview mc gmtp conky gdmap gparted geany roxterm-gtk2 pack-it uextract alsa-utils"
 
 # Desktop environment related
 DESK_APPS_INSTALL="icewm lxrandr lxinput libfm-modules lxappearance run-as-user nitrogen mate-themes"  
@@ -1490,11 +1490,11 @@ fi
 #tar -zxf kernel-sid-amd64.tar.gz -C isodata/live
 #fi
 
-  if [ "$NMU" = "TRUE" ]; then    # NO merged-usr
-export nmu="-nmu"
-  else
-export nmu=""
-  fi
+#  if [ "$NMU" = "TRUE" ]; then    # NO merged-usr
+#export nmu="-nmu"
+#  else
+#export nmu=""
+#  fi
 
 # Allow the user to makes changes in chroot just before creating filesystem.squashfs 
 echo "At this point you may want to add/edit files in chroot folder"
