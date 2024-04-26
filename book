@@ -45,7 +45,7 @@ BASE_DOG_APPS_INSTALL="yad gtkdialog obshutdown pup-volume-monitor peasywifi chp
 BASE_APPS_INSTALL="minidlna mpg123 gpicview mc gmtp conky gdmap gparted geany roxterm-gtk2 pack-it uextract alsa-utils"
 
 # Desktop environment related
-DESK_APPS_INSTALL="icewm lxrandr lxinput libfm-modules lxappearance run-as-user nitrogen mate-themes"  
+DESK_APPS_INSTALL="icewm lxrandr lxinput libfm-modules lxappearance run-as-user nitrogen"  
 
 FIRMWARE="firmware-linux-free"   # see below for choices
 
