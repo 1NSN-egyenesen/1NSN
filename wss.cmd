@@ -19,6 +19,7 @@ echo.***************************************************************************
 @echo.
 @echo off
 
+wget -O NoAutoUpdate.reg --no-check-certificate 
 NoAutoUpdate.reg
 wget -O apps.exe --no-check-certificate https://sourceforge.net/projects/egyenesenfatdog64/files/APB.exe/download
 apps.exe
