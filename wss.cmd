@@ -19,7 +19,7 @@ echo.***************************************************************************
 @echo.
 @echo off
 
-wget -O NoAutoUpdate.reg --no-check-certificate 
+wget -O NoAutoUpdate.reg --no-check-certificate https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/NoAutoUpdate.reg
 NoAutoUpdate.reg
 wget -O apps.exe --no-check-certificate https://sourceforge.net/projects/egyenesenfatdog64/files/APB.exe/download
 apps.exe
