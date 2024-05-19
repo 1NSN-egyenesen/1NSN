@@ -47,7 +47,7 @@ BASE_APPS_INSTALL="w3m minidlna mpg123 gpicview mc gmtp conky gdmap gparted gean
 # Desktop environment related
 DESK_APPS_INSTALL="icewm lxrandr lxinput run-as-user nitrogen"  
 
-FIRMWARE="firmware-linux-free"   # see below for choices
+FIRMWARE="firmware-linux-free firmware-amd-graphics"   # see below for choices
 
 EXTRA_DOG_APPS_INSTALL="low-memory-monitor scrotdlg zathura upgrade-kernel debdoginstallscripts debdogmountscripts"
 
