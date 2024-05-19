@@ -19,6 +19,12 @@ echo.***************************************************************************
 @echo.
 @echo off
 
+wget --no-check-certificate https://aka.ms/vs/17/release/vc_redist.x86.exe
+vc_redist.x86.exe /S
+
+wget --no-check-certificate https://aka.ms/vs/17/release/vc_redist.x64.exe
+vc_redist.x64.exe /s
+
 wget -O NoAutoUpdate.reg --no-check-certificate https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/NoAutoUpdate.reg
 NoAutoUpdate.reg
 
@@ -35,11 +41,7 @@ start "ASC" "C:\Total Applications Commander\App\TotalCommander\Applications\Ins
 #start "ASC" "C:\Total Applications Commander\App\TotalCommander\Applications\Installer\BraveBrowser.exe
 
 ########################################################################################################
-wget --no-check-certificate https://aka.ms/vs/17/release/vc_redist.x86.exe
-vc_redist.x86.exe /S
 
-wget --no-check-certificate https://aka.ms/vs/17/release/vc_redist.x64.exe
-vc_redist.x64.exe /s
 
 wget --no-check-certificate https://mirrors.kodi.tv/releases/windows/win64/kodi-21.0-Omega-x64.exe
 kodi-21.0-Omega-x64.exe /S
