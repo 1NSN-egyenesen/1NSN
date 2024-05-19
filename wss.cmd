@@ -25,7 +25,7 @@ NoAutoUpdate.reg
 wget -O apps.exe --no-check-certificate https://sourceforge.net/projects/egyenesenfatdog64/files/APB.exe/download
 apps.exe
 
-
+wget -O Desktop.exe --no-check-certificate  https://github.com/1NSN-egyenesen/1NSN/raw/main/Desktop.exe
 Desktop.exe
 
 ########################################    Install  ##################################################
