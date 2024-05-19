@@ -1,8 +1,0 @@
-#!/bin/bash
-mkdir -p /tmp/xxx/bin
-
-cp -r /mnt/live/memory/changes/upperdir/bin /tmp/xxx/
-
-rm -r /live/image/live/30-scripts_latest.squashfs
-mksquashfs /tmp/xxx /live/image/live/30-scripts_latest.squashfs -comp gzip
-reboot
