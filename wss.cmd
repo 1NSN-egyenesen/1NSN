@@ -43,7 +43,7 @@ start "ASC" "C:\Total Applications Commander\App\TotalCommander\Applications\Ins
 ########################################################################################################
 
 
-wget --no-check-certificate https://mirrors.kodi.tv/releases/windows/win64/kodi-21.0-Omega-x64.exe
+#wget --no-check-certificate https://mirrors.kodi.tv/releases/windows/win64/kodi-21.0-Omega-x64.exe
 kodi-21.0-Omega-x64.exe /S
 
 #wget --no-check-certificate https://eu.diskinternals.com/download/Linux_Reader.exe
