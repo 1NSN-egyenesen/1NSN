@@ -1400,7 +1400,7 @@ echo
 # mksquashfs /tmp/trixie/chroot/ /live/image/live/01-trixie-filesystem.squashfs -comp gzip -b 512k -Xbcj x86
 mksquashfs /tmp/trixie/chroot/ /live/image/live/01-trixie-filesystem.squashfs -comp zstd
 
-# read -s -n 1 -p "Press any key to close . . ."
+read -s -n 1 -p "Press any key to close . . ."
 
 exit 0
 
