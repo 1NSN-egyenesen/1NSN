@@ -42,7 +42,7 @@ BASE_INSTALL="acl acpi acpi-support-base acpid aespipe anacron apt-rdepends apt-
 BASE_DOG_APPS_INSTALL="yad gtkdialog obshutdown pup-volume-monitor peasywifi chpupsocket edit-sfs-pcmanfm filemnt-pcmanfm remaster-scripts quick-remaster apt2sfs sfsload fixdepinstall greybird-theme-dd-stretch makedebpackage peasyclock"
 
 # Applications
-BASE_APPS_INSTALL="w3m mpg123 gpicview mc gmtp conky gdmap gparted geany roxterm-gtk2 pack-it uextract alsa-utils"
+BASE_APPS_INSTALL="adb fastboot w3m mpg123 gpicview mc gmtp conky gdmap gparted geany roxterm-gtk2 pack-it uextract alsa-utils"
 
 # Desktop environment related
 DESK_APPS_INSTALL="icewm lxrandr lxinput run-as-user nitrogen"  
