@@ -1,5 +1,5 @@
 #!/bin/sh
 
-wget -O /tmp/linux-firmware-20240709.tar.gz --no-check-certificate --content-disposition https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snapshot/linux-firmware-20240709.tar.gz
+wget -O /tmp/linux-firmware-20240709.tgz --no-check-certificate --content-disposition https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snapshot/linux-firmware-20240709.tar.gz
 
 tar zxvf linux-firmware-20240709.tgz -C /root/
