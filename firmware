@@ -3,5 +3,5 @@
 wget -O /tmp/linux-firmware-20240709.tgz --no-check-certificate --content-disposition https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snapshot/linux-firmware-20240709.tar.gz
 
 chmod 777 /tmp/linux-firmware-20240709.tgz
-tar zxvf /tmp/linux-firmware-20240709.tgz -C /usr/lib
+tar zxvf /tmp/linux-firmware-20240709.tgz -C /usr/lib/firmware
 
