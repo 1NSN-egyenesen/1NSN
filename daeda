@@ -23,15 +23,21 @@ standard () {
 # Set the standard, (modify as desired, or run with a custom config file)
 
 # Be careful with removing from this section (mostly essential)
-BASE_INSTALL="wget net-tools ifupdown wireless-tools sysvinit-core xserver-xorg-core xserver-xorg psmisc fuse x11-utils x11-xserver-utils dbus-x11 busybox sudo mawk xinit xterm pciutils usbutils file rsync dosfstools alsa-utils pm-utils xdotool wmctrl desktop-file-utils mime-support cryptsetup-bin squashfs-tools fakeroot xserver-xorg-input-evdev pv xserver-xorg-input-synaptics ntfs-3g nano xserver-xorg-video-intel curl gettext-base fdisk mtools"
+BASE_INSTALL="acl acpi acpi-support-base acpid aespipe anacron apt-rdepends apt-utils bc bsdmainutils busybox bzip2 console-setup console-setup-linux cpio cpufrequtils cryptsetup-bin curlftpfs dash dbus-x11 desktop-file-utils dhex dosfstools e2fsck-static eject fakeroot file flac gettext-base gnupg gnupg-agent gpart gtk-update-icon-cache gtk2-engines-pixbuf gtklp gzip hsetroot ifupdown init initramfs-tools initramfs-tools-core initscripts insserv iproute2 iptables iputils-ping isolinux kbd keyboard-configuration keyboards-rg klibc-utils kmod lame less linux-base linux-user-chroot live-boot live-boot-initramfs-tools live-tools lm-sensors logrotate lsof makedev mime-support nano ncurses-term net-tools netbase ntfs-3g openssl parted patch pciutils pcmciautils perl perl-openssl-defaults pinentry-curses pm-utils policykit-1 powermgmt-base ppp pppoe pppoeconf procps psmisc pv rcconf readline-common rfkill rsync rsyslog scrot sgml-base startpar sudo sysv-rc sysvinit-core time traceroute ucf unzip usbutils util-linux-locales vim-common vim-tiny whiptail wireless-tools wmctrl wvdial x11-xserver-utils xauth xbacklight xdg-utils xdg-user-dirs xdotool xinit xinput xkb-data xml-core xorriso xserver-xorg xserver-xorg-core xserver-xorg-input-evdev xserver-xorg-input-mouse xserver-xorg-input-synaptics xserver-xorg-video-ati xserver-xorg-video-cirrus xserver-xorg-video-fbdev xserver-xorg-video-intel xserver-xorg-video-mga xserver-xorg-video-nouveau xserver-xorg-video-openchrome xserver-xorg-video-radeon xserver-xorg-video-vesa xterm xxd xz-utils zip curl fdisk mtools"
+
 # Base Dog Packages, recommended to keep: yad gtkdialog obshutdown pup-volume-monitor peasywifi
-BASE_DOG_APPS_INSTALL="yad gtkdialog obshutdown pup-volume-monitor peasywifi chpupsocket edit-sfs-pcmanfm filemnt-pcmanfm remaster-scripts quick-remaster apt2sfs sfsload fixdepinstall greybird-theme-dd-stretch makedebpackage peasyclock alsamixer-tray"
+BASE_DOG_APPS_INSTALL="yad gtkdialog obshutdown pup-volume-monitor peasywifi chpupsocket edit-sfs-pcmanfm filemnt-pcmanfm remaster-scripts quick-remaster apt2sfs sfsload fixdepinstall greybird-theme-dd-stretch makedebpackage peasyclock"
+
 # Applications
-BASE_APPS_INSTALL="leafpad gparted parted synaptic viewnior firefox-esr pfind conky"
+BASE_APPS_INSTALL="adb fastboot w3m mpg123 gpicview mc gmtp conky gdmap gparted geany roxterm-gtk2 pack-it uextract alsa-utils"
+
 # Desktop environment related
-DESK_APPS_INSTALL="openbox=3.6.1-4.3 obconf pcmanfm lxpanel lxrandr lxinput lxappearance"  
-FIRMWARE="firmware-linux-free"   # see below for choices
-EXTRA_DOG_APPS_INSTALL=""
+DESK_APPS_INSTALL="icewm lxrandr lxinput run-as-user nitrogen"  
+
+FIRMWARE="firmware-linux-free firmware-amd-graphics"   # see below for choices
+
+EXTRA_DOG_APPS_INSTALL="low-memory-monitor scrotdlg zathura upgrade-kernel debdoginstallscripts debdogmountscripts"
+
 # Remove automatically installed packages: during installing, some are installed that you might not need, e.g.
 # cpp, REM_AUTO_INST=TRUE will uninstall it.
 REM_AUTO_INST="TRUE"
