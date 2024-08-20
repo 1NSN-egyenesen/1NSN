@@ -12,8 +12,6 @@ chmod 777 /tmp/side
 chmod 777 /tmp/trixi
 chmod 777 /tmp/daeda
 
-
-
 echo ""
 echo "****Script by .:1NSN:.******"
 echo "*Scriptek letoltese kesz...*"
