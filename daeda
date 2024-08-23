@@ -1080,7 +1080,7 @@ rm -fr chroot/tmp/*
 echo
 
 wget -o /tmp/02-1nsn-conf.squashfs https://github.com/1NSN-egyenesen/1NSN/blob/main/02-1nsn-conf.squashfs
-unsquashfs /mnt/live/mnt/sda3/Alkalmazások/DebianDog64/daedalus/isodata/live/02-1nsn-conf.squashfs /root
+unsquashfs /mnt/live/mnt/sda3/Alkalmazások/DebianDog64/daedalus/isodata/live/02-1nsn-conf.squashfs /mnt/saved/upperdir
 
 
 read -s -n 1 -p "Press any key to close . . ."
