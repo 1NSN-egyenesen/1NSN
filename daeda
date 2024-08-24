@@ -11,6 +11,8 @@
 # set to yes if you want to keep the locale files in /usr/share/locale
 #export KEEP_LOCALES="no" ### 2021-02-10 is checkbox or variable in config now
 
+clearRAM
+
 export LD_LIBRARY_PATH=
 
 if [ -z $(which gxmessage) ]; then
@@ -43,7 +45,7 @@ EXTRA_DOG_APPS_INSTALL="low-memory-monitor scrotdlg zathura upgrade-kernel debdo
 REM_AUTO_INST="TRUE"
 # To force 32 bit build on a 64 bit OS, set to TRUE
 FORCE32="FALSE"
-KEEPLOCALES="FALSE"
+KEEPLOCALES="TRUE"
 KEEPMANDOC="FALSE"
 }
 
