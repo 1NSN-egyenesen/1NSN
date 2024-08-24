@@ -1452,7 +1452,7 @@ echo
   fi
 
 # mksquashfs /tmp/trixie/chroot/ /live/image/live/01-trixie-filesystem.squashfs -comp gzip -b 512k -Xbcj x86
-mksquashfs /tmp/trixie/chroot/ /tmp/01-trixie-filesystem.squashfs -comp zstd -Xcompression-level 12
+mksquashfs /tmp/bookworm/chroot/ /tmp/01-bookworm-filesystem.squashfs -comp zstd -Xcompression-level 12
 
 read -s -n 1 -p "Press any key to close . . ."
 
