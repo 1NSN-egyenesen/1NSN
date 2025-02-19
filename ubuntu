@@ -1,0 +1,10 @@
+#!/bin/bash
+gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 871920D1991BC93C
+gpg --export 871920D1991BC93C | sudo tee /etc/apt/trusted.gpg.d/ubuntu.lafibre.info.gpg
+
+echo "deb http://archive.ubuntu.com/ubuntu/ plucky main restricted universe multiverse" > /etc/apt/sources.list
+
+apt update
+echo ""
+echo "Plucky Puffin repóra frissítve!"
+echo ""
