@@ -1045,7 +1045,7 @@ fi
 echo -e "\e[0;36mSetting up debootstrap in bookworm/chroot\033[0m"
 echo -e "\e[0;36mThis may take a while...\033[0m"
 mkdir -p bookworm/chroot && cd bookworm &&
-debootstrap --arch=$ARCH --variant=minbase --include=apt-transport-https,ca-certificates,initscripts,adduser,libgtk3-nocsd0 bookworm chroot http://deb.debian.org/debian/
+debootstrap --arch=$ARCH --variant=minbase --include=apt-transport-https,ca-certificates,initscripts,distro-info,adduser,libgtk3-nocsd0 bookworm chroot http://deb.debian.org/debian/
 ret=$?
 echo $ret
 if [ $ret -ne 0 ]; then
