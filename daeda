@@ -713,7 +713,7 @@ fi
 echo -e "\e[0;36mSetting up debootstrap in daedalus/chroot\033[0m"
 echo -e "\e[0;36mThis may take a while...\033[0m"
 mkdir -p daedalus/chroot && cd daedalus &&
-debootstrap --no-merged-usr --arch=$ARCH --variant=minbase --include=apt-transport-https,ca-certificates,adduser,libgtk3-nocsd0 daedalus chroot http://pkgmaster.devuan.org/merged
+debootstrap --arch=$ARCH --variant=minbase --include=apt-transport-https,ca-certificates,adduser,libgtk3-nocsd0 daedalus chroot http://pkgmaster.devuan.org/merged
 #http://deb.devuan.org/merged
 #http://pkgmaster.devuan.org/devuan/
 ret=$?
