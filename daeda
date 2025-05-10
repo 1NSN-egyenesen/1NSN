@@ -1,4 +1,4 @@
-#!/bin/bash
+-#!/bin/bash
 
 #####################################################################################
 # mklive-daedalus 'MakeLive' for Devuan daedalus
@@ -967,7 +967,7 @@ cd /
 
 if [ "$RUNXTERM" = "yes" ]; then
 echo -e "\e[0;36mAs requested, running Xterm now\nDo not forget to close Xterm and all other windows, when done\033[0m"
-xterm
+xfce4-terminal
 fi
 
 if [ "$KEEPLOCALES" = "FALSE" ]; then
