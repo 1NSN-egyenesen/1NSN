@@ -57,10 +57,10 @@ KEEPMANDOC="FALSE"
 # repos for 64-bit
 export REPOS64='deb https://github.com/doglinux/bookworm/raw/master/amd64/ ./
 ## package repositories
-deb http://pkgmaster.devuan.org/merged testing main contrib non-free non-free-firmware  
-#deb http://pkgmaster.devuan.org/merged daedalus-updates main contrib non-free  
-#deb http://pkgmaster.devuan.org/merged daedalus-backports main  
-#deb http://www.deb-multimedia.org buster main non-free
+deb http://pkgmaster.devuan.org/merged daedalus main contrib non-free non-free-firmware  
+deb http://pkgmaster.devuan.org/merged daedalus-updates main contrib non-free  
+deb http://pkgmaster.devuan.org/merged daedalus-backports main  
+deb http://www.deb-multimedia.org buster main non-free
 
 ## source repositories
 #deb-src http://deb.devuan.org/merged daedalus main  
@@ -72,9 +72,9 @@ deb http://pkgmaster.devuan.org/merged testing main contrib non-free non-free-fi
 # repos for 32-bit
 export REPOS32='deb https://github.com/doglinux/bookworm/raw/master/i386/ ./
 ## package repositories
-deb http://pkgmaster.devuan.org/merged testing main contrib non-free non-free-firmware  
-#deb http://pkgmaster.devuan.org/merged daedalus-updates main contrib non-free    
-#deb http://pkgmaster.devuan.org/merged daedalus-backports main  
+deb http://pkgmaster.devuan.org/merged daedalus main contrib non-free non-free-firmware  
+deb http://pkgmaster.devuan.org/merged daedalus-updates main contrib non-free    
+deb http://pkgmaster.devuan.org/merged daedalus-backports main  
 
 ## source repositories
 #deb-src http://deb.devuan.org/merged daedalus main  
