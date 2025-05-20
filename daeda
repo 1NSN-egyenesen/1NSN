@@ -967,7 +967,7 @@ cd /
 
 if [ "$RUNXTERM" = "yes" ]; then
 echo -e "\e[0;36mAs requested, running Xterm now\nDo not forget to close Xterm and all other windows, when done\033[0m"
-xfce4-terminal
+xterm
 fi
 
 if [ "$KEEPLOCALES" = "FALSE" ]; then
