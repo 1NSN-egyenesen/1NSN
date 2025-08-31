@@ -44,7 +44,7 @@ BASE_INSTALL="acl acpi acpi-support-base acpid aespipe anacron apt-rdepends apt-
 BASE_DOG_APPS_INSTALL="yad gtkdialog obshutdown pup-volume-monitor peasywifi chpupsocket edit-sfs-pcmanfm filemnt-pcmanfm remaster-scripts quick-remaster apt2sfs sfsload fixdepinstall greybird-theme-dd-stretch makedebpackage peasyclock"
 
 # Applications
-BASE_APPS_INSTALL="gparted chrony htop sxiv php-google-recaptcha mpg123 mc conky gdmap geany roxterm-gtk2 pack-it uextract alsa-utils"
+BASE_APPS_INSTALL="gparted dunst libnotify-bin libnotify4 libasound2-plugin-equal chrony htop sxiv php-google-recaptcha mpg123 mc conky gdmap geany roxterm-gtk2 pack-it uextract alsa-utils"
 
 # Desktop environment related
 DESK_APPS_INSTALL="dwm openbox tint2 lxrandr lxinput run-as-user nitrogen"  
