@@ -47,7 +47,7 @@ BASE_DOG_APPS_INSTALL="yad gtkdialog obshutdown pup-volume-monitor peasywifi chp
 BASE_APPS_INSTALL="gparted dunst libnotify-bin libnotify4 libasound2-plugin-equal chrony htop sxiv php-google-recaptcha mpg123 mc conky gdmap geany roxterm-gtk2 pack-it uextract alsa-utils"
 
 # Desktop environment related
-DESK_APPS_INSTALL="dwm openbox tint2 lxrandr lxinput run-as-user nitrogen"  
+DESK_APPS_INSTALL="dwm openbox tint2 lxappearance lxsession lxrandr lxinput run-as-user nitrogen"  
 
 FIRMWARE="firmware-linux-free"   # see below for choices
 
