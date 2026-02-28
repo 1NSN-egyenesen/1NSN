@@ -5,6 +5,12 @@ rm -r /tmp/book
 #rm -r /tmp/trixie
 #rm -r /tmp/daeda
 
+echo ""
+echo "****************************"
+echo "*        vezer.sh          *"
+echo "****************************"
+echo ""
+
 wget -O /usr/bin/vezer.sh --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/vezer.sh
 
 wget -O /tmp/book --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/book
