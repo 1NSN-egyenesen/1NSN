@@ -1,18 +1,22 @@
 #!/bin/bash
+rm -r /usr/bin/vezer.sh
 rm -r /tmp/book
-rm -r /tmp/side
-rm -r /tmp/trixie
-rm -r /tmp/daeda
+#rm -r /tmp/side
+#rm -r /tmp/trixie
+#rm -r /tmp/daeda
+
+wget -O /usr/bin/vezer.sh --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/vezer.sh
 
 wget -O /tmp/book --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/book
-wget -O /tmp/side --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/side
-wget -O /tmp/trixi --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/trixi
-wget -O /tmp/daeda --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/daeda
+#wget -O /tmp/side --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/side
+#wget -O /tmp/trixi --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/trixi
+#wget -O /tmp/daeda --no-check-certificate --content-disposition https://raw.githubusercontent.com/1NSN-egyenesen/1NSN/main/daeda
 
 chmod 777 /tmp/book
-chmod 777 /tmp/side
-chmod 777 /tmp/trixi
-chmod 777 /tmp/daeda
+chmod 777 /usr/bin/vezer.sh
+#chmod 777 /tmp/side
+#chmod 777 /tmp/trixi
+#chmod 777 /tmp/daeda
 
 echo ""
 echo "****Script by .:1NSN:.******"
