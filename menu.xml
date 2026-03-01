@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="Openbox 3">
+<item label="PcmanFM" icon="/usr/share/icons/Faenza/apps/64/system-file-manager.png">
+<action name="Execute"><execute>pcmanfm</execute></action>
+			</item>
+<item label="ROXTerm" icon="/usr/share/icons/hicolor/scalable/apps/roxterm.svg">
+<action name="Execute"><execute>x-terminal-emulator</execute></action>
+			</item>
+<item label="Brave" icon="/opt/brave.com/brave/product_logo_32.png">
+<action name="Execute"><execute>/usr/bin/vezer.sh brave</execute></action>
+			</item>
+<item label="LibreWolf" icon="/usr/share/icons/hicolor/32x32/apps/librewolf.png">
+<action name="Execute"><execute>/usr/bin/vezer.sh librewolf</execute></action>
+			</item>
+<item label="Qbittorrent" icon="/usr/share/icons/hicolor/24x24/apps/qbittorrent.png">
+ <action name="Execute"><execute>/usr/bin/vezer.sh qbittorrent</execute></action>
+			</item>
+<item label="Mpv" icon="/usr/share/icons/hicolor/64x64/apps/mpv.png">
+<action name="Execute"><execute>/usr/bin/vezer.sh mpv</execute></action>
+			</item>
+<item label="Kodi" icon="/usr/share/icons/hicolor/24x24/apps/kodi.png">
+<action name="Execute"><execute>/usr/bin/vezer.sh kodi</execute></action>
+			</item>
+<item label="Ventoy" icon="/opt/ventoy/plugin/ventoy/theme/icons/vtoyiso.png">
+<action name="Execute"><execute>/root/sc/ventoy</execute></action>
+			</item>
+<item label="Avidemux" icon="/usr/share/icons/hicolor/128x128/apps/org.avidemux.Avidemux.png">
+<action name="Execute"><execute>/usr/bin/vezer.sh avidemux</execute></action>
+			</item>                                  
+			<separator />
+			<menu id="Radio" label="Radio" icon="/home/1NSN/ikonok/radio.png">
+<item label="Dark Monkey" icon="/usr/share/icons/hicolor/scalable/apps/mpv.svg">
+<action name="Execute">
+		<execute>bash -c 'killall mpv
+			if roxterm -T "Dark Monkey Music" --profile=Default2 -e mpv --no-video https://www.youtube.com/watch?v=i3sD9iUSiaU; then
+			exit 0
+			else
+			roxterm -T "Dark Monkey" --profile=Default2 -e mpv https://www.youtube.com/watch?v=i3sD9iUSiaU
+			fi'</execute></action>
+			</item>
+<item label="Rttwlr" icon="/usr/share/icons/hicolor/scalable/apps/mpv.svg">
+<action name="Execute">
+		<execute>bash -c 'killall mpv
+			if roxterm -T "Rttwlr (Dark Monkey Music)" --profile=Default2 -e mpv --no-video https://www.youtube.com/live/FOsRAs__6PM?si=PI6RYheNCA3Q46qm; then
+			exit 0
+			else
+			roxterm -T "Rttwlr" --profile=Default2 -e mpv https://www.youtube.com/live/FOsRAs__6PM?si=PI6RYheNCA3Q46qm
+			fi'</execute></action>
+			</item>
+<item label="Art of Techno" icon="/usr/share/icons/hicolor/scalable/apps/mpv.svg">
+<action name="Execute"><execute>bash -c 'killall mpv
+			if roxterm -T "Art of Techno by Trippy Code" --profile=Default2 -e mpv --no-video https://www.youtube.com/watch?v=UYOb37KRFqk; then
+			exit 0
+			else
+			roxterm -T "Art of Techno by Trippy Code" --profile=Default2 -e mpv https://www.youtube.com/watch?v=UYOb37KRFqk
+			fi'
+			</execute></action>
+			</item>
+<item label="Art of Gandalf" icon="/usr/share/icons/hicolor/scalable/apps/mpv.svg">
+<action name="Execute"><execute>bash -c 'killall mpv
+			if roxterm -T "Art of Gandalf" --profile=Default2 -e mpv --no-video https://www.youtube.com/watch?v=04KOpxI25DU; then
+			exit 0
+			else
+			roxterm -T "Art of Gandalf" --profile=Default2 -e mpv https://www.youtube.com/watch?v=04KOpxI25DU
+			fi'
+			</execute></action>
+			</item>
+<item label="Minimal Group" icon="/usr/share/icons/hicolor/scalable/apps/mpv.svg">
+<action name="Execute"><execute>bash -c 'killall mpv
+			if roxterm -T "Minimal Group (NON STOP TECHNO RAVE RADIO 24/7 MIX)" --profile=Default2 -e mpv --no-video https://www.youtube.com/live/34H1XIjnfKM?si=5CSAz9TUQHAg5ART; then
+			exit 0
+			else
+			roxterm -T "Minimal Group (NON STOP TECHNO RAVE RADIO 24/7 MIX)" --profile=Default2 -e mpv https://www.youtube.com/live/34H1XIjnfKM?si=5CSAz9TUQHAg5ART
+			fi'
+			</execute></action>
+			</item>
+<item label="Deejay Radio" icon="/usr/share/icons/hicolor/scalable/apps/mpv.svg">
+<action name="Execute"><execute>bash -c 'killall mpv
+			if roxterm -T "Deejay Radio" --profile=Default2 -e mpv https://s01.diazol.hu:9042/live; then
+			exit 0
+			else
+			roxterm --profile=Default2 -e mpv https://s01.diazol.hu:9042/live
+			fi'
+			</execute></action>
+			</item>
+			</menu>
+			<separator />
+			<menu id="AI" label="AI" icon="/home/1NSN/ikonok/ai.png">
+	<item label="OpenAI" icon="/opt/brave.com/brave/product_logo_32.png">
+    <action name="Execute"><execute>run-as-user brave-browser-stable https://chat.openai.com</execute></action>
+  </item>
+	<item label="Deepseek" icon="/opt/brave.com/brave/product_logo_32.png">
+    <action name="Execute"><execute>run-as-user brave-browser-stable https://chat.deepseek.com/ 
+</execute></action>
+  </item>
+	<item label="Gemini" icon="/opt/brave.com/brave/product_logo_32.png">
+    <action name="Execute"><execute>run-as-user brave-browser-stable https://gemini.google.com/app</execute></action>
+  </item>
+            </menu>
+			<separator />
+			<menu id="Web" label="Web" icon="/opt/brave.com/brave/product_logo_32.png">
+ 
+<item label="Kereső" icon="/opt/brave.com/brave/product_logo_32.png">
+<action name="Execute"><execute>run-as-user brave-browser-stable https://search.brave.com/</execute></action>
+			</item> 
+  <item label="Deezer" icon="/opt/brave.com/brave/product_logo_32.png">
+    <action name="Execute"><execute>run-as-user brave-browser-stable https://account.deezer.com/en/login/ /</execute></action>
+			</item>
+	<item label="Gmail" icon="/opt/brave.com/brave/product_logo_32.png">
+    <action name="Execute"><execute>run-as-user brave-browser-stable https://mail.google.com/mail/u/0/#inbox </execute></action>
+   </item>
+			<item label="InsomniaFM" icon="/opt/brave.com/brave/product_logo_32.png">
+    <action name="Execute"><execute>run-as-user brave-browser-stable https://www.insomniafm.com/</execute></action>
+  </item>		
+<item label="Youtube" icon="/opt/brave.com/brave/product_logo_32.png">
+    <action name="Execute"><execute>run-as-user brave-browser-stable https://www.youtube.com/</execute></action>
+			</item>
+  	<item label="Időkép" icon="/opt/brave.com/brave/product_logo_32.png">
+    <action name="Execute"><execute>run-as-user brave-browser-stable https://www.idokep.hu/idojaras/Miskolc || librewolf https://www.idokep.hu/idojaras/Miskolc</execute></action>
+</item>
+  <item label="Radarkép" icon="/opt/brave.com/brave/product_logo_32.png">
+    <action name="Execute"><execute>run-as-user brave-browser-stable https://www.idokep.hu/radar</execute></action>
+			</item>
+  <item label="Github" icon="/opt/brave.com/brave/product_logo_32.png">
+    <action name="Execute"><execute>run-as-user brave-browser-stable https://github.com/1NSN-egyenesen/1NSN</execute></action>
+			</item>
+  <item label="Sourceforge" icon="/opt/brave.com/brave/product_logo_32.png">
+    <action name="Execute"><execute>run-as-user brave-browser-stable https://sourceforge.net/projects/egyenesenfatdog64/files/</execute></action>
+			</item>
+			</menu>
+			<separator />
+<menu id="Rendszer" label="Rendszer">
+<menu id="debdog-openbox" label="Openbox">
+<item label="Edit config file"> 
+<action name="Execute">
+<command>geany /root/.config/openbox/menu.xml</command>
+			</action>
+			</item>
+<item label="Reconfigure">
+<action name="Reconfigure" />
+			</item>
+<item label="Restart">
+<action name="Restart" />
+			</item>
+			</menu>
+<menu id="Tint2" label="Tint2">
+<item label="restart">
+<action name="Execute"><execute>killall -SIGUSR1 tint2</execute></action>
+			</item>
+<item label="config">
+<action name="Execute"><execute>geany /root/.config/tint2/tint2rc_crunchbang</execute></action>
+			</item>			
+			</menu>
+<item label="vezer" icon="/usr/share/icons/Faenza/apps/64/utilities-terminal.png">
+<action name="Execute"><execute>geany /usr/bin/vezer.sh</execute></action>
+			</item>
+<item label="brave conf" icon="/opt/brave.com/brave/product_logo_32.png">
+<action name="Execute"><execute>xterm -e /root/sc/nightly_conf</execute></action>
+			</item>
+<item label="gpg del" icon="/home/1NSN/ikonok/brave.png">
+<action name="Execute"><execute>/usr/bin/vezer.sh brave_key_delete</execute></action>
+			</item>
+<item label="mkgpg" icon="/home/1NSN/ikonok/brave.png">
+<action name="Execute"><execute>/usr/bin/vezer.sh brave_key</execute></action>
+			</item>
+<item label="mentés" icon="/usr/share/icons/hicolor/24x24/apps/qbittorrent.png">
+<action name="Execute"><execute>/usr/bin/vezer.sh qbittorrent_backup</execute></action>
+			</item>
+<item label="repo" icon="/usr/share/icons/Faenza/apps/64/utilities-terminal.png">
+<action name="Execute"><execute>xterm -e nano /etc/apt/sources.list</execute></action>
+			</item>
+<item label="mkinitrd" icon="/usr/share/icons/Faenza/apps/64/utilities-terminal.png">
+<action name="Execute"><execute>roxterm --profile=Default2 -e /usr/local/cr-initrd/mkinitrd</execute></action>
+			</item>
+<item label="mkiso" icon="/usr/share/icons/Faenza/apps/64/utilities-terminal.png">
+<action name="Execute"><execute>mkiso</execute></action>
+			</item>
+<item label="extlinux" icon="/usr/share/icons/Faenza/apps/64/utilities-terminal.png">
+<action name="Execute"><execute>xterm -e nano /live/image/syslinux/extlinux/extlinux.conf</execute></action>
+			</item>
+<item label="nocopy2" icon="/usr/share/icons/Faenza/apps/64/utilities-terminal.png">
+<action name="Execute"><execute>/root/sc/nocopy2 </execute></action>
+			</item>
+<item label="előtöltés" icon="/usr/share/icons/Faenza/apps/64/utilities-terminal.png">
+<action name="Execute"><execute>/root/sc/copy2 </execute></action>
+			</item>
+<item label="Kernel" icon="/usr/share/icons/Faenza/apps/64/utilities-terminal.png">
+<action name="Execute"><execute>xterm -e /root/sc/kernel</execute></action>
+			</item>
+<item label="Gparted" icon="/usr/share/icons/Faenza/apps/64/gparted.png">
+<action name="Execute"><execute>gparted</execute></action>
+			</item>
+<item label="Frugal" icon="/usr/share/icons/Faenza/apps/64/utilities-terminal.png">
+<action name="Execute"><execute>debdog-install</execute></action>
+			</item>
+<item label="Conky" icon="/usr/share/icons/Faenza/apps/64/utilities-system-monitor.png">
+<action name="Execute"><execute>conkytoggle.sh</execute></action>
+			</item>
+<item label="Alsamixer" icon="/usr/share/icons/Faenza/apps/64/utilities-system-monitor.png">
+<action name="Execute"><execute>roxterm --profile=Default2 -e alsamixer</execute></action>
+			</item>
+<item label="Equalizer" icon="/usr/share/icons/Faenza/apps/64/utilities-system-monitor.png">
+<action name="Execute"><execute>roxterm --profile=Default2 -e alsamixer -D equal</execute></action>
+			</item>
+<item label="Alsa" icon="/usr/share/icons/Faenza/apps/64/utilities-terminal.png">
+<action name="Execute"><execute>roxterm --profile=Default2 -e nano /root/.asoundrc</execute></action>
+			</item>
+<item label="Hang-teszt" icon="/usr/share/icons/Faenza/apps/64/utilities-terminal.png">
+<action name="Execute"><execute>roxterm --profile=Default2 -e speaker-test</execute></action>
+			</item>
+<item label="VAAPI" icon="/usr/share/icons/Faenza/apps/64/utilities-terminal.png">
+<action name="Execute"><execute>roxterm --profile=Default2 -e bash -c "vainfo; read -p 'Nyomj egy Enter-t a bezáráshoz...'"</execute></action>
+			</item>
+<item label="Mesa" icon="/usr/share/icons/Faenza/apps/64/utilities-terminal.png">
+<action name="Execute"><execute>/usr/bin/vezer.sh mesa</execute></action>
+			</item>
+			</menu>
+			<separator />
+  <item label="Asztal" icon="/usr/share/icons/Faenza/devices/64/video-display.png">
+    <action name="Execute"><execute>xdotool key Alt+d</execute></action>
+  </item>
+  <item label="Leállítás" icon="/usr/share/icons/Faenza/apps/64/gnome-shutdown.png">
+    <action name="Execute"><execute>obshutdown</execute></action>
+  </item>
+			</menu>
+			</openbox_menu>
